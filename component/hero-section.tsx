@@ -4,8 +4,216 @@ import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react'
 export default function FerlixHero() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <style>{`
+        @keyframes imageSlideshow {
+          0% {
+            opacity: 1;
+          }
+          22% {
+            opacity: 1;
+          }
+          27% {
+            opacity: 0;
+          }
+          97% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .bg-image-1 {
+          background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&q=80');
+          animation: imageSlideshow 20s ease-in-out infinite;
+          animation-delay: 0s;
+        }
+
+        .bg-image-2 {
+          background-image: url('https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600&q=80');
+          animation: imageSlideshow 20s ease-in-out infinite;
+          animation-delay: 5s;
+        }
+
+        .bg-image-3 {
+          background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80');
+          animation: imageSlideshow 20s ease-in-out infinite;
+          animation-delay: 10s;
+        }
+
+        .bg-image-4 {
+          background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80');
+          animation: imageSlideshow 20s ease-in-out infinite;
+          animation-delay: 15s;
+        }
+
+        @keyframes slideBackground {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+
+        @keyframes floatCircle1 {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(30px, -30px) scale(1.1);
+          }
+        }
+
+        @keyframes floatCircle2 {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(-40px, 40px) scale(1.15);
+          }
+        }
+
+        @keyframes floatCircle3 {
+          0%, 100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(20px, 30px) scale(1.08);
+          }
+        }
+
+        @keyframes shine {
+          0% {
+            left: -100%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+
+        @keyframes pulse {
+          0%, 100% {
+            transform: scale(1);
+            box-shadow: 0 10px 40px rgba(236, 72, 153, 0.3);
+          }
+          50% {
+            transform: scale(1.05);
+            box-shadow: 0 20px 60px rgba(236, 72, 153, 0.5);
+          }
+        }
+
+        @keyframes slideRight {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(5px);
+          }
+        }
+
+        @keyframes playBounce {
+          0%, 100% {
+            transform: scale(1);
+          }
+          50% {
+            transform: scale(1.2);
+          }
+        }
+
+        @keyframes ripple {
+          0% {
+            box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7),
+                        0 0 0 0 rgba(236, 72, 153, 0.5),
+                        0 0 0 0 rgba(236, 72, 153, 0.3);
+          }
+          100% {
+            box-shadow: 0 0 0 10px rgba(236, 72, 153, 0),
+                        0 0 0 20px rgba(236, 72, 153, 0),
+                        0 0 0 30px rgba(236, 72, 153, 0);
+          }
+        }
+
+        .animate-slide-bg {
+          background-size: 200% 200%;
+          animation: slideBackground 20s ease-in-out infinite;
+        }
+
+        .animate-float-1 {
+          animation: floatCircle1 15s ease-in-out infinite;
+        }
+
+        .animate-float-2 {
+          animation: floatCircle2 18s ease-in-out infinite;
+        }
+
+        .animate-float-3 {
+          animation: floatCircle3 12s ease-in-out infinite;
+        }
+
+        .btn-primary {
+          position: relative;
+          overflow: hidden;
+          transition: all 0.3s ease;
+        }
+
+        .btn-primary::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+          transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover {
+          animation: pulse 1.5s ease-in-out infinite;
+          transform: translateY(-2px);
+        }
+
+        .btn-primary:hover::before {
+          animation: shine 0.8s ease;
+        }
+
+        .btn-primary:hover .arrow-icon {
+          animation: slideRight 0.6s ease-in-out infinite alternate;
+        }
+
+        .btn-video {
+          transition: all 0.3s ease;
+        }
+
+        .btn-video:hover .play-circle {
+          animation: ripple 1.5s ease-out infinite;
+          background: linear-gradient(135deg, #ec4899, #f472b6);
+        }
+
+        .btn-video:hover .play-icon {
+          animation: playBounce 0.6s ease-in-out infinite;
+        }
+
+        .btn-video:hover {
+          transform: translateX(10px);
+        }
+
+        .social-icon {
+          transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+          transform: translateY(-3px) rotate(360deg);
+          background: linear-gradient(135deg, #ec4899, #f472b6);
+          color: white;
+          border-color: transparent;
+        }
+      `}</style>
       {/* Top Contact Bar */}
-      <div className="bg-white px-6 py-3">
+      <div className="bg-white px-6 py-2">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex gap-8 text-sm text-gray-600">
             <div className="flex items-center gap-2">
@@ -22,18 +230,18 @@ export default function FerlixHero() {
             </div>
           </div>
           <div className="flex gap-3">
-            <a href="#" className="w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400 hover:bg-pink-50 transition">
+            <a href="#" className="social-icon w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.188 8.188h-1.5c-.188 0-.375.188-.375.375v1.125h1.875l-.188 1.875h-1.688v5.438h-2.25v-5.438h-1.5v-1.875h1.5v-1.313c0-1.5.938-2.438 2.438-2.438h1.688v1.875z"/>
               </svg>
             </a>
-            <a href="#" className="w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400 hover:bg-pink-50 transition">
+            <a href="#" className="social-icon w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400">
               <Twitter size={14} />
             </a>
-            <a href="#" className="w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400 hover:bg-pink-50 transition">
+            <a href="#" className="social-icon w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400">
               <Instagram size={14} />
             </a>
-            <a href="#" className="w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400 hover:bg-pink-50 transition">
+            <a href="#" className="social-icon w-8 h-8 rounded-full border border-pink-300 flex items-center justify-center text-pink-400">
               <Facebook size={14} />
             </a>
           </div>
@@ -41,32 +249,32 @@ export default function FerlixHero() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative min-h-[700px] overflow-hidden rounded-3xl mx-4 mt-4">
-        {/* Background Image with Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"><rect fill="%232d3e7f" width="1600" height="900"/><g opacity="0.15"><circle cx="400" cy="300" r="200" fill="%23fff"/><circle cx="1000" cy="500" r="300" fill="%23fff"/><circle cx="1400" cy="200" r="150" fill="%23fff"/></g></svg>')`,
-          }}
-        >
-          {/* Navy Blue Overlay with Pattern */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2d3e7f] via-[#3d4e8f] to-[#2d3e7f] opacity-95"></div>
-          
-          {/* Decorative Circles Pattern */}
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 left-40 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-white rounded-full blur-3xl"></div>
-            <div className="absolute top-40 right-60 w-64 h-64 bg-pink-300 rounded-full blur-2xl"></div>
-          </div>
-
-          {/* Subtle Pattern Overlay */}
-          <div className="absolute inset-0" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
+      <div className="relative min-h-[700px] overflow-hidden rounded-3xl mx-4">
+        {/* Background Images Slideshow - 4 Images */}
+        <div className="absolute inset-0">
+          <div className="bg-image-1 absolute inset-0 bg-cover bg-center will-change-opacity" style={{ transform: 'translateZ(0)' }}></div>
+          <div className="bg-image-2 absolute inset-0 bg-cover bg-center will-change-opacity" style={{ transform: 'translateZ(0)' }}></div>
+          <div className="bg-image-3 absolute inset-0 bg-cover bg-center will-change-opacity" style={{ transform: 'translateZ(0)' }}></div>
+          <div className="bg-image-4 absolute inset-0 bg-cover bg-center will-change-opacity" style={{ transform: 'translateZ(0)' }}></div>
         </div>
 
+        {/* Navy Blue Overlay - Exact color from uploaded image (#2d3e7f to #3d4e8f) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2d3e7f] via-[#354a8f] to-[#3d4e8f] opacity-[0.80]"></div>
+        
+        {/* Decorative Circles Pattern with Animation */}
+        <div className="absolute inset-0 opacity-[0.08]">
+          <div className="absolute top-20 left-40 w-96 h-96 bg-white rounded-full blur-3xl animate-float-1"></div>
+          <div className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-white rounded-full blur-3xl animate-float-2"></div>
+          <div className="absolute top-40 right-60 w-64 h-64 bg-pink-300 rounded-full blur-2xl animate-float-3"></div>
+        </div>
+
+        {/* Subtle Pattern Overlay
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}></div> */}
+
         {/* Navigation */}
-        <nav className="relative z-10 px-8 py-6">
+        <nav className="relative z-10 px-8 py-5">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
@@ -75,27 +283,27 @@ export default function FerlixHero() {
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                 </svg>
               </div>
-              <span className="text-2xl font-bold text-white">Ferlix.</span>
+              <span className="text-2xl font-bold text-white">Smile Baby IVF</span>
             </div>
 
             {/* Menu */}
             <div className="flex items-center gap-8">
               <a href="#" className="text-white hover:text-pink-300 transition flex items-center gap-1">
-                Home <span className="text-xs">▼</span>
+                Home <span className="text-xs"></span>
               </a>
               <a href="#" className="text-white hover:text-pink-300 transition">About Us</a>
               <a href="#" className="text-white hover:text-pink-300 transition">Services</a>
               <a href="#" className="text-white hover:text-pink-300 transition">Blog</a>
               <a href="#" className="text-white hover:text-pink-300 transition flex items-center gap-1">
-                Pages <span className="text-xs">▼</span>
+                Pages <span className="text-xs"></span>
               </a>
               <a href="#" className="text-white hover:text-pink-300 transition">Contact Us</a>
             </div>
 
             {/* CTA Button */}
-            <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-lg font-medium hover:shadow-xl transition flex items-center gap-2 shadow-lg">
+            <button className="btn-primary bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-lg font-medium shadow-lg">
               Book An Appointment
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg className="arrow-icon inline-block ml-2" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M7 17L17 7M17 7H7M17 7V17"/>
               </svg>
             </button>
@@ -103,77 +311,198 @@ export default function FerlixHero() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-8 pt-24 pb-20 text-center">
-          {/* Welcome Badge */}
-          <div className="inline-flex items-center gap-2 mb-6">
-            <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-            <span className="text-pink-300 uppercase text-sm font-semibold tracking-wider">Welcome to Ferlix</span>
-          </div>
-
-          {/* Main Heading */}
-          <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
-            Helping you build of the<br />
-            family of your <span className="text-pink-400">dreams!</span>
-          </h1>
-
-          {/* Subheading */}
-          <p className="text-lg text-gray-200 mb-10 max-w-3xl mx-auto">
-            We provide expert fertility care, advanced treatments, and compassionate support<br />
-            to help you achieve your dream of parenthood.
-          </p>
-
-          {/* Features */}
-          <div className="flex items-center justify-center gap-8 mb-12">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
+        <div className="relative z-10 max-w-7xl mx-auto px-8 pt-10 pb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
+            <div className="text-left">
+              {/* Welcome Badge */}
+              <div className="inline-flex items-center gap-2 mb-4">
+                <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
+                <span className="text-pink-300 uppercase text-sm font-semibold tracking-wider">Welcome to Smile Baby IVF</span>
               </div>
-              <span className="text-pink-300 font-medium">High success rates</span>
+
+              {/* Main Heading */}
+              <h1 className="text-5xl font-bold text-white mb-4 leading-tight">
+                Ready to Start IVF? Get a Clear Plan + <span className="text-pink-400">Transparent Cost Breakdown</span> at Smile Baby IVF
+              </h1>
+
+              {/* Subheading */}
+              <p className="text-lg text-gray-200 mb-8">
+                If you've already tried medicines or IUI — or you've been told IVF may be needed — we'll help you understand the right protocol, realistic expectations, and the exact next steps for your case.
+              </p>
+
+              {/* Trust Chips Grid */}
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">Affordable IVF planning (starting around ₹1.8L as per case)</span>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">10,000+ babies delivered / families supported</span>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">12 years of advanced fertility care</span>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">60–70% patients via referrals</span>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">Transparent pricing — no hidden costs</span>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">EMI available • Insurance guidance</span>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-3 col-span-2">
+                  <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <span className="text-white text-sm font-medium">Ethical donor programs available (if required)</span>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </div>
-              <span className="text-pink-300 font-medium">Expert specialists</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </div>
-              <span className="text-pink-300 font-medium">Financial support</span>
-            </div>
-          </div>
 
-          {/* CTA Buttons */}
-          <div className="flex items-center justify-center gap-6">
-            <button className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-lg font-medium hover:shadow-2xl transition flex items-center gap-2 shadow-xl text-lg">
-              Book A Consultation
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M7 17L17 7M17 7H7M17 7V17"/>
-              </svg>
-            </button>
-            
-            <button className="flex items-center gap-3 text-white hover:text-pink-300 transition group">
-              <div className="w-14 h-14 rounded-full border-2 border-pink-400 flex items-center justify-center group-hover:bg-pink-500 transition">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="ml-1">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <span className="font-medium text-lg">Watch Video</span>
-            </button>
-          </div>
+            {/* Right Column - Form */}
+            <div className="bg-white rounded-2xl shadow-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Get IVF Plan & Case-Wise Estimate</h3>
+              <p className="text-sm text-gray-500 mb-6">Fill in your details and we'll get back to you</p>
 
-          {/* Dot Indicator */}
-          <div className="flex items-center justify-center gap-2 mt-16">
-            <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-            <div className="w-2 h-2 bg-white/30 rounded-full"></div>
-            <div className="w-2 h-2 bg-white/30 rounded-full"></div>
+              <form className="space-y-4">
+                {/* Row 1: Full Name and Mobile Number */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Full Name */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                    <input 
+                      type="text" 
+                      placeholder="Enter your full name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition"
+                      required
+                    />
+                  </div>
+
+                  {/* Mobile Number */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Mobile Number *</label>
+                    <input 
+                      type="tel" 
+                      placeholder="Enter your mobile number"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition"
+                      required
+                    />
+                  </div>
+                </div>
+
+                {/* Row 2: WhatsApp and Woman's Age */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* WhatsApp */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Is this number on WhatsApp? *</label>
+                    <div className="flex gap-4 mt-3">
+                      <label className="flex items-center gap-2 cursor-pointer">
+                        <input type="radio" name="whatsapp" value="yes" className="w-4 h-4 text-pink-500 focus:ring-pink-400" />
+                        <span className="text-gray-700">Yes</span>
+                      </label>
+                      <label className="flex items-center gap-2 cursor-pointer">
+                        <input type="radio" name="whatsapp" value="no" className="w-4 h-4 text-pink-500 focus:ring-pink-400" />
+                        <span className="text-gray-700">No</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Woman's Age */}
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Woman's age bracket *</label>
+                    <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition">
+                      <option value="">Select age bracket</option>
+                      <option value="<30">&lt;30</option>
+                      <option value="30-34">30–34</option>
+                      <option value="35-39">35–39</option>
+                      <option value="40+">40+</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Row 3: Trying Duration (Full Width) */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Trying for how long? *</label>
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition">
+                    <option value="">Select duration</option>
+                    <option value="0-6">0–6 months</option>
+                    <option value="6-12">6–12 months</option>
+                    <option value="1-2">1–2 years</option>
+                    <option value="2+">2+ years</option>
+                  </select>
+                </div>
+
+                {/* Row 4: Callback Time (Full Width) */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Preferred callback time *</label>
+                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition">
+                    <option value="">Select preferred time</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                  </select>
+                </div>
+
+                {/* Primary CTA */}
+                <button type="submit" className="btn-primary w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-4 rounded-lg font-semibold shadow-xl text-lg mt-4">
+                  Get Cost Breakdown on WhatsApp
+                  <svg className="arrow-icon inline-block ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                  </svg>
+                </button>
+
+                {/* Secondary CTA */}
+                <div className="text-center">
+                  <a href="#" className="text-pink-500 hover:text-pink-600 font-medium text-sm underline">
+                    Book Treatment Planning Visit
+                  </a>
+                </div>
+
+                {/* Microcopy */}
+                <p className="text-xs text-gray-500 text-center mt-4">
+                  Privacy maintained. We follow ethical care and do not promise guaranteed outcomes.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>

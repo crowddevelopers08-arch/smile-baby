@@ -24,25 +24,25 @@ export default function FerlixHero() {
         }
 
         .bg-image-1 {
-          background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1600&q=80');
-          animation: imageSlideshow 20s ease-in-out infinite;
+          background-image: url('/medium-shot.jpg');
+          animation: imageSlideshow 10s ease-in-out infinite;
           animation-delay: 0s;
         }
 
         .bg-image-2 {
-          background-image: url('https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=1600&q=80');
+          background-image: url('/mother-with.jpg');
           animation: imageSlideshow 20s ease-in-out infinite;
           animation-delay: 5s;
         }
 
         .bg-image-3 {
-          background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80');
+          background-image: url('/concept-protection.avif');
           animation: imageSlideshow 20s ease-in-out infinite;
           animation-delay: 10s;
         }
 
         .bg-image-4 {
-          background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80');
+          background-image: url('/baby-feet.jpg');
           animation: imageSlideshow 20s ease-in-out infinite;
           animation-delay: 15s;
         }
@@ -259,7 +259,7 @@ export default function FerlixHero() {
         </div>
 
         {/* Navy Blue Overlay - Exact color from uploaded image (#2d3e7f to #3d4e8f) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#2d3e7f] via-[#354a8f] to-[#3d4e8f] opacity-[0.80]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#2d3e7f] via-[#354a8f] to-[#3d4e8f] opacity-[0.78]"></div>
         
         {/* Decorative Circles Pattern with Animation */}
         <div className="absolute inset-0 opacity-[0.08]">

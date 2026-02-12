@@ -40,10 +40,10 @@ const IVFProcessSection = () => {
   const pinkFilter = "brightness(0) saturate(100%) invert(48%) sepia(86%) saturate(1854%) hue-rotate(300deg) brightness(97%) contrast(93%)";
 
   return (
-    <div className="bg-gradient-to-b from-white to-blue-50/30 px-4 sm:px-6 lg:px-8 pb-13">
+    <div id='process' className="bg-gradient-to-b from-white to-blue-50/30 px-4 sm:px-6 lg:px-8 max-sm:pb-7 pb-13">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-16">
+        <div className="text-center max-sm:mb-10 mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <svg className="w-5 h-5 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
@@ -56,7 +56,7 @@ const IVFProcessSection = () => {
         </div>
 
         {/* Process Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 max-sm:gap-0 gap-8 lg:gap-6 max-sm:mb-4 mb-12">
           {processes.map((process, index) => (
             <div key={index} className="text-center">
               {/* Icon and Number Container */}
@@ -89,11 +89,14 @@ const IVFProcessSection = () => {
         </div>
 
         {/* Reassurance Section */}
-        <div className="items-center flex justify-around">
-          <p className="text-gray-600 text-lg max-w-3xl items-left">
+        <div className="items-center flex flex-wrap justify-around">
+          <p className="text-gray-600 text-lg max-w-3xl items-left max-sm:mb-4">
             You'll be guided step-by-step, with planned visits and clear instructions throughout.
           </p>
-          <button className="bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-3 px-8 rounded-xl transition-colors duration-300 shadow-lg hover:shadow-xl">
+          <button className="bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-3 px-8 rounded-xl transition-colors duration-300 shadow-lg hover:shadow-xl" onClick={() => {
+                  const section = document.getElementById("forms");
+                  section?.scrollIntoView({ behavior: "smooth" });
+                }}>
             Book Planning Visit
           </button>
         </div>

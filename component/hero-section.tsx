@@ -10,6 +10,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
+import SmileBabyForm from "./contact-froms";
 
 export default function FerlixHero() {
   return (
@@ -674,7 +675,7 @@ export default function FerlixHero() {
             </div>
 
             {/* Right Column - Form - Responsive */}
-            <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 lg:p-8 mx-0 sm:mx-2 lg:mx-0">
+            {/* <div  id="forms" className="bg-white rounded-xl sm:rounded-2xl shadow-xl sm:shadow-2xl p-4 sm:p-6 lg:p-8 mx-0 sm:mx-2 lg:mx-0">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-1 sm:mb-2">
                 Get IVF Plan & Case-Wise Estimate
               </h3>
@@ -682,10 +683,8 @@ export default function FerlixHero() {
                 Fill in your details and we'll get back to you
               </p>
 
-              <form id="forms" className="space-y-3 sm:space-y-4">
-                {/* Row 1: Full Name and Mobile Number - Stack on Mobile */}
+              <form className="space-y-3 sm:space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  {/* Full Name */}
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Full Name *
@@ -698,7 +697,6 @@ export default function FerlixHero() {
                     />
                   </div>
 
-                  {/* Mobile Number */}
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Mobile Number *
@@ -712,9 +710,7 @@ export default function FerlixHero() {
                   </div>
                 </div>
 
-                {/* Row 2: WhatsApp and Woman's Age - Stack on Mobile */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  {/* WhatsApp */}
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Is this number on WhatsApp? *
@@ -745,7 +741,6 @@ export default function FerlixHero() {
                     </div>
                   </div>
 
-                  {/* Woman's Age */}
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                       Woman's age bracket *
@@ -760,7 +755,6 @@ export default function FerlixHero() {
                   </div>
                 </div>
 
-                {/* Row 3: Trying Duration (Full Width) */}
                 <div>
                   <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Trying for how long? *
@@ -774,7 +768,6 @@ export default function FerlixHero() {
                   </select>
                 </div>
 
-                {/* Row 4: Callback Time (Full Width) */}
                 <div>
                   <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
                     Preferred callback time *
@@ -787,7 +780,6 @@ export default function FerlixHero() {
                   </select>
                 </div>
 
-                {/* Primary CTA */}
                 <button
                   type="submit"
                   className="btn-primary w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white px-4 sm:px-6 py-3 sm:py-4 rounded-lg font-semibold shadow-xl text-sm sm:text-base lg:text-lg mt-3 sm:mt-4"
@@ -806,7 +798,6 @@ export default function FerlixHero() {
                   </svg>
                 </button>
 
-                {/* Secondary CTA */}
                 <div className="text-center">
                   <a
                     href="#"
@@ -816,13 +807,13 @@ export default function FerlixHero() {
                   </a>
                 </div>
 
-                {/* Microcopy */}
                 <p className="text-xs text-gray-500 text-center mt-3 sm:mt-4">
                   Privacy maintained. We follow ethical care and do not promise
                   guaranteed outcomes.
                 </p>
               </form>
-            </div>
+            </div> */}
+            <SmileBabyForm />
           </div>
         </div>
       </div>

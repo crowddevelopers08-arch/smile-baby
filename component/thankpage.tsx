@@ -5,7 +5,7 @@ import React from 'react';
 export default function ThankYouPage() {
   return (
     <div className="bg-gradient-to-br from-pink-50 via-white to-blue-50 flex items-center justify-center px-4 sm:px-6 py-6 sm:py-8 min-h-screen">
-      <div className="max-w-4xl w-full">
+      <div className="max-w-7xl w-full">
         {/* Main Card */}
         <div className="bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12 relative overflow-hidden">
           {/* Decorative Elements - Adjusted for mobile */}
@@ -17,13 +17,13 @@ export default function ThankYouPage() {
             {/* Success Icon - Smaller on mobile */}
             <div className="flex justify-center mb-4 sm:mb-6 md:mb-8">
               <div className="relative">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full flex items-center justify-center shadow-2xl animate-bounce">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-18 md:h-18 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full flex items-center justify-center shadow-2xl animate-bounce">
                   <svg width={32} height={32} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="20 6 9 17 4 12"/>
                   </svg>
                 </div>
                 {/* Pulse rings - Adjusted size */}
-                <div className="absolute inset-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-pink-400 rounded-full animate-ping opacity-20"></div>
+                <div className="absolute inset-0 w-16 h-16 sm:w-20 sm:h-20 md:w-18 md:h-18 bg-pink-400 rounded-full animate-ping opacity-20"></div>
               </div>
             </div>
 
@@ -34,7 +34,7 @@ export default function ThankYouPage() {
             </div>
 
             {/* Main Heading - Responsive text sizes */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#1e2f5f] mb-4 sm:mb-5 md:mb-6 leading-tight">
+            <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-4xl font-bold text-[#1e2f5f] mb-4 sm:mb-5 md:mb-6 leading-tight">
               We've Received Your <span className="text-pink-400 block sm:inline">Request!</span>
             </h1>
 

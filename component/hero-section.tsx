@@ -529,7 +529,7 @@ export default function FerlixHero() {
 
               {/* Main Heading - Responsive Font Sizes */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                Ready to Start IVF? Get a Complete {" "}
+                Planning For a IVF? Get a Complete {" "}
                 <span className="text-pink-400">
                   Plan at Smile 
                 </span>{" "}

@@ -156,7 +156,7 @@ export default function SmileBabyForm() {
           {/* WhatsApp - Dropdown */}
           <div>
             <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-              Is this number on WhatsApp? *
+              Have you tried any treatments before? *
             </label>
             <select
               name="whatsapp"
@@ -175,7 +175,7 @@ export default function SmileBabyForm() {
           {/* Woman's Age */}
           <div>
             <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-              Woman's age bracket *
+              Age Group *
             </label>
             <select
               name="womansAgeBracket"
@@ -235,16 +235,6 @@ export default function SmileBabyForm() {
             </>
           )}
         </button>
-
-        {/* Secondary CTA */}
-        <div className="text-center">
-          <a
-            href="#"
-            className="text-pink-500 hover:text-pink-600 font-medium text-xs sm:text-sm underline"
-          >
-            Book Treatment Planning Visit
-          </a>
-        </div>
 
         {/* Microcopy */}
         <p className="text-xs text-gray-500 text-center mt-3 sm:mt-4">

@@ -11,7 +11,7 @@ interface FormData {
   whatsapp: string
   womansAgeBracket: string
   tryingDuration: string
-  preferredCallbackTime: string
+  // preferredCallbackTime: string
   consent: boolean
   formName: string
   source: string
@@ -26,7 +26,7 @@ export default function SmileBabyForm() {
     whatsapp: 'yes',
     womansAgeBracket: '',
     tryingDuration: '',
-    preferredCallbackTime: '',
+    // preferredCallbackTime: '',
     consent: true,
     formName: 'Smile Baby',
     source: 'Smile Baby IVF Form',
@@ -52,8 +52,15 @@ export default function SmileBabyForm() {
     setErrorMessage('')
 
     // Validate required fields
+    // if (!formData.name || !formData.phone || !formData.womansAgeBracket || 
+    //     !formData.tryingDuration || !formData.preferredCallbackTime) {
+    //   setSubmitStatus('error')
+    //   setErrorMessage('Please fill in all required fields')
+    //   setIsSubmitting(false)
+    //   return
+    // }
     if (!formData.name || !formData.phone || !formData.womansAgeBracket || 
-        !formData.tryingDuration || !formData.preferredCallbackTime) {
+        !formData.tryingDuration) {
       setSubmitStatus('error')
       setErrorMessage('Please fill in all required fields')
       setIsSubmitting(false)
@@ -78,7 +85,7 @@ export default function SmileBabyForm() {
         body: JSON.stringify({
           ...formData,
           isWhatsapp: formData.whatsapp === 'yes' ? 'Yes' : 'No',
-          message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}, Preferred time: ${formData.preferredCallbackTime}`
+          message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
         }),
       })
 
@@ -94,7 +101,7 @@ export default function SmileBabyForm() {
           whatsapp: 'yes',
           womansAgeBracket: '',
           tryingDuration: '',
-          preferredCallbackTime: '',
+          // preferredCallbackTime: '',
           consent: true,
           formName: 'Smile Baby',
           source: 'Smile Baby IVF Form',
@@ -251,7 +258,7 @@ export default function SmileBabyForm() {
         </div>
 
         {/* Row 4: Callback Time */}
-        <div>
+        {/* <div>
           <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
             Preferred callback time *
           </label>
@@ -268,7 +275,7 @@ export default function SmileBabyForm() {
             <option value="Afternoon">Afternoon</option>
             <option value="Evening">Evening</option>
           </select>
-        </div>
+        </div> */}
 
         {/* Primary CTA */}
         <button

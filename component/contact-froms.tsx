@@ -189,40 +189,28 @@ export default function SmileBabyForm() {
           {/* WhatsApp */}
           <div>
             <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-              Is this number on WhatsApp? *
+              Have you tried any treatments before? *
             </label>
-            <div className="flex gap-4 mt-1 sm:mt-3">
-              <label className="flex items-center gap-1 sm:gap-2 cursor-pointer">
-                <input
-                  type="radio"
-                  name="whatsapp"
-                  value="yes"
-                  checked={formData.whatsapp === 'yes'}
-                  onChange={handleChange}
-                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 focus:ring-pink-400"
-                  disabled={isSubmitting}
-                />
-                <span className="text-xs sm:text-sm text-gray-700">Yes</span>
-              </label>
-              <label className="flex items-center gap-1 sm:gap-2 cursor-pointer">
-                <input
-                  type="radio"
-                  name="whatsapp"
-                  value="no"
-                  checked={formData.whatsapp === 'no'}
-                  onChange={handleChange}
-                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 focus:ring-pink-400"
-                  disabled={isSubmitting}
-                />
-                <span className="text-xs sm:text-sm text-gray-700">No</span>
-              </label>
-            </div>
+
+            <select
+              name="whatsapp"
+              value={formData.whatsapp}
+              onChange={handleChange}
+              disabled={isSubmitting}
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition"
+              required
+            >
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
           </div>
+
 
           {/* Woman's Age */}
           <div>
             <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-              Woman's age bracket *
+             Age Group *
             </label>
             <select
               name="womansAgeBracket"
@@ -302,16 +290,6 @@ export default function SmileBabyForm() {
             </>
           )}
         </button>
-
-        {/* Secondary CTA */}
-        <div className="text-center">
-          <a
-            href="#"
-            className="text-pink-500 hover:text-pink-600 font-medium text-xs sm:text-sm underline"
-          >
-            Book Treatment Planning Visit
-          </a>
-        </div>
 
         {/* Microcopy */}
         <p className="text-xs text-gray-500 text-center mt-3 sm:mt-4">

@@ -93,12 +93,6 @@ const IVFProcessSection = () => {
           <p className="text-gray-600 text-lg max-w-3xl items-left max-sm:mb-4">
             You'll be guided step-by-step, with planned visits and clear instructions throughout.
           </p>
-          <button className="bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-3 px-8 rounded-xl transition-colors duration-300 shadow-lg hover:shadow-xl" onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
-            Book Planning Visit
-          </button>
         </div>
       </div>
     </div>

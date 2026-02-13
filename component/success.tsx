@@ -154,51 +154,6 @@ const SuccessRatesSection = () => {
                 * Results vary by individual case. We do not guarantee outcomes.
               </p>
             </div>
-
-            {/* CTA Button */}
-            <div className="flex justify-center px-4 sm:px-6" >
-              <button
-                className="
-                  bg-[#ec4899] 
-                  hover:bg-[#db2777] 
-                  text-white 
-                  font-semibold 
-                  py-3 sm:py-4 
-                  px-3 sm:px-6 md:px-8 
-                  rounded-xl 
-                  transition-all duration-300 
-                  shadow-lg hover:shadow-xl 
-                  transform hover:-translate-y-1 
-                  flex items-center justify-center 
-                  gap-2 sm:gap-3
-                  w-full sm:w-auto
-                  text-sm sm:text-base
-                  max-w-xs sm:max-w-none
-                  mx-auto
-                "
-                onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                <svg
-                  className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <span className="whitespace-normal sm:whitespace-nowrap">
-                  Book Treatment Planning Visit
-                </span>
-              </button>
-            </div>
           </div>
         </div>
       </div>

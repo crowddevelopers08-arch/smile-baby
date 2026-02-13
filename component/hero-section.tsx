@@ -529,11 +529,11 @@ export default function FerlixHero() {
 
               {/* Main Heading - Responsive Font Sizes */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                Ready to Start IVF? Get a Clear Plan +{" "}
+                Ready to Start IVF? Get a Complete {" "}
                 <span className="text-pink-400">
-                  Transparent Cost Breakdown
+                  Plan at Smile 
                 </span>{" "}
-                at Smile Baby IVF
+               Baby IVF
               </h1>
 
               {/* Subheading */}
@@ -615,42 +615,6 @@ export default function FerlixHero() {
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
                     60–70% patients via referrals
-                  </span>
-                </div>
-
-                <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="white"
-                      strokeWidth="3"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </div>
-                  <span className="text-white text-xs sm:text-sm font-medium">
-                    Transparent pricing — no hidden costs
-                  </span>
-                </div>
-
-                <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="white"
-                      strokeWidth="3"
-                    >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                  </div>
-                  <span className="text-white text-xs sm:text-sm font-medium">
-                    EMI available • Insurance guidance
                   </span>
                 </div>
 

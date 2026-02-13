@@ -65,25 +65,7 @@ export default function OurCommitment() {
                   <span className="text-gray-700 text-sm sm:text-base font-medium">
                     Diagnosis confirmation and treatment recommendation
                   </span>
-                </div>
-
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
-                    <svg 
-                      width="12" 
-                      height="12"  
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="white" 
-                      strokeWidth="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 text-sm sm:text-base font-medium">
-                    Personalised IVF protocol and timeline
-                  </span>
-                </div>
+                </div>  
               </div>
 
               {/* Column 2 */}
@@ -121,24 +103,6 @@ export default function OurCommitment() {
                   </div>
                   <span className="text-gray-700 text-sm sm:text-base font-medium">
                     Transparent estimate: what's included + what may add on
-                  </span>
-                </div>
-
-                <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 sm:mt-1">
-                    <svg 
-                      width="12" 
-                      height="12"  
-                      viewBox="0 0 24 24" 
-                      fill="none" 
-                      stroke="white" 
-                      strokeWidth="3"
-                    >
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 text-sm sm:text-base font-medium">
-                    Safety planning based on your body and medical history
                   </span>
                 </div>
               </div>
@@ -223,17 +187,6 @@ export default function OurCommitment() {
                     Diagnosis confirmation and treatment recommendation
                   </span>
                 </div>
-
-                <div className="flex items-start gap-2">
-                  <div className="w-5 h-5 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 text-sm font-medium">
-                    Personalised IVF protocol and timeline
-                  </span>
-                </div>
               </div>
 
               {/* Column 2 */}
@@ -257,17 +210,6 @@ export default function OurCommitment() {
                   </div>
                   <span className="text-gray-700 text-sm font-medium">
                     Transparent estimate: what's included + what may add on
-                  </span>
-                </div>
-
-                <div className="flex items-start gap-2">
-                  <div className="w-5 h-5 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                      <polyline points="20 6 9 17 4 12"/>
-                    </svg>
-                  </div>
-                  <span className="text-gray-700 text-sm font-medium">
-                    Safety planning based on your body and medical history
                   </span>
                 </div>
               </div>

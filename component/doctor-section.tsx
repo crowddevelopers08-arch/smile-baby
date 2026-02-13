@@ -68,31 +68,6 @@ const TeamSection = () => {
               IVF success depends on the right diagnosis, the right lab work,
               and the right protocol — guided by experienced specialists.
             </p>
-            <button className="bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-3 px-6 rounded-xl flex items-center gap-2 transition-colors duration-300 shadow-lg hover:shadow-xl text-sm sm:text-base w-full sm:w-auto justify-center" onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
-              Talk to Our IVF Team
-              <svg
-                className="w-4 h-4 sm:w-5 sm:h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M7 7l9.586 0 0 9.586"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 7L7 17"
-                />
-              </svg>
-            </button>
           </div>
         </div>
 

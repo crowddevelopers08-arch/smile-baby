@@ -71,7 +71,7 @@ export default function SmileBabyForm() {
         body: JSON.stringify({
           ...formData,
           isWhatsapp: formData.whatsapp === 'yes' ? 'Yes' : 'No',
-          message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
+          // message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
         }),
       })
 

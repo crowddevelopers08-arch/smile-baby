@@ -675,35 +675,24 @@ export default function FerlixHero() {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  <div>
-                    <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-                      Is this number on WhatsApp? *
-                    </label>
-                    <div className="flex gap-4 mt-1 sm:mt-3">
-                      <label className="flex items-center gap-1 sm:gap-2 cursor-pointer">
-                        <input
-                          type="radio"
-                          name="whatsapp"
-                          value="yes"
-                          className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 focus:ring-pink-400"
-                        />
-                        <span className="text-xs sm:text-sm text-gray-700">
-                          Yes
-                        </span>
-                      </label>
-                      <label className="flex items-center gap-1 sm:gap-2 cursor-pointer">
-                        <input
-                          type="radio"
-                          name="whatsapp"
-                          value="no"
-                          className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 focus:ring-pink-400"
-                        />
-                        <span className="text-xs sm:text-sm text-gray-700">
-                          No
-                        </span>
-                      </label>
-                    </div>
-                  </div>
+      
+          <div>
+            <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+              Is this number on WhatsApp? *
+            </label>
+            <select
+              name="whatsapp"
+              value={formData.whatsapp}
+              onChange={handleChange}
+              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition"
+              required
+              disabled={isSubmitting}
+            >
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
 
                   <div>
                     <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
@@ -732,17 +721,6 @@ export default function FerlixHero() {
                   </select>
                 </div>
 
-                <div>
-                  <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-                    Preferred callback time *
-                  </label>
-                  <select className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition">
-                    <option value="">Select preferred time</option>
-                    <option value="morning">Morning</option>
-                    <option value="afternoon">Afternoon</option>
-                    <option value="evening">Evening</option>
-                  </select>
-                </div>
 
                 <button
                   type="submit"

@@ -2,7 +2,7 @@
 "use client"
 
 import { useState } from "react"
-import { Baby, ChevronRight, AlertCircle } from "lucide-react"
+import { Baby, ChevronRight, AlertCircle, CheckCircle2 } from "lucide-react"
 import { useRouter } from "next/navigation"
 
 interface FormData {
@@ -11,6 +11,7 @@ interface FormData {
   whatsapp: string
   womansAgeBracket: string
   tryingDuration: string
+  preferredCallbackTime: string
   consent: boolean
   formName: string
   source: string
@@ -18,13 +19,14 @@ interface FormData {
 }
 
 export default function SmileBabyForm() {
-  const router = useRouter()
+    const router = useRouter()
   const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
-    whatsapp: 'Select Option',
+    whatsapp: 'yes',
     womansAgeBracket: '',
     tryingDuration: '',
+    preferredCallbackTime: '',
     consent: true,
     formName: 'Smile Baby',
     source: 'Smile Baby IVF Form',
@@ -32,23 +34,27 @@ export default function SmileBabyForm() {
   })
   
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const { name, value } = e.target
+    const { name, value, type } = e.target as HTMLInputElement
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: type === 'radio' ? value : value
     }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus('idle')
     setErrorMessage('')
 
     // Validate required fields
-    if (!formData.name || !formData.phone || !formData.womansAgeBracket || !formData.tryingDuration || !formData.whatsapp) {
+    if (!formData.name || !formData.phone || !formData.womansAgeBracket || 
+        !formData.tryingDuration || !formData.preferredCallbackTime) {
+      setSubmitStatus('error')
       setErrorMessage('Please fill in all required fields')
       setIsSubmitting(false)
       return
@@ -57,6 +63,7 @@ export default function SmileBabyForm() {
     // Validate phone number (10 digits)
     const phoneRegex = /^\d{10}$/
     if (!phoneRegex.test(formData.phone)) {
+      setSubmitStatus('error')
       setErrorMessage('Please enter a valid 10-digit mobile number')
       setIsSubmitting(false)
       return
@@ -71,21 +78,36 @@ export default function SmileBabyForm() {
         body: JSON.stringify({
           ...formData,
           isWhatsapp: formData.whatsapp === 'yes' ? 'Yes' : 'No',
-          message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
+          message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}, Preferred time: ${formData.preferredCallbackTime}`
         }),
       })
 
       const data = await response.json()
 
       if (response.ok) {
-        // Redirect to thank you page
-        router.push('/thank-you')
+          router.push('/thank-you')
+        setSubmitStatus('success')
+        // Reset form
+        setFormData({
+          name: '',
+          phone: '',
+          whatsapp: 'yes',
+          womansAgeBracket: '',
+          tryingDuration: '',
+          preferredCallbackTime: '',
+          consent: true,
+          formName: 'Smile Baby',
+          source: 'Smile Baby IVF Form',
+          treatment: 'IVF Consultation'
+        })
       } else {
+        setSubmitStatus('error')
         setErrorMessage(data.error || 'Something went wrong. Please try again.')
-        setIsSubmitting(false)
       }
     } catch (error) {
+      setSubmitStatus('error')
       setErrorMessage('Network error. Please check your connection.')
+    } finally {
       setIsSubmitting(false)
     }
   }
@@ -102,7 +124,17 @@ export default function SmileBabyForm() {
         Fill in your details and we'll get back to you
       </p>
 
-      {errorMessage && (
+      {submitStatus === 'success' && (
+        <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
+          <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+          <div>
+            <p className="text-green-800 font-medium">Thank you!</p>
+            <p className="text-green-700 text-sm">We have received your request and will contact you shortly on WhatsApp.</p>
+          </div>
+        </div>
+      )}
+
+      {submitStatus === 'error' && (
         <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
           <AlertCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
           <div>
@@ -154,23 +186,37 @@ export default function SmileBabyForm() {
 
         {/* Row 2: WhatsApp and Woman's Age */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-          {/* WhatsApp - Now as dropdown */}
+          {/* WhatsApp */}
           <div>
             <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
               Is this number on WhatsApp? *
             </label>
-            <select
-              name="whatsapp"
-              value={formData.whatsapp}
-              onChange={handleChange}
-              className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition"
-              required
-              disabled={isSubmitting}
-            >
-              <option value="">Select an option</option>
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
-            </select>
+            <div className="flex gap-4 mt-1 sm:mt-3">
+              <label className="flex items-center gap-1 sm:gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="whatsapp"
+                  value="yes"
+                  checked={formData.whatsapp === 'yes'}
+                  onChange={handleChange}
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 focus:ring-pink-400"
+                  disabled={isSubmitting}
+                />
+                <span className="text-xs sm:text-sm text-gray-700">Yes</span>
+              </label>
+              <label className="flex items-center gap-1 sm:gap-2 cursor-pointer">
+                <input
+                  type="radio"
+                  name="whatsapp"
+                  value="no"
+                  checked={formData.whatsapp === 'no'}
+                  onChange={handleChange}
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-pink-500 focus:ring-pink-400"
+                  disabled={isSubmitting}
+                />
+                <span className="text-xs sm:text-sm text-gray-700">No</span>
+              </label>
+            </div>
           </div>
 
           {/* Woman's Age */}
@@ -213,6 +259,26 @@ export default function SmileBabyForm() {
             <option value="6-12 months">6–12 months</option>
             <option value="1-2 years">1–2 years</option>
             <option value="2+ years">2+ years</option>
+          </select>
+        </div>
+
+        {/* Row 4: Callback Time */}
+        <div>
+          <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
+            Preferred callback time *
+          </label>
+          <select
+            name="preferredCallbackTime"
+            value={formData.preferredCallbackTime}
+            onChange={handleChange}
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent outline-none transition"
+            required
+            disabled={isSubmitting}
+          >
+            <option value="">Select preferred time</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
           </select>
         </div>
 

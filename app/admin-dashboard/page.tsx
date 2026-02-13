@@ -38,7 +38,6 @@ interface Lead {
   whatsappNumber?: string
   womansAgeBracket?: string
   tryingDuration?: string
-  preferredCallbackTime?: string
   isWhatsapp?: string
 }
 
@@ -242,7 +241,7 @@ export default function LeadsTable({
       "Name", "Phone", "Email", "Treatment", "Message", "City", "Age", 
       "Status", "Form Name", "Source", "TeleCRM Synced", "Created At",
       // Smile Baby specific fields
-      "WhatsApp", "Woman's Age Bracket", "Trying Duration", "Preferred Callback Time"
+      "WhatsApp", "Woman's Age Bracket", "Trying Duration"
     ]
     
     const csvData = filteredLeads.map(lead => [
@@ -260,8 +259,7 @@ export default function LeadsTable({
       isClient ? new Date(lead.createdAt).toLocaleString('en-IN') : lead.createdAt,
       lead.isWhatsapp || lead.whatsappNumber || '',
       lead.womansAgeBracket || '',
-      lead.tryingDuration || '',
-      lead.preferredCallbackTime || ''
+      lead.tryingDuration || ''
     ])
     
     const csvContent = [headers, ...csvData]
@@ -584,9 +582,6 @@ export default function LeadsTable({
                                     {lead.tryingDuration && (
                                       <span className="text-xs text-gray-600">Trying: {lead.tryingDuration}</span>
                                     )}
-                                    {lead.preferredCallbackTime && (
-                                      <span className="text-xs text-gray-600">Callback: {lead.preferredCallbackTime}</span>
-                                    )}
                                   </>
                                 ) : (
                                   <>
@@ -709,7 +704,6 @@ export default function LeadsTable({
                                         <>
                                           <div><span className="font-medium">Woman's Age Bracket:</span> {lead.womansAgeBracket || 'Not specified'}</div>
                                           <div><span className="font-medium">Trying Duration:</span> {lead.tryingDuration || 'Not specified'}</div>
-                                          <div><span className="font-medium">Preferred Callback Time:</span> {lead.preferredCallbackTime || 'Not specified'}</div>
                                           <div><span className="font-medium">WhatsApp:</span> {lead.isWhatsapp || lead.whatsappNumber || 'Not specified'}</div>
                                         </>
                                       ) : (

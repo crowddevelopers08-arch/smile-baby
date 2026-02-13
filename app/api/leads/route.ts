@@ -29,7 +29,6 @@ interface LeadData {
   whatsappNumber?: string;
   womansAgeBracket?: string;
   tryingDuration?: string;
-  // preferredCallbackTime?: string;
   isWhatsapp?: string;
   whatsapp?: string;
 }
@@ -109,7 +108,6 @@ async function saveLeadToDatabase(leadData: LeadData, telecrmResult?: any) {
       whatsappNumber: leadData.whatsappNumber || leadData.whatsapp || null,
       womansAgeBracket: leadData.womansAgeBracket || null,
       tryingDuration: leadData.tryingDuration || null,
-      // preferredCallbackTime: leadData.preferredCallbackTime || null,
       isWhatsapp: leadData.isWhatsapp || null,
 
       telecrmSynced: !!telecrmResult?.synced,
@@ -154,7 +152,6 @@ async function sendToTeleCRM(leadData: LeadData) {
       { type: "SYSTEM_NOTE", text: `Service: IVF Consultation - Smile Baby` },
       { type: "SYSTEM_NOTE", text: `Woman's Age Bracket: ${leadData.womansAgeBracket || "Not specified"}` },
       { type: "SYSTEM_NOTE", text: `Trying Duration: ${leadData.tryingDuration || "Not specified"}` },
-      // { type: "SYSTEM_NOTE", text: `Preferred Callback Time: ${leadData.preferredCallbackTime || "Not specified"}` },
       { type: "SYSTEM_NOTE", text: `WhatsApp: ${leadData.isWhatsapp || leadData.whatsapp || "Not specified"}` }
     );
   } else {
@@ -401,7 +398,6 @@ export async function GET(request: NextRequest) {
           whatsappNumber: lead.whatsappNumber,
           womansAgeBracket: lead.womansAgeBracket,
           tryingDuration: lead.tryingDuration,
-          // preferredCallbackTime: lead.preferredCallbackTime,
           isWhatsapp: lead.isWhatsapp,
           
           createdAt: lead.createdAt.toISOString(),

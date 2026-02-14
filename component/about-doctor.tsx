@@ -3,7 +3,7 @@ import React from 'react';
 
 const MeetDoctorSection = () => {
   return (
-    <div className="bg-gradient-to-br from-pink-50 via-blue-50 to-pink-50 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="bg-gradient-to-br from-pink-50 via-blue-50 to-pink-50 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden max-sm:mb-3">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 xl:gap-16 items-center">
           {/* DESKTOP LAYOUT - Left Side - Doctor Image (Unchanged) */}
@@ -58,7 +58,7 @@ const MeetDoctorSection = () => {
                 <img 
                   src="/doctors.avif" 
                   alt="Dr. Mangala Devi K R"
-                  className="w-full h-[350px] sm:h-[450px] md:h-[600px] object-cover object-center"
+                  className="w-full h-[450px] sm:h-[450px] md:h-[600px] object-cover object-center"
                 />
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1e2f5f]/90 via-transparent to-transparent"></div>
@@ -88,8 +88,8 @@ const MeetDoctorSection = () => {
             </div>
 
             {/* Qualifications - Grid layout for mobile */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-              <div className="flex items-start gap-2 bg-white/70 backdrop-blur-sm rounded-xl p-3 sm:p-4">
+            <div className="flex-wrap flex gap-1 mb-6">
+              <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-xl p-3 sm:p-4">
                 <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 bg-[#ec4899]/10 rounded-full flex items-center justify-center">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#ec4899]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -100,7 +100,7 @@ const MeetDoctorSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-2 bg-white/70 backdrop-blur-sm rounded-xl p-3 sm:p-4">
+              <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-xl p-3 sm:p-4">
                 <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 bg-[#ec4899]/10 rounded-full flex items-center justify-center">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#ec4899]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -112,7 +112,7 @@ const MeetDoctorSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-2 bg-white/70 backdrop-blur-sm rounded-xl p-3 sm:p-4 sm:col-span-2 lg:col-span-1">
+              {/* <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm rounded-xl p-3 sm:p-4 sm:col-span-2 lg:col-span-1">
                 <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 bg-[#ec4899]/10 rounded-full flex items-center justify-center">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#ec4899]" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -122,7 +122,7 @@ const MeetDoctorSection = () => {
                   <p className="text-[#1e2f5f] font-semibold text-sm sm:text-base">Registration No.</p>
                   <p className="text-gray-600 text-xs sm:text-sm">65809</p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Doctor Bio - Simplified card for mobile */}

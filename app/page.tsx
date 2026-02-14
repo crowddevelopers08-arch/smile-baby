@@ -16,11 +16,11 @@ export default function Home() {
     <>
     <FerlixHero />
     <OurCommitment />
+    <MeetDoctorSection />
     <TeamSection />
     <WorkProcessSection />
     <FunFacts />
     <SuccessRatesSection />
-    <MeetDoctorSection />
     <TestimonialsSection />
     <FAQSection />
     <VisitClinic />

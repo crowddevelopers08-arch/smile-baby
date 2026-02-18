@@ -1,7 +1,35 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
+import SmileBabyForm from './contact-froms';
+import { X } from 'lucide-react';
+interface imgse{
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+// Modal wrapper component
+const BookingModal = ({ isOpen, onClose, children } : imgse) => {
+  if (!isOpen) return null;
 
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 popup-overlay">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition-all"
+        >
+          <X size={20} />
+        </button>
+        <div className="max-h-[90vh] overflow-y-auto">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+};
 const MeetDoctorSection = () => {
+      const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  
   return (
     <div className="bg-gradient-to-br from-pink-50 via-blue-50 to-pink-50 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden max-sm:mb-3">
       <div className="max-w-7xl mx-auto">
@@ -135,10 +163,7 @@ const MeetDoctorSection = () => {
             {/* CTA Button - Full width on mobile, centered on tablet */}
             <div className="flex justify-center">
               <button className="w-full sm:w-auto bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-3.5 sm:py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2 sm:gap-3 justify-center text-sm sm:text-base"
-              onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
+             onClick={() => setIsBookingModalOpen(true)}>
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
@@ -200,10 +225,7 @@ const MeetDoctorSection = () => {
             </div>
 
             {/* CTA Button */}
-            <button className="bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-3"onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
+            <button className="bg-[#ec4899] hover:bg-[#db2777] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-3"onClick={() => setIsBookingModalOpen(true)}>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
@@ -212,7 +234,12 @@ const MeetDoctorSection = () => {
           </div>
         </div>
       </div>
-
+                      <BookingModal 
+                        isOpen={isBookingModalOpen} 
+                        onClose={() => setIsBookingModalOpen(false)}
+                      >
+                        <SmileBabyForm />
+                      </BookingModal>
       {/* Responsive Styles */}
       <style jsx>{`
         @media (max-width: 1023px) {

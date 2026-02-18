@@ -1,10 +1,39 @@
-'use client'
+"use client";
 
-import React from "react";
+import { X } from "lucide-react";
+import React, { useState } from "react";
+import SmileBabyForm from "./contact-froms";
+interface imgse {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+// Modal wrapper component
+const BookingModal = ({ isOpen, onClose, children }: imgse) => {
+  if (!isOpen) return null;
 
-export default function FunFacts() {
   return (
-    <section id='transparent' className="py-16 max-sm:py-10 px-6 bg-gradient-to-br from-pink-50 via-blue-50 to-pink-50">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 popup-overlay">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition-all"
+        >
+          <X size={20} />
+        </button>
+        <div className="max-h-[90vh] overflow-y-auto">{children}</div>
+      </div>
+    </div>
+  );
+};
+export default function FunFacts() {
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+  return (
+    <section
+      id="transparent"
+      className="py-16 max-sm:py-10 px-6 bg-gradient-to-br from-pink-50 via-blue-50 to-pink-50"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 max-sm:gap-6 gap-12">
           {/* Left Column - Content */}
@@ -78,21 +107,21 @@ export default function FunFacts() {
                 <p className="text-gray-600 font-medium">Transparent</p>
               </div>
             </div>
-                        <button className="group bg-gradient-to-r mt-9 max-sm:mt-6 from-pink-400 to-pink-500 text-white px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:gap-3 text-sm sm:text-base"onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
+            <button
+              className="group bg-gradient-to-r mt-9 max-sm:mt-6 from-pink-400 to-pink-500 text-white px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:gap-3 text-sm sm:text-base"
+              onClick={() => setIsBookingModalOpen(true)}
+            >
               Get Plan + Estimate on WhatsApp
-              <svg 
-                width="16" 
-                height="16"  
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
                 className="transition-transform group-hover:translate-x-1"
               >
-                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
               </svg>
             </button>
           </div>
@@ -102,32 +131,32 @@ export default function FunFacts() {
             {/* Main Image */}
             <div className="rounded-3xl overflow-hidden shadow-xl mb-8">
               <img
-                src="/fact-img-1.jpg"
+                src="/wife-hus.jpeg"
                 alt="Parents looking at newborn babies"
                 className="w-full h-auto object-cover"
               />
             </div>
 
             {/* Feature Checkmarks */}
-                          <div className="flex justify-between max-sm:mt-3 mt-15">
-            <div className="space-y-4 ">
-              <div className="flex items-center gap-3">
-                <div className="w-7 h-7 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="3"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
+            <div className="flex justify-between max-sm:mt-3 mt-15">
+              <div className="space-y-4 ">
+                <div className="flex items-center gap-3">
+                  <div className="w-7 h-7 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      strokeWidth="3"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700 font-medium text-lg">
+                    No hidden costs or surprise charges
+                  </span>
                 </div>
-                <span className="text-gray-700 font-medium text-lg">
-                  No hidden costs or surprise charges
-                </span>
-              </div>
 
                 <div className="flex items-center gap-3">
                   <div className="w-7 h-7 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0">
@@ -164,8 +193,8 @@ export default function FunFacts() {
                     Flexible payment options available
                   </span>
                 </div>
-                  {/* Finance Support */}
-{/* 
+                {/* Finance Support */}
+                {/* 
             <div className="mb-4">
               <h3 className="text-md md:text-lg font-bold text-[#1e2f5f] mb-4">
                 Finance Support:
@@ -208,36 +237,53 @@ export default function FunFacts() {
               </div>  
             </div> */}
               </div>
-                          {/* Floating Circular Button */}
-            <div className="flex justify-end">
-              <button className="group relative w-32 h-32 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-110">
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  {/* Circular Text */}
-                  <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full animate-spin-slow">
-                    <path
-                      id="circlePath"
-                      d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+              {/* Floating Circular Button */}
+              <div className="flex justify-end">
+                <button className="group relative w-32 h-32 bg-gradient-to-br from-pink-400 to-pink-500 rounded-full shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-110">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    {/* Circular Text */}
+                    <svg
+                      viewBox="0 0 100 100"
+                      className="absolute inset-0 w-full h-full animate-spin-slow"
+                    >
+                      <path
+                        id="circlePath"
+                        d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                        fill="none"
+                      />
+                      <text className="text-[9px] fill-white font-semibold tracking-wider">
+                        <textPath href="#circlePath" startOffset="0%">
+                          Request Estimate • Request Estimate • IVF Pricing •
+                          Adds
+                        </textPath>
+                      </text>
+                    </svg>
+
+                    {/* Arrow Icon */}
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
                       fill="none"
-                    />
-                    <text className="text-[9px] fill-white font-semibold tracking-wider">
-                      <textPath href="#circlePath" startOffset="0%">
-                        Request Estimate • Request Estimate • IVF Pricing • Adds
-                      </textPath>
-                    </text>
-                  </svg>
-                  
-                  {/* Arrow Icon */}
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" className="relative z-10 group-hover:translate-y-1 transition-transform">
-                    <path d="M12 5v14M5 12l7 7 7-7"/>
-                  </svg>
-                </div>
-              </button>
-            </div>
+                      stroke="white"
+                      strokeWidth="2.5"
+                      className="relative z-10 group-hover:translate-y-1 transition-transform"
+                    >
+                      <path d="M12 5v14M5 12l7 7 7-7" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      >
+        <SmileBabyForm />
+      </BookingModal>
       <style jsx>{`
         @keyframes spin-slow {
           from {

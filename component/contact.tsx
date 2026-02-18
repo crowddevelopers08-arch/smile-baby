@@ -1,8 +1,33 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import SmileBabyForm from "./contact-froms";
+import { X } from "lucide-react";
+interface imgse {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+// Modal wrapper component
+const BookingModal = ({ isOpen, onClose, children }: imgse) => {
+  if (!isOpen) return null;
 
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 popup-overlay">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition-all"
+        >
+          <X size={20} />
+        </button>
+        <div className="max-h-[90vh] overflow-y-auto">{children}</div>
+      </div>
+    </div>
+  );
+};
 export default function VisitClinic() {
+    const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   return (
     <section
       id="contact"
@@ -56,10 +81,7 @@ export default function VisitClinic() {
 
               <button
                 className="group bg-[#1e2f5f] text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
-                onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}
+                onClick={() => setIsBookingModalOpen(true)}
               >
                 <svg
                   width="20"
@@ -191,10 +213,7 @@ export default function VisitClinic() {
 
               <button
                 className="group bg-[#1e2f5f] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
-                onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}
+                onClick={() => setIsBookingModalOpen(true)}
               >
                 <svg
                   width="18"
@@ -292,7 +311,12 @@ export default function VisitClinic() {
           </div>
         </div>
       </div>
-
+                <BookingModal 
+                                        isOpen={isBookingModalOpen} 
+                                        onClose={() => setIsBookingModalOpen(false)}
+                                      >
+                                        <SmileBabyForm />
+                                      </BookingModal>
       {/* Responsive Styles */}
       <style jsx>{`
         @media (max-width: 1023px) {

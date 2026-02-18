@@ -1,8 +1,37 @@
 'use client'
 
-import React from 'react';
+import { X } from 'lucide-react';
+import React, { useState } from 'react';
+import SmileBabyForm from './contact-froms';
+interface imgse{
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+// Modal wrapper component
+const BookingModal = ({ isOpen, onClose, children } : imgse) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 popup-overlay">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition-all"
+        >
+          <X size={20} />
+        </button>
+        <div className="max-h-[90vh] overflow-y-auto">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function OurCommitment() {
+    const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  
   return (
     <section id='Planning-Visit' className="py-12 sm:py-14 md:py-16 px-4 sm:px-5 md:px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -109,10 +138,7 @@ export default function OurCommitment() {
             </div>
 
             {/* CTA Button - Desktop */}
-            <button className="group bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:gap-3 text-sm sm:text-base"onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
+            <button className="group bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 md:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:gap-3 text-sm sm:text-base"  onClick={() => setIsBookingModalOpen(true)}>
               Get Plan + Estimate on WhatsApp
               <svg 
                 width="16" 
@@ -147,7 +173,7 @@ export default function OurCommitment() {
             <div className="relative flex items-center justify-center my-6">
               <div className="relative w-full max-w-md">
                 <img 
-                  src="/commitment-image.png" 
+                  src="/Gachibowli.png" 
                   alt="Happy couple expecting a baby"
                   className="h-auto max-sm:max-h-[475px] sm:max-h-[800px] rounded-2xl object-cover shadow-lg"
                 />
@@ -216,10 +242,7 @@ export default function OurCommitment() {
             </div>
 
             {/* CTA Button - Mobile */}
-            <button className="group bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:gap-3 text-sm w-full sm:w-auto justify-center"onClick={() => {
-                  const section = document.getElementById("forms");
-                  section?.scrollIntoView({ behavior: "smooth" });
-                }}>
+            <button className="group bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:gap-3 text-sm w-full sm:w-auto justify-center" onClick={() => setIsBookingModalOpen(true)}>
               Get Plan + Estimate on WhatsApp
               <svg 
                 width="16" 
@@ -251,7 +274,7 @@ export default function OurCommitment() {
           <div className="hidden lg:flex relative items-center justify-center lg:order-2">
             <div className="relative w-full">
               <img 
-                src="/commitment-image.png" 
+                src="/Gachibowli.png" 
                 alt="Happy couple expecting a baby"
                 className="w-full h-auto rounded-3xl object-cover"
               />
@@ -259,7 +282,12 @@ export default function OurCommitment() {
           </div>
         </div>
       </div>
-
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)}
+      >
+        <SmileBabyForm />
+      </BookingModal>
       {/* Custom Responsive Styles */}
       <style jsx>{`
         @media (max-width: 1023px) {

@@ -73,7 +73,7 @@ export default function FunFacts() {
               </h3>
               <p className="text-gray-700 text-md leading-relaxed">
                 ICSI • donor eggs/sperm • embryo freezing/storage • genetic
-                testing (PGT) • additional procedures if needed • luteal phase support drugs
+                testing (PGT) • luteal phase support drugs • additional procedures if needed 
               </p>
             </div>
 

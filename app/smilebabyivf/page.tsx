@@ -1,4 +1,4 @@
-import TrustedFamiliesSection from "@/component/smilebaby/ivf-about";
+// import TrustedFamiliesSection from "@/component/smilebaby/ivf-about";
 import FerlixHeros from "@/component/smilebaby/ivf-hero";
 
 

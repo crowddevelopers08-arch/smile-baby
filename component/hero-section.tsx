@@ -1255,8 +1255,6 @@ export default function FerlixHero() {
 
         {/* Navy Blue Overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#2d3e7f] via-[#354a8f] to-[#3d4e8f] opacity-[0.74]"></div>
-
-        {/* Decorative Circles Pattern - Responsive */}
         <div className="absolute inset-0 opacity-[0.08] overflow-hidden">
           <div className="absolute top-10 sm:top-20 left-10 sm:left-40 w-48 sm:w-72 lg:w-96 h-48 sm:h-72 lg:h-96 bg-white rounded-full blur-3xl animate-float-1"></div>
           <div className="absolute bottom-10 sm:bottom-20 right-10 sm:right-20 w-64 sm:w-80 lg:w-[500px] h-64 sm:h-80 lg:h-[500px] bg-white rounded-full blur-3xl animate-float-2"></div>

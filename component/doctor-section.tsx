@@ -7,7 +7,7 @@ const TeamSection = () => {
   const teamMembers = [
     {
       name: "Fertility specialists",
-      role: "(MBBS, MS OBG)",
+      role: "(Dip. In reprod. Med.)",
       icon: "/insemination.png",
     },
     {
@@ -58,7 +58,7 @@ const TeamSection = () => {
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1e2f5f] max-sm:mb-0 mb-4">
               A Complete Fertility Team —{" "}
-              <span className="text-[#ec4899]">Not Just One Doctor</span>
+              <span className="text-[#ec4899]">Not Just One  Person</span>
             </h2>
           </div>
 

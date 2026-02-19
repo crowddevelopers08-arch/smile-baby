@@ -55,7 +55,7 @@ const MeetDoctorSection = () => {
                     MBBS, MS (OBG)
                   </p>
                   <p className="text-gray-600 text-sm mt-1">
-                    Certified Fertility Specialist (NUHS, Singapore)
+                    Fertility specialist Dip. In reprod. Med.
                   </p>
                   <p className="text-gray-500 text-sm mt-1">
                     Reg No. 65809
@@ -101,7 +101,7 @@ const MeetDoctorSection = () => {
                       MBBS, MS (OBG)
                     </p>
                     <p className="text-gray-600 text-xs sm:text-sm mt-0.5">
-                      Certified Fertility Specialist (NUHS, Singapore)
+                     Fertility specialist Dip. In reprod. Med.
                     </p>
                     <p className="text-gray-500 text-xs sm:text-sm mt-0.5">
                       Reg No. 65809
@@ -136,7 +136,7 @@ const MeetDoctorSection = () => {
                 </div>
                 <div>
                   <p className="text-[#1e2f5f] font-semibold text-sm sm:text-base">Fertility Specialist</p>
-                  <p className="text-gray-600 text-xs sm:text-sm">(NUHS, Singapore)</p>
+                  <p className="text-gray-600 text-xs sm:text-sm">(Dip. In reprod. Med.)</p>
                 </div>
               </div>
 
@@ -200,8 +200,8 @@ const MeetDoctorSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#1e2f5f] font-semibold text-lg">Certified Fertility Specialist</p>
-                  <p className="text-gray-600">(NUHS, Singapore)</p>
+                  <p className="text-[#1e2f5f] font-semibold text-lg">Fertility specialist </p>
+                  <p className="text-gray-600">(Dip. In reprod. Med.)</p>
                 </div>
               </div>
 

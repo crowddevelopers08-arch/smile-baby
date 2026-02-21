@@ -132,7 +132,7 @@ export default function ServicesGrid() {
         {/* ── TITLE above the grid ── */}
         <h2
           className="font-extrabold leading-tight mb-10"
-          style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.6rem)", color: "#1e2a6e", maxWidth: 700 }}
+          style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.6rem)", color: "#1e2a6e", maxWidth: 700 }}
         >
           Why Couples Choose{" "}
           <span style={{ color: "#ec4899" }}>Smile Baby IVF</span>{" "}

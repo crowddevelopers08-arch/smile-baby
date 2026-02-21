@@ -26,7 +26,7 @@ export default function CompassionateCareSection() {
           {/* Main heading */}
           <h2
             className="font-extrabold leading-[1.1] mb-1"
-            style={{ fontSize: "clamp(2rem, 2.8vw, 3.5rem)", color: "#1e2a6e" }}
+            style={{ fontSize: "clamp(2rem, 2.4vw, 3.5rem)", color: "#1e2a6e" }}
           >
             IVF Is Not Always{" "}
             <span style={{ color: "#ec4899" }}>the First Step</span>

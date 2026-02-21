@@ -117,7 +117,7 @@ const MeetDoctorSection = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.6rem] xl:text-5xl font-extrabold leading-[1.1] tracking-tight text-[#1e2a6e] mb-4 sm:mb-5">
+            <h2 className="font-extrabold leading-[1.1] tracking-tight text-[#1e2a6e] mb-4 sm:mb-5" style={{ fontSize: "clamp(2rem, 2.5vw, 3.5rem)", color: "#1e2a6e" }}>
               Meet{" "}
               <span className="relative inline-block text-[#f9a8d4]">
                 Dr. Mangala

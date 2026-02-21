@@ -78,7 +78,7 @@ export default function SmileBabyFormed() {
       const data = await response.json()
 
       if (response.ok) {
-        router.push('/thank-you')
+        router.push('/thankyou')
       } else {
         setErrorMessage(data.error || 'Something went wrong. Please try again.')
         setIsSubmitting(false)

@@ -224,7 +224,7 @@ export default function FertilitySection() {
       `}</style>
 
       <section
-        className="fertility-section"
+        className="fertility-section max-sm:pb-6"
         style={{
           minHeight: "100vh",
           display: "flex",
@@ -314,12 +314,12 @@ export default function FertilitySection() {
               {/* CTA button */}
               <div className="fu d7">
                 <button  onClick={() => setIsBookingModalOpen(true)} 
-                  className="cta-pill"
+                  className="cta-pill rounded-xl"
                   style={{
                     background: "#f472b6",
                     color: "white",
                     border: "none",
-                    borderRadius: 50,
+                    
                     padding: "14px 28px",
                     fontSize: 14,
                     fontWeight: 600,
@@ -327,7 +327,6 @@ export default function FertilitySection() {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: 10,
-                    boxShadow: "0 8px 30px rgba(244,114,182,0.42)",
                     letterSpacing: "0.3px",
                   }}
                 >
@@ -380,7 +379,7 @@ export default function FertilitySection() {
                   style={{ width:"100%", height:"100%", objectFit:"cover", display:"block" }} />
               */}
               <img
-                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600&q=80"
+                src="/ivf-smile/free-photo.jpg"
                 alt="Doctor"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               
@@ -389,7 +388,7 @@ export default function FertilitySection() {
 
             {/* ── SPINNING BADGE overlapping Image 1 ── */}
             <div
-              className="badge-pos"
+              className="badge-pos max-sm:hidden"
               style={{
                 position: "absolute",
                 top: 300, left: 210,

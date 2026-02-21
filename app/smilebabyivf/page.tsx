@@ -9,6 +9,7 @@ import Footers from "@/component/smilebaby/ivf-footer";
 import FerlixHeros from "@/component/smilebaby/ivf-hero";
 import PersonalInfo from "@/component/smilebaby/ivf-personalinfo";
 import WhoIsThisFor from "@/component/smilebaby/ivf-service";
+import MobileActionBar from "@/component/smilebaby/mobile-bar";
 import TestsSection from "@/component/smilebaby/testssection";
 // import TestsSection from "@/component/smilebaby/testssection";
 
@@ -29,6 +30,7 @@ export default function Home() {
     <FAQSections />
     <VisitClinic />
     <Footers />
+    <MobileActionBar />
     </>
   );
 }

@@ -22,7 +22,7 @@ const cards = [
       "We walk you through every step so you always know what's happening and what comes next.",
   },
   {
-    icon: "/ivf-smile/privacy.png", // replace with your icon path
+    icon: "/ivf-smile/gear.png", // replace with your icon path
     title: "Privacy Maintained",
     description:
       "Your details are kept strictly confidential. We maintain full privacy for every patient.",

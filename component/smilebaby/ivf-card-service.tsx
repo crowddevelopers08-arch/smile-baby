@@ -1,6 +1,8 @@
 'use client'
 
+import { X } from "lucide-react";
 import { useState } from "react";
+import SmileBabyFormed from "./ivf-contact-form";
 
 // Define the service type
 interface Service {
@@ -9,9 +11,36 @@ interface Service {
   title: string;
   desc: string;
   image: string;
-  icon?: JSX.Element;
+  icon?: React.ReactNode;
   hoverColor?: string;
 }
+
+interface ModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+
+// Modal wrapper component
+const BookingModal = ({ isOpen, onClose, children }: ModalProps) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 popup-overlay">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition-all"
+        >
+          <X size={20} />
+        </button>
+        <div className="max-h-[90vh] overflow-y-auto">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const services: Service[] = [
   {
@@ -94,6 +123,7 @@ interface NormalCardProps {
 
 export default function ServicesGrid() {
   const [activeId, setActiveId] = useState<number>(0);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   return (
     <section className="w-full bg-white px-6 sm:px-10 md:px-16 pb-4">
@@ -135,14 +165,13 @@ export default function ServicesGrid() {
 
         {/* ── CTA Button — below entire grid ── */}
         <div className="flex justify-center mt-10">
-          <button
-            className="group flex items-center gap-2 font-bold text-sm tracking-wide transition-all duration-300 hover:opacity-90 hover:scale-105"
+          <button 
+            onClick={() => setIsBookingModalOpen(true)} 
+            className="group flex items-center gap-2 font-bold text-sm rounded-xl tracking-wide transition-all duration-300 hover:opacity-90 hover:scale-105"
             style={{
               padding: "15px 40px",
-              borderRadius: 50,
               background: "linear-gradient(135deg,#f9a8d4,#ec4899)",
               color: "#fff",
-              boxShadow: "0 12px 32px rgba(236,72,153,0.4)",
               whiteSpace: "nowrap",
             }}
           >
@@ -154,6 +183,14 @@ export default function ServicesGrid() {
         </div>
 
       </div>
+
+      {/* Booking Modal - Moved outside the grid but inside the section */}
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      >
+        <SmileBabyFormed />
+      </BookingModal>
     </section>
   );
 }

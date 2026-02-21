@@ -4,13 +4,13 @@ import { useState } from "react";
 import SmileBabyFormed from "./ivf-contact-form";
 import { X } from "lucide-react";
 
-interface imgse{
+interface imgse {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
 }
 // Modal wrapper component
-const BookingModal = ({ isOpen, onClose, children } : imgse) => {
+const BookingModal = ({ isOpen, onClose, children }: imgse) => {
   if (!isOpen) return null;
 
   return (
@@ -22,16 +22,14 @@ const BookingModal = ({ isOpen, onClose, children } : imgse) => {
         >
           <X size={20} />
         </button>
-        <div className="max-h-[90vh] overflow-y-auto">
-          {children}
-        </div>
+        <div className="max-h-[90vh] overflow-y-auto">{children}</div>
       </div>
     </div>
   );
 };
 export default function AboutSection() {
-        const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
-    
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
   const highlights = [
     { stat: "10,000+", label: "Babies Born" },
     { stat: "12 Years", label: "Advanced Fertility Care" },
@@ -44,7 +42,6 @@ export default function AboutSection() {
   return (
     <section className="w-full bg-white py-8 sm:py-10 md:py-14 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 overflow-hidden">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-0 md:gap-10 lg:gap-16 xl:gap-20">
-
         {/* ══════════════════════════════════════
             HEADLINE — Mobile order 1
         ══════════════════════════════════════ */}
@@ -65,7 +62,10 @@ export default function AboutSection() {
             PARAGRAPH — Mobile order 2 (moved outside right container)
         ══════════════════════════════════════ */}
         <div className="w-full lg:hidden block order-2">
-          <p className="text-xs sm:text-sm leading-relaxed mb-4 md:mb-6 text-center" style={{ color: "#6b7280" }}>
+          <p
+            className="text-xs sm:text-sm leading-relaxed mb-4 md:mb-6 text-center"
+            style={{ color: "#6b7280" }}
+          >
             A fertility centre built on trust, transparency, and the joy of new
             beginnings.
           </p>
@@ -75,7 +75,6 @@ export default function AboutSection() {
             LEFT — Stacked image collage — Mobile order 3
         ══════════════════════════════════════ */}
         <div className="relative flex-shrink-0 w-full max-w-[380px] xs:max-w-[420px] sm:max-w-[460px] md:max-w-[480px] lg:w-[460px] xl:w-[500px] mx-auto lg:mx-0 h-[400px] xs:h-[340px] sm:h-[380px] md:h-[440px] lg:h-[520px] xl:h-[560px] order-3 lg:order-1">
-
           {/* Main large image */}
           <div
             className="absolute rounded-2xl sm:rounded-3xl overflow-hidden"
@@ -88,7 +87,7 @@ export default function AboutSection() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&h=800&fit=crop&crop=faces"
+              src="/ivf-smile/happy-doctor.avif"
               alt="Happy family with newborn"
               className="w-full h-full object-cover"
             />
@@ -147,10 +146,22 @@ export default function AboutSection() {
               height="24"
               className="sm:w-7 sm:h-7 md:w-8 md:h-8 mb-1 sm:mb-1.5"
             >
-              <circle cx="24" cy="24" r="14" strokeDasharray="4 3" opacity="0.7" />
+              <circle
+                cx="24"
+                cy="24"
+                r="14"
+                strokeDasharray="4 3"
+                opacity="0.7"
+              />
               <circle cx="24" cy="24" r="8" />
-              <path d="M24 14v-4M24 38v-4M14 24h-4M38 24h-4" strokeLinecap="round" />
-              <path d="M17 17l-3-3M34 34l-3-3M17 31l-3 3M34 14l-3 3" strokeLinecap="round" />
+              <path
+                d="M24 14v-4M24 38v-4M14 24h-4M38 24h-4"
+                strokeLinecap="round"
+              />
+              <path
+                d="M17 17l-3-3M34 34l-3-3M17 31l-3 3M34 14l-3 3"
+                strokeLinecap="round"
+              />
               <polygon
                 points="24,18 25.8,22.6 30.8,22.6 26.9,25.4 28.5,30 24,27.2 19.5,30 21.1,25.4 17.2,22.6 22.2,22.6"
                 fill="white"
@@ -176,7 +187,7 @@ export default function AboutSection() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=400&h=450&fit=crop&crop=center"
+              src="/ivf-smile/indian-baby.avif"
               alt="Newborn baby"
               className="w-full h-full object-cover"
             />
@@ -187,7 +198,6 @@ export default function AboutSection() {
             RIGHT — Highlights + CTA — Mobile order 4
         ══════════════════════════════════════ */}
         <div className="flex-1 flex flex-col w-full order-4 lg:order-2">
-
           {/* Headline - Hidden on mobile (shown above), visible on lg+ */}
           <h2
             className="font-extrabold leading-[1.15] mb-2 md:mb-3 text-2xl sm:text-3xl md:text-4xl text-center lg:text-left hidden lg:block"
@@ -201,18 +211,23 @@ export default function AboutSection() {
           </h2>
 
           {/* Paragraph - Hidden on mobile (shown above), visible on lg+ */}
-          <p className="text-xs sm:text-sm leading-relaxed mb-4 md:mb-6 text-center lg:text-left hidden lg:block" style={{ color: "#6b7280" }}>
+          <p
+            className="text-xs sm:text-sm leading-relaxed mb-4 md:mb-6 text-center lg:text-left hidden lg:block"
+            style={{ color: "#6b7280" }}
+          >
             A fertility centre built on trust, transparency, and the joy of new
             beginnings.
           </p>
 
           {/* Highlights grid + spinning badge */}
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 mb-6 md:mb-8">
-
             {/* 6-item 2-column grid */}
             <div className="grid grid-cols-2 gap-x-3 sm:gap-x-4 md:gap-x-6 gap-y-2 sm:gap-y-3 md:gap-y-4 flex-1 w-full">
               {highlights.map(({ stat, label }, i) => (
-                <div key={i} className="flex items-center gap-1.5 sm:gap-2 md:gap-3 min-w-0">
+                <div
+                  key={i}
+                  className="flex items-center gap-1.5 sm:gap-2 md:gap-3 min-w-0"
+                >
                   {/* Pink checkmark */}
                   <span
                     className="flex-shrink-0 flex items-center justify-center rounded-full"
@@ -268,7 +283,12 @@ export default function AboutSection() {
                   />
                 </defs>
                 <circle cx="55" cy="55" r="50" fill="#1e2a6e" />
-                <text fontSize="8" fontWeight="600" fill="white" letterSpacing="2.8">
+                <text
+                  fontSize="8"
+                  fontWeight="600"
+                  fill="white"
+                  letterSpacing="2.8"
+                >
                   <textPath href="#about-circle-path">
                     Book a Consultation • Book a Consultation •{" "}
                   </textPath>
@@ -296,12 +316,12 @@ export default function AboutSection() {
 
           {/* CTA Button */}
           <div className="flex justify-center lg:justify-start">
-            <button              onClick={() => setIsBookingModalOpen(true)} 
+            <button
+              onClick={() => setIsBookingModalOpen(true)}
               className="flex items-center gap-2 rounded-xl font-bold text-xs sm:text-sm tracking-wide transition-all duration-300 hover:opacity-90 hover:scale-105 active:scale-95 px-5 py-2.5 sm:px-6 sm:py-3"
               style={{
                 background: "linear-gradient(135deg,#f9a8d4,#ec4899)",
                 color: "#fff",
-                boxShadow: "0 8px 24px rgba(236,72,153,0.38)",
                 whiteSpace: "nowrap",
               }}
             >
@@ -401,13 +421,13 @@ export default function AboutSection() {
           .order-4 { order: 4; } /* Highlights + CTA */
         }
       `}</style>
-      
-                            <BookingModal 
-                              isOpen={isBookingModalOpen} 
-                              onClose={() => setIsBookingModalOpen(false)}
-                            >
-                              <SmileBabyFormed />
-                            </BookingModal>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      >
+        <SmileBabyFormed />
+      </BookingModal>
     </section>
   );
 }

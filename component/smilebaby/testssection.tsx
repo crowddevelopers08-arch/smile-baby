@@ -1,6 +1,32 @@
 'use client'
 
+import { X } from "lucide-react";
 import { useState } from "react";
+import SmileBabyFormed from "./ivf-contact-form";
+
+interface imgse {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}
+
+const BookingModal = ({ isOpen, onClose, children }: imgse) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 popup-overlay">
+      <div className="relative w-full max-w-2xl bg-white rounded-2xl overflow-hidden">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 z-10 w-10 h-10 bg-gray-200 hover:bg-gray-300 rounded-full flex items-center justify-center text-gray-600 transition-all"
+        >
+          <X size={20} />
+        </button>
+        <div className="max-h-[90vh] overflow-y-auto">{children}</div>
+      </div>
+    </div>
+  );
+};
 
 const cards = [
   {
@@ -9,7 +35,7 @@ const cards = [
     desc: "Ultrasound + basic hormone tests (as advised)",
     accent: "#ec4899",
     iconBg: "#fff0f7",
-    imgSrc: "/ivf-smile/blood-test.png", // ✅ change path
+    imgSrc: "/ivf-smile/blood-test.png",
     imgAlt: "Wife tests icon",
   },
   {
@@ -18,7 +44,7 @@ const cards = [
     desc: "Semen analysis — sperm count & quality",
     accent: "#1e2a6e",
     iconBg: "#eef1fb",
-    imgSrc: "/ivf-smile/sperm.png", // ✅ change path
+    imgSrc: "/ivf-smile/sperm.png",
     imgAlt: "Husband tests icon",
   },
   {
@@ -27,16 +53,17 @@ const cards = [
     desc: "Doctor review + plan for the best next step",
     accent: "#ec4899",
     iconBg: "#fff0f7",
-    imgSrc: "/ivf-smile/vision.png", // ✅ change path
+    imgSrc: "/ivf-smile/vision.png",
     imgAlt: "Couple review icon",
   },
 ];
 
 export default function TestsSection() {
   const [hovered, setHovered] = useState<number | null>(null);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   return (
-    <section className="w-full bg-white py-8 px-5 sm:px-10 overflow-hidden">
+    <section className="w-full bg-white max-sm:py-0 py-8 px-5 sm:px-10 overflow-hidden">
 
       {/* ── HEADER ── */}
       <div className="text-center max-sm:mb-4 mb-8 max-w-2xl mx-auto">
@@ -75,7 +102,7 @@ export default function TestsSection() {
               key={i}
               onMouseEnter={() => setHovered(i)}
               onMouseLeave={() => setHovered(null)}
-              className="relative flex flex-col items-center gap-6 rounded-2xl overflow-hidden cursor-default"
+              className="relative flex flex-col items-center gap-4 rounded-2xl overflow-hidden cursor-default flex-1"
               style={{
                 padding: "22px 28px",
                 background: active
@@ -84,13 +111,14 @@ export default function TestsSection() {
                     : "linear-gradient(135deg, #eef1fb, #e0e7ff)"
                   : "#fafafa",
                 border: `1.5px solid ${active ? accent + "35" : "#f0f0f0"}`,
-                transform: active ? "translateX(8px)" : "translateX(0px)",
+                transform: active ? "translateY(-4px)" : "translateY(0px)",
                 transition: "all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)",
+                boxShadow: active ? `0 12px 32px ${accent}18` : "none",
               }}
             >
-              {/* Left accent bar */}
+              {/* Top accent bar */}
               <div
-                className="absolute left-0 top-0 bottom-0 w-1 rounded-r-full"
+                className="absolute top-0 left-4 right-4 h-0.5 rounded-b-full"
                 style={{
                   background: accent,
                   opacity: active ? 1 : 0,
@@ -100,43 +128,48 @@ export default function TestsSection() {
 
               {/* Number */}
               <span
-                className="font-extrabold text-sm tracking-widest flex-shrink-0 w-8 text-center"
-                style={{ color: accent, opacity: active ? 0.7 : 0.35, transition: "opacity 0.3s" }}
+                className="font-extrabold text-xs tracking-widest self-start"
+                style={{ color: accent, opacity: active ? 0.8 : 0.4, transition: "opacity 0.3s" }}
               >
                 {number}
               </span>
 
-              {/* Image circle (replacing SVG icon) */}
+              {/* Image icon — always visible with color tint */}
               <div
-                className="flex-shrink-0 flex items-center justify-center rounded-2xl"
+                className="flex items-center justify-center rounded-2xl"
                 style={{
-                  width: 56,
-                  height: 56,
+                  width: 64,
+                  height: 64,
                   background: active ? accent : iconBg,
-                  boxShadow: active ? `0 8px 24px ${accent}40` : "none",
+                  boxShadow: active ? `0 8px 24px ${accent}40` : `0 2px 12px ${accent}18`,
                   transition: "all 0.3s ease",
+                  border: `1.5px solid ${active ? "transparent" : accent + "30"}`,
                 }}
               >
                 <img
                   src={imgSrc}
                   alt={imgAlt}
-                  width={26}
-                  height={26}
+                  width={32}
+                  height={32}
                   style={{
-                    width: 26,
-                    height: 26,
+                    width: 32,
+                    height: 32,
                     objectFit: "contain",
-                    // ✅ on hover -> icon becomes white
-                    filter: active ? "brightness(0) invert(1)" : "none",
+                    // white on hover, colored tint at rest
+                    filter: active
+                      ? "brightness(0) invert(1)"
+                      : accent === "#ec4899"
+                        ? "invert(40%) sepia(90%) saturate(500%) hue-rotate(300deg) brightness(100%) contrast(95%)"
+                        : "invert(12%) sepia(60%) saturate(800%) hue-rotate(210deg) brightness(80%) contrast(95%)",
                     transition: "filter 0.3s ease",
                   }}
                 />
               </div>
 
               {/* Text */}
-              <div className="flex flex-col flex-1 min-w-0">
+              <div className="flex flex-col items-center text-center gap-1">
                 <span
-                  className="font-extrabold leading-tight mb-1"
+                  className="font-extrabold leading-tight"
                   style={{
                     fontSize: 17,
                     color: active ? accent : "#1e2a6e",
@@ -149,23 +182,6 @@ export default function TestsSection() {
                   {desc}
                 </span>
               </div>
-
-              {/* Right arrow — appears on hover */}
-              <div
-                className="flex-shrink-0 flex items-center justify-center rounded-full"
-                style={{
-                  width: 36,
-                  height: 36,
-                  background: active ? accent : "transparent",
-                  opacity: active ? 1 : 0,
-                  transform: active ? "translateX(0) scale(1)" : "translateX(-8px) scale(0.8)",
-                  transition: "all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)",
-                }}
-              >
-                <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" width="16" height="16">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </div>
             </div>
           );
         })}
@@ -174,19 +190,16 @@ export default function TestsSection() {
       {/* ── CTA ── */}
       <div className="flex justify-center">
         <button
-          className="group flex items-center gap-2 font-bold text-sm tracking-wide transition-all duration-300 hover:opacity-90 hover:scale-105"
+          onClick={() => setIsBookingModalOpen(true)}
+          className="group flex items-center rounded-xl gap-2 font-bold text-sm tracking-wide transition-all duration-300 hover:opacity-90 hover:scale-105"
           style={{
             padding: "15px 36px",
-            borderRadius: 50,
             background: "linear-gradient(135deg,#f9a8d4,#ec4899)",
             color: "#fff",
             whiteSpace: "nowrap",
           }}
         >
           Book Your First Consultation
-          <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" width="16" height="16" className="transition-transform duration-300 group-hover:translate-x-1">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
         </button>
       </div>
 
@@ -196,6 +209,13 @@ export default function TestsSection() {
           50% { opacity: 0.5; transform: scale(0.85); }
         }
       `}</style>
+
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      >
+        <SmileBabyFormed />
+      </BookingModal>
     </section>
   );
 }

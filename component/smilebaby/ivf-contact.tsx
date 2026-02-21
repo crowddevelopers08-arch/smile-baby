@@ -32,7 +32,7 @@ export default function VisitClinic() {
   return (
     <section
       id="contact"
-      className="py-12 sm:py-14 md:py-16 px-4 sm:px-5 md:px-6 bg-gradient-to-br from-pink-50 via-white to-blue-50 overflow-hidden"
+      className="py-6 sm:py-14 md:py-16 px-4 sm:px-5 md:px-6 bg-gradient-to-br from-pink-50 via-white to-blue-50 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
@@ -62,7 +62,20 @@ export default function VisitClinic() {
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="tel:+8884752134"
-                className="group bg-gradient-to-r from-pink-400 to-pink-500 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                className="group  text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"  style={{
+                    background: "#f472b6",
+                    color: "white",
+                    border: "none",
+                    
+                    padding: "14px 28px",
+                    fontSize: 14,
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 10,
+                    letterSpacing: "0.3px",
+                  }}
               >
                 <svg
                   width="20"
@@ -81,7 +94,7 @@ export default function VisitClinic() {
                 href="https://wa.me/8884752134"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                className="group bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
               >
                 <svg
                   width="20"
@@ -95,7 +108,7 @@ export default function VisitClinic() {
               </a>
 
               <button
-                className="group bg-[#1e2f5f] text-white px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                className="group bg-[#1e2f5f] text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
                 onClick={() => setIsBookingModalOpen(true)}
               >
                 <svg
@@ -211,7 +224,20 @@ export default function VisitClinic() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6">
               <a
                 href="tel:+ 8884752134"
-                className="group bg-gradient-to-r from-pink-400 to-pink-500 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
+                className=" text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"  style={{
+                    background: "#f472b6",
+                    color: "white",
+                    border: "none",
+                    
+                    padding: "14px 28px",
+                    fontSize: 14,
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 10,
+                    letterSpacing: "0.3px",
+                  }}
               >
                 <svg
                   width="18"
@@ -230,7 +256,7 @@ export default function VisitClinic() {
                 href="https://wa.me/ 8884752134"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
+                className="group bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
               >
                 <svg
                   width="18"
@@ -244,7 +270,7 @@ export default function VisitClinic() {
               </a>
 
               <button
-                className="group bg-[#1e2f5f] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
+                className="group bg-[#1e2f5f] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 text-sm sm:text-base w-full sm:w-auto"
                 onClick={() => setIsBookingModalOpen(true)}
               >
                 <svg

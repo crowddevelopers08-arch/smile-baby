@@ -26,8 +26,8 @@ export default function SmileBabyFormed() {
     womansAgeBracket: '',
     tryingDuration: '',
     consent: true,
-    formName: 'Smile Baby',
-    source: 'Smile Baby IVF Form',
+    formName: 'Smile Baby Evaluation',
+    source: 'Smile Baby IVF Evaluation',
     treatment: 'IVF Consultation'
   })
   
@@ -94,7 +94,7 @@ export default function SmileBabyFormed() {
       <div className="flex items-center gap-2 mb-2">
         <Baby className="h-6 w-6 text-pink-500" />
         <h3 className="text-xl sm:text-2xl font-bold text-gray-800">
-          Get IVF Plan & Case-Wise Estimate
+          Book Your Fertility Evaluation Call-Back
         </h3>
       </div>
       <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">
@@ -156,7 +156,7 @@ export default function SmileBabyFormed() {
           {/* WhatsApp - Dropdown */}
           <div>
             <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-1 sm:mb-2">
-              Have you tried any treatments before? *
+              Tried treatment before? *
             </label>
             <select
               name="whatsapp"
@@ -167,8 +167,11 @@ export default function SmileBabyFormed() {
               disabled={isSubmitting}
             >
               <option value="">Select an option</option>
-              <option value="yes">Yes</option>
+              <option value="Medicines ">Medicines </option>
               <option value="no">No</option>
+              <option value="IUI">IUI</option>
+              <option value="IVF">IVF</option>
+              <option value="Not sure">Not sure</option>
             </select>
           </div>
 

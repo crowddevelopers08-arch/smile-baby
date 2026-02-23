@@ -1,3 +1,4 @@
+import MeetDoctorSection from "@/component/smilebaby/doctor";
 import TeamSections from "@/component/smilebaby/doctor";
 import TrustedFamiliesSection from "@/component/smilebaby/ivf-about";
 import ServicesGrid from "@/component/smilebaby/ivf-card-service";
@@ -22,10 +23,11 @@ export default function Home() {
     <TrustedFamiliesSection />
     <WhoIsThisFor />
     <FertilitySection />
+    <MeetDoctorSection />
     <TestsSection />
     <CompassionateCareSection />
     <ServicesGrid />
-    <TeamSections />
+    {/* <TeamSections /> */}
     <PersonalInfo />
     <FAQSections />
     <VisitClinic />

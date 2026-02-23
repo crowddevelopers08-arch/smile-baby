@@ -582,7 +582,7 @@ export default function FerlixHeros() {
 
         {/* Hero Content - Responsive */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 lg:pt-10 pb-6 sm:pb-8 lg:pb-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start lg:items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 sm:gap-8 lg:gap-12 items-start lg:items-center">
             {/* Left Column - Content */}
             <div className="text-left">
               {/* Welcome Badge */}
@@ -608,7 +608,7 @@ export default function FerlixHeros() {
               </p>
 
               {/* Trust Chips Grid - Responsive Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
                 <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg
@@ -698,7 +698,101 @@ export default function FerlixHeros() {
                    Interest-free EMI + Insurance support
                   </span>
                 </div>
-              </div>
+              </div> */}
+              {/* Trust Chips Grid - Responsive Grid */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
+  {/* First 3 items - visible on all screens */}
+  <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="3"
+      >
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
+    </div>
+    <span className="text-white text-xs sm:text-sm font-medium">
+      10,000+ babies born
+    </span>
+  </div>
+
+  <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="3"
+      >
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
+    </div>
+    <span className="text-white text-xs sm:text-sm font-medium">
+      12 years of advanced fertility care
+    </span>
+  </div>
+
+  <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="3"
+      >
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
+    </div>
+    <span className="text-white text-xs sm:text-sm font-medium">
+      80% patients via referrals
+    </span>
+  </div>
+
+  {/* Last 2 items - hidden on mobile, visible on sm and above */}
+  <div className="hidden sm:flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="3"
+      >
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
+    </div>
+    <span className="text-white text-xs sm:text-sm font-medium">
+      Transparent pricing — no hidden costs
+    </span>
+  </div>
+
+  <div className="hidden sm:flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 col-span-1 sm:col-span-2">
+    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="white"
+        strokeWidth="3"
+      >
+        <polyline points="20 6 9 17 4 12" />
+      </svg>
+    </div>
+    <span className="text-white text-xs sm:text-sm font-medium">
+      Interest-free EMI + Insurance support
+    </span>
+  </div>
+</div>
             </div>
 
             {/* Right Column - Video Section */}

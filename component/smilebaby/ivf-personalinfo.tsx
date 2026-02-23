@@ -31,7 +31,7 @@ const cards = [
 
 export default function PersonalInfo() {
   return (
-    <section className="py-10 sm:py-12 md:py-14 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 bg-white overflow-hidden">
+    <section className="py-5 sm:py-12 md:py-14 lg:py-16 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
@@ -42,14 +42,14 @@ export default function PersonalInfo() {
         </h2>
 
         {/* Subtext */}
-        <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-8 sm:mb-10 max-w-full lg:max-w-4xl">
+        <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-4 sm:mb-10 max-w-full lg:max-w-4xl">
           We offer counselling and guidance so couples feel supported and
           informed at every stage. We also maintain strict privacy and
           confidentiality for all patients.
         </p>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
           {cards.map((card, index) => (
             <div
               key={index}

@@ -18,11 +18,11 @@ export default function CompassionateCareSection() {
   ];
 
   return (
-    <section className="w-full bg-white px-6 sm:px-10 md:px-16 pt-14 pb-16">
+    <section className="w-full bg-white px-6 sm:px-10 md:px-16 max-sm:pt-8 pt-14 pb-10">
       <div className="max-w-6xl mx-auto">
 
         {/* ── FULL-WIDTH HEADER ── */}
-        <div className="mb-10">
+        <div className="mb-10 max-sm:mb-0">
           {/* Main heading */}
           <h2
             className="font-extrabold leading-[1.1] mb-1"
@@ -39,7 +39,7 @@ export default function CompassionateCareSection() {
         </div>
 
         {/* ── TWO COLUMN: Left steps + Right image ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-14 items-center">
 
           {/* ── LEFT: Vertical timeline steps ── */}
           <div className="flex flex-col">

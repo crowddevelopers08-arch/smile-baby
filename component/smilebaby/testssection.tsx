@@ -63,7 +63,7 @@ export default function TestsSection() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   return (
-    <section className="w-full bg-white max-sm:py-0 py-8 px-5 sm:px-10 overflow-hidden">
+    <section className="w-full bg-white max-sm:py-0 max-sm:pt-5 py-8 px-5 sm:px-10 overflow-hidden">
 
       {/* ── HEADER ── */}
       <div className="text-center max-sm:mb-4 mb-8 max-w-2xl mx-auto">

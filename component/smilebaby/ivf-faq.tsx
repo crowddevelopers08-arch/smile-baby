@@ -37,7 +37,7 @@ const FAQSections = () => {
   };
 
   return (
-    <div className="py-12 sm:py-14 md:py-15 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="py-4 sm:py-14 md:py-15 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-10 lg:gap-12 xl:gap-16">
           

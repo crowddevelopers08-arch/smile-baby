@@ -131,7 +131,7 @@ export default function ServicesGrid() {
 
         {/* ── TITLE above the grid ── */}
         <h2
-          className="font-extrabold leading-tight mb-10"
+          className="font-extrabold leading-tight max-sm:mb-5 mb-10"
           style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.6rem)", color: "#1e2a6e", maxWidth: 700 }}
         >
           Why Couples Choose{" "}
@@ -140,7 +140,7 @@ export default function ServicesGrid() {
         </h2>
 
         {/* 4-column grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-sm:gap-2">
           {services.map((svc) => {
             if (svc.featured) {
               return (
@@ -164,7 +164,7 @@ export default function ServicesGrid() {
         </div>
 
         {/* ── CTA Button — below entire grid ── */}
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-10 max-sm:mt-5">
           <button 
             onClick={() => setIsBookingModalOpen(true)} 
             className="group flex items-center gap-2 font-bold text-sm rounded-xl tracking-wide transition-all duration-300 hover:opacity-90 hover:scale-105"
@@ -202,7 +202,7 @@ function FeaturedCard({ svc, hov, onEnter }: FeaturedCardProps) {
       className="relative overflow-hidden flex flex-col cursor-pointer"
       style={{
         borderRadius: 20,
-        minHeight: 280,
+        // minHeight: 280,
         padding: "28px 24px 24px 24px",
         background: "white",
         border: `1.5px solid ${hov ? "#1e2a6e" : "#e5e7eb"}`,
@@ -288,7 +288,7 @@ function NormalCard({ svc, hovered, onEnter }: NormalCardProps) {
         borderRadius: 20,
         border: `1.5px solid ${hovered ? "#ec4899" : "#e5e7eb"}`,
         padding: "28px 24px 24px 24px",
-        minHeight: 280,
+        // minHeight: 280,
         background: "white",
         transition: "all 0.4s cubic-bezier(0.34,1.1,0.64,1)",
         transform: hovered ? "translateY(-5px)" : "translateY(0)",

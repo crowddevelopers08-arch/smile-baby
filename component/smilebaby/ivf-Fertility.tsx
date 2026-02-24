@@ -345,7 +345,6 @@ export default function FertilitySection() {
           ══════════════════════════ */}
           <div className="image-cluster" style={{ position: "relative", height: 590 }}>
 
-            {/* Ambient glow */}
             <div
               style={{
                 position: "absolute",

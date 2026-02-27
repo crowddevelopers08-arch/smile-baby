@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
           <div className="p-6 sm:p-8">
             <h2 className="text-lg font-bold text-[#1e2f5f] mb-2 flex items-center gap-2">
               <span className="w-6 h-6 rounded-full bg-pink-100 text-pink-500 flex items-center justify-center text-xs font-bold">2</span>
-              How We Use Your Information
+              How We Use Your Informations
             </h2>
             <p className="text-gray-600 text-sm leading-relaxed">
               Your information is used solely to contact you regarding your appointment, treatment enquiries, and follow-ups. We do not use your data for unsolicited marketing or share it with third parties for advertising purposes.

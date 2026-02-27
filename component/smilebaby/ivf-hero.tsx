@@ -595,7 +595,7 @@ export default function FerlixHeros() {
 
               {/* Main Heading - Responsive Font Sizes */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-               Not Sure If You Need IVF? Star{" "}
+               Not Sure If You Need IVF? Start{" "}
                 <span className="text-pink-400">
                  With a Fertility Evaluation 
                 </span>{" "}

@@ -72,8 +72,7 @@ export default function FunFacts() {
                 Add-ons (only if medically required):
               </h3>
               <p className="text-gray-700 text-md leading-relaxed">
-                ICSI • donor eggs/sperm • embryo freezing/storage • genetic
-                testing (PGT) • luteal phase support drugs • additional procedures if needed 
+                ICSI • donor eggs/sperm • embryo freezing/storage • luteal phase support drugs • additional procedures if needed 
               </p>
             </div>
 

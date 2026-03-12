@@ -141,7 +141,7 @@ const TestimonialsSection = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center lg:bg-fixed bg-no-repeat"
           style={{
-            backgroundImage: `url('/humans.jpg')`
+            backgroundImage: `url('https://ik.imagekit.io/tnvhh8yfa/public/humans.jpg?updatedAt=1773300924154')`
           }}
         ></div>
         

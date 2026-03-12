@@ -48,14 +48,14 @@
 //     featured: true,
 //     title: "Doctor-led and ethical treatment approach",
 //     desc: "Book Your Fertility Evaluation",
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //   },
 //   {
 //     id: 1,
 //     title: "Personalised protocols (not one-size-fits-all)",
 //     desc: "Doctor-led and ethical treatment approach for every patient.",
 //     icon: <GearIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 //   {
@@ -63,7 +63,7 @@
 //     title: "Continuity of care (same doctor throughout)",
 //     desc: "Personalised protocols — not one-size-fits-all treatment.",
 //     icon: <CirclesIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 //   {
@@ -71,7 +71,7 @@
 //     title: "Transparent pricing & clear communication",
 //     desc: "Same doctor throughout — consistent care from start to finish.",
 //     icon: <LayersIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 //   {
@@ -79,7 +79,7 @@
 //     title: "Counselling + nutrition + fertility support",
 //     desc: "Transparent pricing & clear communication — no hidden costs.",
 //     icon: <BoxIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 //   {
@@ -87,7 +87,7 @@
 //     title: "Interest-Free EMI",
 //     desc: "Interest-free EMI available — affordable care for every couple.",
 //     icon: <LifeRingIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 //   {
@@ -95,7 +95,7 @@
 //     title: "Insurance support available",
 //     desc: "Insurance support available to ease your financial journey.",
 //     icon: <DatabaseIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 //   {
@@ -103,7 +103,7 @@
 //     title: "Ethical donor programs available (if required)",
 //     desc: "Ethical donor programs available if required for your journey.",
 //     icon: <GearIcon />,
-//     image: "/ivf-smile/service-2.jpg",
+//     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
 //     hoverColor: "rgba(30,42,110,0.82)",
 //   },
 // ];
@@ -489,14 +489,14 @@ const services: Service[] = [
     featured: true,
     title: "Doctor-led and ethical treatment approach",
     desc: "Book Your Fertility Evaluation",
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
   },
   {
     id: 1,
     title: "Personalised protocols (not one-size-fits-all)",
     desc: "Doctor-led and ethical treatment approach for every patient.",
     icon: <GearIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -504,7 +504,7 @@ const services: Service[] = [
     title: "Continuity of care (same doctor throughout)",
     desc: "Personalised protocols — not one-size-fits-all treatment.",
     icon: <CirclesIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -512,7 +512,7 @@ const services: Service[] = [
     title: "Transparent pricing & clear communication",
     desc: "Same doctor throughout — consistent care from start to finish.",
     icon: <LayersIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -520,7 +520,7 @@ const services: Service[] = [
     title: "Counselling + nutrition + fertility support",
     desc: "Transparent pricing & clear communication — no hidden costs.",
     icon: <BoxIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -528,7 +528,7 @@ const services: Service[] = [
     title: "Interest-Free EMI",
     desc: "Interest-free EMI available — affordable care for every couple.",
     icon: <LifeRingIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -536,7 +536,7 @@ const services: Service[] = [
     title: "Insurance support available",
     desc: "Insurance support available to ease your financial journey.",
     icon: <DatabaseIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -544,7 +544,7 @@ const services: Service[] = [
     title: "Ethical donor programs available (if required)",
     desc: "Ethical donor programs available if required for your journey.",
     icon: <GearIcon />,
-    image: "/ivf-smile/service-2.jpg",
+    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
     hoverColor: "rgba(30,42,110,0.82)",
   },
 ];

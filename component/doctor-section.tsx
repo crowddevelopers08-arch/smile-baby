@@ -8,22 +8,22 @@ const TeamSection = () => {
     {
       name: "Fertility specialists",
       role: "(Dip. In reprod. Med.)",
-      icon: "/insemination.png",
+      icon: "https://ik.imagekit.io/tnvhh8yfa/public/insemination.png?updatedAt=1773300923237",
     },
     {
       name: "Fellowship-trained",
       role: "laparoscopic surgery expertise",
-      icon: "/team-leadership.png",
+      icon: "https://ik.imagekit.io/tnvhh8yfa/public/team-leadership.png?updatedAt=1773300923053",
     },
     {
       name: "Embryology lab team",
       role: "(MSc Embryology)",
-      icon: "/woman-chemist.png",
+      icon: "https://ik.imagekit.io/tnvhh8yfa/public/woman-chemist.png?updatedAt=1773300922917",
     },
     {
       name: "Urology support",
       role: "(MCh Urology)",
-      icon: "/nephrology.png",
+      icon: "https://ik.imagekit.io/tnvhh8yfa/public/nephrology.png?updatedAt=1773300923021",
     },
   ];
 

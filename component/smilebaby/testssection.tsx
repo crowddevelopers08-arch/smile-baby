@@ -35,7 +35,7 @@ const cards = [
     desc: "Ultrasound + basic hormone tests (as advised)",
     accent: "#ec4899",
     iconBg: "#fff0f7",
-    imgSrc: "/ivf-smile/blood-test.png",
+    imgSrc: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/blood-test.png?updatedAt=1773300923146",
     imgAlt: "Wife tests icon",
   },
   {
@@ -44,7 +44,7 @@ const cards = [
     desc: "Semen analysis — sperm count & quality",
     accent: "#1e2a6e",
     iconBg: "#eef1fb",
-    imgSrc: "/ivf-smile/sperm.png",
+    imgSrc: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/sperm.png?updatedAt=1773300923039",
     imgAlt: "Husband tests icon",
   },
   {
@@ -53,7 +53,7 @@ const cards = [
     desc: "Doctor review + plan for the best next step",
     accent: "#ec4899",
     iconBg: "#fff0f7",
-    imgSrc: "/ivf-smile/vision.png",
+    imgSrc: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/vision.png?updatedAt=1773300923089",
     imgAlt: "Couple review icon",
   },
 ];

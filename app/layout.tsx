@@ -21,16 +21,16 @@ export const metadata: Metadata = {
 
   icons: {
     icon: [
-      { url: "/pregnant.png", sizes: "any" },
-      { url: "/pregnant.png", sizes: "16x16", type: "image/png" },
-      { url: "/pregnant.png", sizes: "32x32", type: "image/png" },
+      { url: "https://ik.imagekit.io/tnvhh8yfa/public/pregnant.png?updatedAt=1773300923014", sizes: "any" },
+      { url: "https://ik.imagekit.io/tnvhh8yfa/public/pregnant.png?updatedAt=1773300923014", sizes: "16x16", type: "image/png" },
+      { url: "https://ik.imagekit.io/tnvhh8yfa/public/pregnant.png?updatedAt=1773300923014", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "/pregnant.png", sizes: "180x180", type: "image/png" },
+      { url: "https://ik.imagekit.io/tnvhh8yfa/public/pregnant.png?updatedAt=1773300923014", sizes: "180x180", type: "image/png" },
     ],
     other: [
-      { rel: "icon", url: "/pregnant.png", sizes: "192x192", type: "image/png" },
-      { rel: "icon", url: "/pregnant.png", sizes: "512x512", type: "image/png" },
+      { rel: "icon", url: "https://ik.imagekit.io/tnvhh8yfa/public/pregnant.png?updatedAt=1773300923014", sizes: "192x192", type: "image/png" },
+      { rel: "icon", url: "https://ik.imagekit.io/tnvhh8yfa/public/pregnant.png?updatedAt=1773300923014", sizes: "512x512", type: "image/png" },
     ],
   },
 };

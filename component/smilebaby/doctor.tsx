@@ -60,7 +60,7 @@ const MeetDoctorSection = () => {
             {/* Image wrapper */}
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-md">
               <img
-                src="/doctors.avif"
+                src="https://ik.imagekit.io/tnvhh8yfa/public/doctors.avif?updatedAt=1773300923122"
                 alt="Dr. Mangala Devi K R"
                 className="w-full h-[420px] sm:h-[520px] lg:h-[640px] object-cover object-top"
               />

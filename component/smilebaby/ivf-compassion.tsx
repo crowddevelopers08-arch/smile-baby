@@ -127,7 +127,7 @@ export default function CompassionateCareSection() {
             }}
           >
             <img
-              src="/ivf-smile/ivf-image.avif"
+              src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/ivf-image.avif?updatedAt=1773300923177"
               alt="Compassionate care — doctor with pregnant patient"
               className="w-full h-full object-cover"
             />

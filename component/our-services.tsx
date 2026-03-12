@@ -112,37 +112,37 @@ const IVFProcessSection = () => {
     {
       number: '1',
       title: 'Stimulation (Super Ovulation)',
-      icon: '/icons1.png',
+      icon: 'https://ik.imagekit.io/tnvhh8yfa/public/icons1.png?updatedAt=1773300922980',
       isImage: true
     },
     {
       number: '2',
       title: 'Egg Retrieval',
-      icon: '/icons2.png',
+      icon: 'https://ik.imagekit.io/tnvhh8yfa/public/icons2.png?updatedAt=1773300923181',
       isImage: true
     },
     {
       number: '3',
       title: 'Fertilization',
-      icon: '/icons3.png',
+      icon: 'https://ik.imagekit.io/tnvhh8yfa/public/icons3.png?updatedAt=1773300923076',
       isImage: true
     },
     {
       number: '4',
       title: 'Embryo Culture',
-      icon: '/icons4.png',
+      icon: 'https://ik.imagekit.io/tnvhh8yfa/public/icons4.png?updatedAt=1773300922985',
       isImage: true
     },
     {
       number: '5',
       title: 'Embryo Transfer',
-      icon: '/icons5.png',
+      icon: 'https://ik.imagekit.io/tnvhh8yfa/public/icons5.png?updatedAt=1773300923100',
       isImage: true
     },
     {
       number: '6',
       title: 'Pregnancy Test',
-      icon: '/pregnancy-test.png',
+      icon: 'https://ik.imagekit.io/tnvhh8yfa/public/pregnancy-test.png?updatedAt=1773300923084',
       isImage: true,
       mobileOnly: true // This will only show on mobile
     }

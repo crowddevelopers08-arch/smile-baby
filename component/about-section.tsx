@@ -173,7 +173,7 @@ export default function OurCommitment() {
             <div className="relative flex items-center justify-center my-6">
               <div className="relative w-full max-w-md">
                 <img 
-                  src="/Gachibowli.png" 
+                  src="https://ik.imagekit.io/tnvhh8yfa/public/Gachibowli.png" 
                   alt="Happy couple expecting a baby"
                   className="h-auto max-sm:max-h-[475px] sm:max-h-[800px] rounded-2xl object-cover shadow-lg"
                 />
@@ -274,7 +274,7 @@ export default function OurCommitment() {
           <div className="hidden lg:flex relative items-center justify-center lg:order-2">
             <div className="relative w-full">
               <img 
-                src="/Gachibowli.png" 
+                src="https://ik.imagekit.io/tnvhh8yfa/public/Gachibowli.png" 
                 alt="Happy couple expecting a baby"
                 className="w-full h-auto rounded-3xl object-cover"
               />

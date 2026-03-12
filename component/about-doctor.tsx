@@ -38,7 +38,7 @@ const MeetDoctorSection = () => {
           <div className="hidden lg:block relative">
             <div className="relative rounded-3xl overflow-hidden">
               <img 
-                src="/doctors.avif" 
+                src="https://ik.imagekit.io/tnvhh8yfa/public/doctors.avif?updatedAt=1773300923122" 
                 alt="Dr. Mangala Devi K R"
                 className="w-full h-[650px] object-cover"
               />
@@ -84,7 +84,7 @@ const MeetDoctorSection = () => {
             <div className="relative mb-6">
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden">
                 <img 
-                  src="/doctors.avif" 
+                  src="https://ik.imagekit.io/tnvhh8yfa/public/doctors.avif?updatedAt=1773300923122" 
                   alt="Dr. Mangala Devi K R"
                   className="w-full h-[450px] sm:h-[450px] md:h-[600px] object-cover object-center"
                 />

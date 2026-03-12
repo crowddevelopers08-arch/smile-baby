@@ -87,7 +87,7 @@ export default function AboutSection() {
             }}
           >
             <img
-              src="/ivf-smile/happy-doctor.avif"
+              src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/happy-doctor.avif?updatedAt=1773300924507"
               alt="Happy family with newborn"
               className="w-full h-full object-cover"
             />
@@ -187,7 +187,7 @@ export default function AboutSection() {
             }}
           >
             <img
-              src="/ivf-smile/indian-baby.avif"
+              src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/indian-baby.avif?updatedAt=1773300923150"
               alt="Newborn baby"
               className="w-full h-full object-cover"
             />

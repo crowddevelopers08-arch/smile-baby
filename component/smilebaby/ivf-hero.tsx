@@ -68,25 +68,25 @@ export default function FerlixHeros() {
         }
 
         .bg-image-1 {
-          background-image: url('/medium-shot.jpg');
+          background-image: url('https://ik.imagekit.io/tnvhh8yfa/public/medium-shot.jpg');
           animation: imageSlideshow 10s ease-in-out infinite;
           animation-delay: 0s;
         }
 
         .bg-image-2 {
-          background-image: url('/mother-with.jpg');
+          background-image: url('https://ik.imagekit.io/tnvhh8yfa/public/mother-with.jpg');
           animation: imageSlideshow 20s ease-in-out infinite;
           animation-delay: 5s;
         }
 
         .bg-image-3 {
-          background-image: url('/concept-protection.avif');
+          background-image: url('https://ik.imagekit.io/tnvhh8yfa/public/concept-protection.avif');
           animation: imageSlideshow 20s ease-in-out infinite;
           animation-delay: 10s;
         }
 
         .bg-image-4 {
-          background-image: url('/baby-feet.jpg');
+          background-image: url('https://ik.imagekit.io/tnvhh8yfa/public/baby-feet.jpg');
           animation: imageSlideshow 20s ease-in-out infinite;
           animation-delay: 15s;
         }
@@ -321,7 +321,7 @@ export default function FerlixHeros() {
             <div className="relative pt-[56.25%]">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="/smile-babys.mp4"
+                src="https://ik.imagekit.io/tnvhh8yfa/public/smile-babys.mp4"
                 title="Smile Baby IVF Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -504,7 +504,7 @@ export default function FerlixHeros() {
               {/* Logo */}
               <div className="flex items-center">
                 <img
-                  src="/smile-baby-logo.webp"
+                  src="https://ik.imagekit.io/tnvhh8yfa/public/smile-baby-logo.webp"
                   alt="Smile Baby IVF Logo"
                   className="h-12 w-auto object-contain"
                 />
@@ -810,7 +810,7 @@ export default function FerlixHeros() {
                 onClick={() => setIsVideoPopupOpen(true)}
               >
                 <img 
-                  src="/image-smile.png" 
+                  src="https://ik.imagekit.io/tnvhh8yfa/public/image-smile.png" 
                   alt="Video Thumbnail" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

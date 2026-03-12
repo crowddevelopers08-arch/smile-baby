@@ -130,7 +130,7 @@ export default function FunFacts() {
             {/* Main Image */}
             <div className="rounded-3xl overflow-hidden shadow-xl mb-8">
               <img
-                src="/wife-hus.jpeg"
+                src="https://ik.imagekit.io/tnvhh8yfa/public/wife-hus.jpeg?updatedAt=1773300923084"
                 alt="Parents looking at newborn babies"
                 className="w-full h-auto object-cover"
               />

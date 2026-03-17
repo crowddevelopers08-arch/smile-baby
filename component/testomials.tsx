@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
       name: 'Nayana',
       initials: 'NY',
       role: 'Patient',
-      testimonial: 'I am very satisfied, took treatment for fertility and under one cycle of iui now my pregnancy is confirmed, doctor communication is very good with the patients.'
+      testimonial: 'I am very satisfied. I underwent treatment to support pregnancy, and within one IUI cycle my pregnancy was confirmed. The doctor communicates very well with patients.'
     },
     {
       name: 'Joyful moment',

@@ -47,7 +47,7 @@ const services: Service[] = [
     id: 0,
     featured: true,
     title: "Doctor-led and ethical treatment approach",
-    desc: "Book Your Conception Assessment",
+    desc: "Book Your Conception Evaluation",
     image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
   },
   {
@@ -187,7 +187,7 @@ export default function ServicesGrid() {
               whiteSpace: "nowrap",
             }}
           >
-            Book Your Conception Assessment
+            Book Your Conception Evaluation
             <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" width="16" height="16" className="transition-transform duration-300 group-hover:translate-x-1">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>

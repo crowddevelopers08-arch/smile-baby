@@ -85,7 +85,7 @@ const MeetDoctorSection = () => {
                       MBBS, MS (OBG)
                     </p>
                     <p className="text-white/60 text-xs sm:text-sm mt-0.5">
-                      Women’s Health Specialist· Dip. In reprod. Med.
+                      Reproductive Health Specialist · Dip. In reprod. Med.
                     </p>
                     <p className="text-white/40 text-xs mt-0.5">Reg No. 65809</p>
                   </div>

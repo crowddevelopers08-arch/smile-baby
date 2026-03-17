@@ -40,7 +40,7 @@ const bullets = [
   },
   {
     num: "3",
-    text: "We Guide you on the essential lab checks for both husband and wife in the first consultation.",
+    text: "Guide you on the essential screening and health checks for both husband and wife during the first consultation.",
   },
   {
     num: "4",

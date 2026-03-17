@@ -75,7 +75,7 @@ export default function TestsSection() {
             className="w-2 h-2 rounded-full"
             style={{ background: "#ec4899", animation: "testPulse 2s ease-in-out infinite" }}
           />
-          Conception Assessment
+          Conception Evaluation
         </span>
 
         <h2

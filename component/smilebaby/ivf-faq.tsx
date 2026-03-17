@@ -12,10 +12,10 @@ const FAQSections = () => {
     },
     {
       question: "We've been trying naturally for months/years—When should we meet a conception specialist?",
-      answer: "If it's taking longer than expected, it's better to get checked early. A Conception Assessment gives clarity and prevents losing valuable time."
+      answer: "If it’s taking longer than expected, it’s better to get checked early. A reproductive health evaluation gives clarity and helps you avoid losing valuable time"
     },
     {
-      question: 'What basic tests are done in the first consultation for both husband and wife?',
+      question: 'What basic screenings are done in the first consultation for both husband and wife?',
       answer: "Usually, the wife may need an ultrasound and basic blood tests, and the husband may need a semen analysis. The doctor will advise what's necessary for your case."
     },
     {

@@ -660,7 +660,7 @@ export default function FerlixHero() {
                     </svg>
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
-                    12 years of advanced fertility care
+                    12 years of advanced care for couples trying to conceive
                   </span>
                 </div>
 

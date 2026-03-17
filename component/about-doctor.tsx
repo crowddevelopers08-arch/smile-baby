@@ -55,7 +55,7 @@ const MeetDoctorSection = () => {
                     MBBS, MS (OBG)
                   </p>
                   <p className="text-gray-600 text-sm mt-1">
-                    Fertility specialist Dip. In reprod. Med.
+                    Women’s Health Specialist Dip. In reprod. Med.
                   </p>
                   <p className="text-gray-500 text-sm mt-1">
                     Reg No. 65809
@@ -101,7 +101,7 @@ const MeetDoctorSection = () => {
                       MBBS, MS (OBG)
                     </p>
                     <p className="text-gray-600 text-xs sm:text-sm mt-0.5">
-                     Fertility specialist Dip. In reprod. Med.
+                     Women’s Health Specialist Dip. In reprod. Med.
                     </p>
                     <p className="text-gray-500 text-xs sm:text-sm mt-0.5">
                       Reg No. 65809
@@ -156,7 +156,7 @@ const MeetDoctorSection = () => {
             {/* Doctor Bio - Simplified card for mobile */}
             <div className="bg-white/90 backdrop-blur-sm rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 mb-6 border border-gray-100 shadow-sm">
               <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-                Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and fertility specialist focused on ethical, personalised IVF planning. Known for clear communication and patient-first care, she guides couples through the process with continuity and transparency.
+                Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and conception-care specialist focused on ethical, personalised IVF planning. Known for clear communication and patient-first care, she guides couples through the process with continuity and transparency.
               </p>
             </div>
 
@@ -200,7 +200,7 @@ const MeetDoctorSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#1e2f5f] font-semibold text-lg">Fertility specialist </p>
+                  <p className="text-[#1e2f5f] font-semibold text-lg">Women’s Health Specialist </p>
                   <p className="text-gray-600">(Dip. In reprod. Med.)</p>
                 </div>
               </div>
@@ -220,7 +220,7 @@ const MeetDoctorSection = () => {
             {/* Doctor Bio */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-gray-100 shadow-sm">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and fertility specialist focused on ethical, personalised IVF planning. Known for clear communication and patient-first care, she guides couples through the process with continuity and transparency.
+                Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and conception-care specialist focused on ethical, personalised IVF planning. Known for clear communication and patient-first care, she guides couples through the process with continuity and transparency.
               </p>
             </div>
 

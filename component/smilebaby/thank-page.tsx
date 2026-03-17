@@ -24,7 +24,7 @@ export default function ThankYouPage() {
 
         {/* Subtext */}
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed mb-8">
-          We've received your fertility evaluation request. Our team will review your details and contact you shortly to confirm your consultation.
+          We've received your Conception Assessment request. Our team will review your details and contact you shortly to confirm your consultation.
         </p>
 
         {/* Info cards */}

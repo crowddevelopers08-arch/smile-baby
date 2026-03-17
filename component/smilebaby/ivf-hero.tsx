@@ -597,9 +597,9 @@ export default function FerlixHeros() {
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
                Not Sure If You Need IVF? Start{" "}
                 <span className="text-pink-400">
-                 With a Fertility Evaluation 
+                 With a Reproductive Health 
                 </span>{" "}
-               at Smile Baby IVF
+               Assessment at Smile Baby IVF
               </h1>
 
               {/* Subheading */}
@@ -734,7 +734,7 @@ export default function FerlixHeros() {
       </svg>
     </div>
     <span className="text-white text-xs sm:text-sm font-medium">
-      12 years of advanced fertility care
+      12 years of advanced care for couples trying to conceive
     </span>
   </div>
 

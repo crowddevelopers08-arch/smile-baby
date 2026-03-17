@@ -32,7 +32,7 @@ export default function AboutSection() {
 
   const highlights = [
     { stat: "10,000+", label: "Babies Born" },
-    { stat: "12 Years", label: "Advanced Fertility Care" },
+    { stat: "12 Years", label: "Advanced Conception Support" },
     { stat: "80%", label: "Word-of-Mouth Referrals" },
     { stat: "No Hidden", label: "Transparent Pricing" },
     { stat: "Same Doctor", label: "Guidance + Support Team" },
@@ -66,8 +66,7 @@ export default function AboutSection() {
             className="text-xs sm:text-sm leading-relaxed mb-4 md:mb-6 text-center"
             style={{ color: "#6b7280" }}
           >
-            A fertility centre built on trust, transparency, and the joy of new
-            beginnings.
+            A centre built on trust, transparency, and the joy of new beginnings.
           </p>
         </div>
 
@@ -215,8 +214,7 @@ export default function AboutSection() {
             className="text-xs sm:text-sm leading-relaxed mb-4 md:mb-6 text-center lg:text-left hidden lg:block"
             style={{ color: "#6b7280" }}
           >
-            A fertility centre built on trust, transparency, and the joy of new
-            beginnings.
+            A centre built on trust, transparency, and the joy of new beginnings.
           </p>
 
           {/* Highlights grid + spinning badge */}

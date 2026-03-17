@@ -40,7 +40,7 @@ const bullets = [
   },
   {
     num: "3",
-    text: "Guide you on the essential fertility tests for both husband and wife in the first consultation",
+    text: "We Guide you on the essential lab checks for both husband and wife in the first consultation.",
   },
   {
     num: "4",
@@ -284,7 +284,7 @@ export default function FertilitySection() {
 
               {/* Body intro */}
               <p className="fu d3" style={{ fontSize: 14, fontWeight: 600, color: "#1e2a6e", marginBottom: 16 }}>
-                During your fertility evaluation, our doctor will:
+                During your assessment, our doctor will:
               </p>
 
               {/* 4 Bullets */}

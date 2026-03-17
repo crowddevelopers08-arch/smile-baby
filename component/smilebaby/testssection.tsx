@@ -32,7 +32,7 @@ const cards = [
   {
     number: "01",
     title: "For the Wife",
-    desc: "Ultrasound + basic hormone tests (as advised)",
+    desc: "Ultrasound + basic hormone screening (as advised)",
     accent: "#ec4899",
     iconBg: "#fff0f7",
     imgSrc: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/blood-test.png?updatedAt=1773300923146",
@@ -75,20 +75,19 @@ export default function TestsSection() {
             className="w-2 h-2 rounded-full"
             style={{ background: "#ec4899", animation: "testPulse 2s ease-in-out infinite" }}
           />
-          Fertility Evaluation
+          Conception Assessment
         </span>
 
         <h2
           className="font-extrabold leading-[1.1] tracking-tight mb-4 md:text-4xl text-2xl"
           style={{ color: "#1e2a6e" }}
         >
-          What Tests Are Done for{" "}
+          What Checkups Are Done for{" "}
           <span style={{ color: "#ec4899" }}>Husband &amp; Wife?</span>
         </h2>
 
         <p className="mx-auto" style={{ fontSize: 16, color: "#6b7280", maxWidth: 710 }}>
-          Many couples feel anxious before the first consultation. The good news: the initial
-          tests are simple, standard, and designed to give clarity quickly.
+          Many couples feel anxious before the first consultation. The good news: the initial screenings are simple, standard, and designed to give clarity quickly.
         </p>
       </div>
 

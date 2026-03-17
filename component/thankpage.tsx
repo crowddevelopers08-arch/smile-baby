@@ -88,7 +88,7 @@ export default function ThankYouPage() {
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-xs sm:text-sm font-bold">1</span>
                   </div>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-700">Our fertility specialist will review your case details</p>
+                  <p className="text-xs sm:text-sm md:text-base text-gray-700">Our Women’s Health Specialist will review your case details</p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">

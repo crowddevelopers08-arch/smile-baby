@@ -7,7 +7,7 @@ const cards = [
     icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/communication.png?updatedAt=1773300923152", // replace with your icon path
     title: "Counselling Support",
     description:
-      "Dedicated emotional support for couples at every stage of their fertility journey.",
+      "Dedicated emotional support for couples at every stage of their parenthood journey.",
   },
   {
     icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/guidance.png?updatedAt=1773300923101", // replace with your icon path
@@ -36,8 +36,8 @@ export default function PersonalInfo() {
 
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl font-bold text-[#1e2f5f] mb-3 sm:mb-4 leading-tight">
-          Fertility Decisions Are{" "}
-          <span className="text-pink-400">Emotional</span> — We Support You
+          These Decisions Are{" "}
+          <span className="text-pink-400"> Emotional</span> — We Support You
           Through It
         </h2>
 

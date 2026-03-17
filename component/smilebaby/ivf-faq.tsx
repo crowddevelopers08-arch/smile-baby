@@ -11,8 +11,8 @@ const FAQSections = () => {
       answer: "That's exactly what the evaluation is for. Based on your age, reports, and how long you've been trying, the doctor explains whether lifestyle support, medicines, IUI, or IVF fits best."
     },
     {
-      question: "We've been trying naturally for months/years—when should we meet a fertility specialist?",
-      answer: "If it's taking longer than expected, it's better to get checked early. A fertility evaluation gives clarity and prevents losing valuable time."
+      question: "We've been trying naturally for months/years—When should we meet a conception specialist?",
+      answer: "If it's taking longer than expected, it's better to get checked early. A Conception Assessment gives clarity and prevents losing valuable time."
     },
     {
       question: 'What basic tests are done in the first consultation for both husband and wife?',

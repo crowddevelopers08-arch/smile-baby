@@ -340,10 +340,10 @@ export default function FerlixHero() {
                 <Phone size={16} className="text-pink-400" />
                 <span>+91 8884752134</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Mail size={16} className="text-pink-400" />
                 <span>info@smilebabyivfs.in</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-pink-400" />
                 <span>Hennur Main Road, Below Fly over Lingarajapuram,</span>
@@ -405,7 +405,7 @@ export default function FerlixHero() {
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
                 <Mail size={14} className="text-pink-400" />
-                <span className="hidden xs:inline">info@smilebabyivfs.in</span>
+                {/* <span className="hidden xs:inline">info@smilebabyivfs.in</span> */}
                 <span className="xs:hidden">Email</span>
               </div>
               <div className="flex items-center gap-1 sm:gap-2">

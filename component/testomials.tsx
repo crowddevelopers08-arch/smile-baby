@@ -157,7 +157,7 @@ const TestimonialsSection = () => {
             </h2>
 
             <p className="text-white/90 text-sm sm:text-base md:text-lg max-w-3xl mx-auto px-4">
-              IVF is a trust decision. Explore patient experiences and testimonials before you decide.
+              This is a trust decision. Explore patient experiences and testimonials before you decide.
             </p>
           </div>
 

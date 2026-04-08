@@ -68,7 +68,7 @@ const IVFProcessSection = () => {
             <p className="text-pink-500 font-semibold text-lg">Our Work Process</p>
           </div>
           <h2 className="text-2xl lg:text-4xl font-bold text-[#1e2f5f]">
-            What IVF Looks Like at Smile Baby IVF
+            What the treatment journey looks like at Smile Baby
           </h2>
         </div>
 

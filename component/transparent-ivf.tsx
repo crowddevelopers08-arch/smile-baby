@@ -45,13 +45,13 @@ export default function FunFacts() {
             <div className="flex items-center gap-2 mb-6">
               <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
               <span className="text-pink-400 uppercase text-sm font-semibold tracking-wider">
-                IVF Pricing
+                Treatment Pricing
               </span>
             </div>
 
             {/* Main Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-[#1e2f5f] mb-6 leading-tight">
-              Transparent IVF Pricing —{" "}
+              Transparent Pricing —{" "}
               <span className="text-pink-400">What's Included vs Add-Ons</span>
             </h2>
 
@@ -252,7 +252,7 @@ export default function FunFacts() {
                       />
                       <text className="text-[9px] fill-white font-semibold tracking-wider">
                         <textPath href="#circlePath" startOffset="0%">
-                          Request Estimate • Request Estimate • IVF Pricing •
+                          Request Estimate • Request Estimate • Treatment •
                           Adds
                         </textPath>
                       </text>

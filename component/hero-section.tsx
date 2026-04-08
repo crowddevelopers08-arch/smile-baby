@@ -587,23 +587,23 @@ export default function FerlixHero() {
               <div className="inline-flex items-center gap-2 mb-3 sm:mb-4">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-pink-400 rounded-full"></div>
                 <span className="text-pink-300 uppercase text-xs sm:text-sm font-semibold tracking-wider">
-                  Welcome to Smile Baby IVF
+                  Welcome to Smile Baby
                 </span>
               </div>
 
               {/* Main Heading - Responsive Font Sizes */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-                Planning For a IVF? Get a Complete {" "}
+                Planning for advanced conception treatment? {" "}
                 <span className="text-pink-400">
-                  Plan at Smile 
+                 Get a complete plan 
                 </span>{" "}
-               Baby IVF
+               at Smile Baby
               </h1>
 
               {/* Subheading */}
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-5 sm:mb-6 lg:mb-8">
                 If you've already tried medicines or IUI — or you've been told
-                IVF may be needed — we'll help you understand the right
+                Ithat an advanced procedure may be needed — we'll help you understand the right
                 protocol, realistic expectations, and the exact next steps for
                 your case.
               </p>
@@ -624,7 +624,7 @@ export default function FerlixHero() {
                     </svg>
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
-                    Affordable IVF planning (starting around ₹1.8L as per case)
+                    Affordable treatment planning (starting around ₹1.8L as per case)
                   </span>
                 </div>
 
@@ -743,7 +743,7 @@ export default function FerlixHero() {
                     <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                   </div>
                   <p className="text-white text-xs sm:text-sm">
-                    Expert doctors explain the IVF process
+                    Expert doctors explain the complete process
                   </p>
                 </div>
                 <div className="flex items-start gap-2">

@@ -40,7 +40,7 @@ export default function ThankYouPage() {
 
             {/* Message - Adjusted padding */}
             <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-7 md:mb-8 leading-relaxed px-2 sm:px-4 md:px-0 max-w-2xl mx-auto">
-              Thank you for reaching out to Smile Baby IVF. Our team will review your details and get back to you shortly with your personalized IVF plan and cost estimate.
+              Thank you for reaching out to Smile Baby Treatment. Our team will review your details and get back to you shortly with your personalized treatment plan and cost estimate.
             </p>
 
             {/* Info Cards - Responsive grid */}
@@ -94,7 +94,7 @@ export default function ThankYouPage() {
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-white text-xs sm:text-sm font-bold">2</span>
                   </div>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-700">You'll receive a personalized IVF protocol and timeline</p>
+                  <p className="text-xs sm:text-sm md:text-base text-gray-700">You'll receive a personalized treatment protocol and timeline</p>
                 </div>
                 <div className="flex items-start gap-2 sm:gap-3">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-400 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">

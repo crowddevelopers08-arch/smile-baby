@@ -94,7 +94,7 @@ export default function SmileBabyForm() {
       <div className="flex items-center gap-2 mb-2">
         <Baby className="h-6 w-6 text-pink-500" />
         <h3 className="text-xl sm:text-2xl font-bold text-gray-800">
-          Get IVF Plan & Case-Wise Estimate
+          Get Treatment Plan & Case-Wise Estimate
         </h3>
       </div>
       <p className="text-xs sm:text-sm text-gray-500 mb-4 sm:mb-6">

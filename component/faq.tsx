@@ -7,11 +7,11 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: 'What is included in the IVF package at Smile Baby IVF?',
+      question: 'What is included in the package at Smile Baby?',
       answer: 'We explain inclusions clearly—consultations, scans, procedures, and basic lab charges (as applicable). Your estimate is case-wise and transparent.'
     },
     {
-      question: 'What extra costs can come in IVF?',
+      question: 'What extra costs can come during the process?',
       answer: 'Add-ons like ICSI, embryo freezing, donor programs, or PGT may be required in some cases. We inform you upfront—no hidden surprises.'
     },
     {
@@ -19,7 +19,7 @@ const FAQSection = () => {
       answer: 'Yes. EMI / instalment support is available based on your plan.'
     },
     {
-      question: 'Is insurance applicable for IVF?',
+      question: 'Is insurance applicable for this treatment?',
       answer: 'It depends on your insurance policy. Our team will guide you on what can be checked or claimed.'
     },
     {

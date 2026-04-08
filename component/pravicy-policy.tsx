@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
             <div className="flex-1">
               <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-[#1e2f5f] mb-3 sm:mb-4">Introduction</h2>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-3 sm:mb-4">
-                At Smile Baby IVF, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                At Smile Baby Treatment, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
               </p>
               <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                 By accessing or using our services, you agree to the terms of this Privacy Policy. If you do not agree with the terms, please do not access our website or use our services.

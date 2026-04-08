@@ -6,7 +6,7 @@ const TeamSection = () => {
 
   const teamMembers = [
     {
-      name: "conception specialist",
+      name: "Conception specialist",
       role: "(Dip. In reprod. Med.)",
       icon: "https://ik.imagekit.io/tnvhh8yfa/public/insemination.png?updatedAt=1773300923237",
     },
@@ -65,8 +65,7 @@ const TeamSection = () => {
           {/* DESKTOP ONLY - Paragraph and Button */}
           <div className="hidden lg:block lg:ml-8 w-full lg:w-auto">
             <p className="text-gray-600mb-6 max-w-md text-sm sm:text-base mb-3">
-              IVF success depends on the right diagnosis, the right lab work,
-              and the right protocol — guided by experienced specialists.
+              Successful outcomes depend on the right diagnosis, the right lab support, and the right protocol — guided by experienced specialists.
             </p>
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function VisitClinic() {
 
             {/* Main Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-[#1e2f5f] mb-6 leading-tight">
-              Visit <span className="text-pink-400">Smile Baby IVF</span> —
+              Visit <span className="text-pink-400">Smile Baby Treatment</span> —
               Lingarajapuram, Bangalore
             </h2>
 
@@ -158,7 +158,7 @@ export default function VisitClinic() {
 
             {/* Main Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e2f5f] mb-4 leading-tight">
-              Visit <span className="text-pink-400">Smile Baby IVF</span> —
+              Visit <span className="text-pink-400">Smile Baby Treatment</span> —
               Lingarajapuram, Bangalore
             </h2>
 

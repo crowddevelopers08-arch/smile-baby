@@ -342,10 +342,10 @@ export default function FerlixHeros() {
                 <Phone size={16} className="text-pink-400" />
                 <span>+91 8884752134</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Mail size={16} className="text-pink-400" />
                 <span>info@smilebabyivfs.in</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-pink-400" />
                 <span>Hennur Main Road, Below Fly over Lingarajapuram,</span>
@@ -407,7 +407,7 @@ export default function FerlixHeros() {
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
                 <Mail size={14} className="text-pink-400" />
-                <span className="hidden xs:inline">info@smilebabyivfs.in</span>
+                {/* <span className="hidden xs:inline">info@smilebabyivfs.in</span> */}
                 <span className="xs:hidden">Email</span>
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
@@ -604,7 +604,7 @@ export default function FerlixHeros() {
 
               {/* Subheading */}
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-5 sm:mb-6 lg:mb-8">
-                If you’re trying for months/years and feeling confused about the next step, our doctor-led evaluation helps you understand whether lifestyle changes, medicines, IUI, or IVF is right for your case.
+                If you’re trying for months/years and feeling confused about the next step, our doctor led evaluation helps you understand whether lifestyle changes, medicines, IUI, or IVF is right for your case.
               </p>
 
               {/* Trust Chips Grid - Responsive Grid */}
@@ -771,7 +771,7 @@ export default function FerlixHeros() {
       </svg>
     </div>
     <span className="text-white text-xs sm:text-sm font-medium">
-      Transparent pricing — no hidden costs
+      Transparent pricing no hidden costs
     </span>
   </div>
 
@@ -789,7 +789,7 @@ export default function FerlixHeros() {
       </svg>
     </div>
     <span className="text-white text-xs sm:text-sm font-medium">
-      Interest-free EMI + Insurance support
+      Interest free EMI + Insurance support
     </span>
   </div>
 </div>

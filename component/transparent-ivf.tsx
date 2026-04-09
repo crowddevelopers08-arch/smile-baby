@@ -51,8 +51,8 @@ export default function FunFacts() {
 
             {/* Main Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-[#1e2f5f] mb-6 leading-tight">
-              Transparent Pricing —{" "}
-              <span className="text-pink-400">What's Included vs Add-Ons</span>
+              Transparent Pricing {" "}
+              <span className="text-pink-400">What's Included vs Add Ons</span>
             </h2>
 
             {/* Included Section */}
@@ -69,7 +69,7 @@ export default function FunFacts() {
             {/* Add-ons Section */}
             <div className="mb-4">
               <h3 className="text-md md:text-lg font-bold text-[#1e2f5f] mb-3">
-                Add-ons (only if medically required):
+                Add ons (only if medically required):
               </h3>
               <p className="text-gray-700 text-md leading-relaxed">
                 ICSI • donor eggs/sperm • embryo freezing/storage • luteal phase support drugs • additional procedures if needed 

@@ -11,7 +11,7 @@ const FAQSections = () => {
       answer: "That's exactly what the evaluation is for. Based on your age, reports, and how long you've been trying, the doctor explains whether lifestyle support, medicines, IUI, or IVF fits best."
     },
     {
-      question: "We've been trying naturally for months/years—When should we meet a conception specialist?",
+      question: "We've been trying naturally for months/years When should we meet a conception specialist?",
       answer: "If it’s taking longer than expected, it’s better to get checked early. A reproductive health evaluation gives clarity and helps you avoid losing valuable time"
     },
     {
@@ -28,7 +28,7 @@ const FAQSections = () => {
     },
     {
       question: 'Can delaying treatment by 1–2 years reduce chances?',
-      answer: 'Yes—especially as age increases. A timely evaluation helps you make the right decision with clarity.'
+      answer: 'Yes especially as age increases. A timely evaluation helps you make the right decision with clarity.'
     }
   ];
 
@@ -57,7 +57,7 @@ const FAQSections = () => {
           <span style={{ color: "#ec4899" }}> We've Got</span>{" "} Answers.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Here to make your experience as seamless as possible—explore answers to common questions about our services, policies, and patient care.
+                Here to make your experience as seamless as possible explore answers to common questions about our services, policies, and patient care.
               </p>
             </div>
 
@@ -108,7 +108,7 @@ const FAQSections = () => {
           <span style={{ color: "#ec4899" }}> We've Got</span>{" "} Answers.
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Here to make your experience as seamless as possible—explore answers to common questions about our services, policies, and patient care.
+                Here to make your experience as seamless as possible explore answers to common questions about our services, policies, and patient care.
               </p>
             </div>
 

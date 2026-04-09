@@ -55,7 +55,7 @@ export default function VisitClinic() {
 
             {/* Body Copy */}
             <p className="text-gray-700 text-md md:text-lg mb-8 leading-relaxed">
-              Book an assessment and get clear answers on the right next step for you—without confusion, pressure, or hidden costs.
+              Book an assessment and get clear answers on the right next step for you without confusion, pressure, or hidden costs.
             </p>
 
             {/* Action Buttons */}

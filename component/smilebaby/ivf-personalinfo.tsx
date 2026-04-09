@@ -17,7 +17,7 @@ const cards = [
   },
   {
     icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/idea.png?updatedAt=1773300923029", // replace with your icon path
-    title: "Step-by-Step Clarity",
+    title: "Step by Step Clarity",
     description:
       "We walk you through every step so you always know what's happening and what comes next.",
   },
@@ -37,7 +37,7 @@ export default function PersonalInfo() {
         {/* Heading */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl font-bold text-[#1e2f5f] mb-3 sm:mb-4 leading-tight">
           These Decisions Are{" "}
-          <span className="text-pink-400"> Emotional</span> — We Support You
+          <span className="text-pink-400"> Emotional</span> We Support You
           Through It
         </h2>
 

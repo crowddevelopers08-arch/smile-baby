@@ -113,7 +113,7 @@ export default function CompassionateCareSection() {
 
             {/* Mini line */}
             <p className="mt-2 text-sm font-semibold italic" style={{ color: "#ec4899" }}>
-              Not sure what's right for you? Let's decide with evidence — not guesswork.
+              Not sure what's right for you? Let's decide with evidence not guesswork.
             </p>
           </div>
 

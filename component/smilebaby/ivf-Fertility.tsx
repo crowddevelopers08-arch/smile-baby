@@ -44,7 +44,7 @@ const bullets = [
   },
   {
     num: "4",
-    text: "Share a clear next-step plan and timeline so you don't lose valuable time",
+    text: "Share a clear next step plan and timeline so you don't lose valuable time",
   },
 ];
 
@@ -279,7 +279,7 @@ export default function FertilitySection() {
               {/* Subheading */}
               <p className="fu d3" style={{ fontSize: 15, color: "#6b7280", lineHeight: 1.78, marginBottom: 24, maxWidth: 420 }}>
                 Your first visit is focused on understanding your situation and
-                mapping the right next step — no confusion, no wasted time.
+                mapping the right next step no confusion, no wasted time.
               </p>
 
               {/* Body intro */}

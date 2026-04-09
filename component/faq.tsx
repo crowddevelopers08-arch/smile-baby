@@ -8,11 +8,11 @@ const FAQSection = () => {
   const faqs = [
     {
       question: 'What is included in the package at Smile Baby?',
-      answer: 'We explain inclusions clearly—consultations, scans, procedures, and basic lab charges (as applicable). Your estimate is case-wise and transparent.'
+      answer: 'We explain inclusions clearly consultations, scans, procedures, and basic lab charges (as applicable). Your estimate is case wise and transparent.'
     },
     {
       question: 'What extra costs can come during the process?',
-      answer: 'Add-ons like ICSI, embryo freezing, donor programs, or PGT may be required in some cases. We inform you upfront—no hidden surprises.'
+      answer: 'Add ons like ICSI, embryo freezing, donor programs, or PGT may be required in some cases. We inform you upfront—no hidden surprises.'
     },
     {
       question: 'Are EMI options available?',
@@ -24,7 +24,7 @@ const FAQSection = () => {
     },
     {
       question: 'Will the same doctor handle my case throughout?',
-      answer: 'Yes. Continuity of care is part of our approach—your case is guided consistently.'
+      answer: 'Yes. Continuity of care is part of our approach your case is guided consistently.'
     },
     {
       question: 'Is embryo freezing safe? Can it help for second baby planning?',
@@ -60,7 +60,7 @@ const FAQSection = () => {
                 Got Questions Before You Decide? We've Got Answers.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Here to make your experience as seamless as possible—explore answers to common questions about our services, policies, and patient care.
+                Here to make your experience as seamless as possible explore answers to common questions about our services, policies, and patient care.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ const FAQSection = () => {
                 Got Questions Before You Decide? We've Got Answers.
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-                Here to make your experience as seamless as possible—explore answers to common questions about our services, policies, and patient care.
+                Here to make your experience as seamless as possible explore answers to common questions about our services, policies, and patient care.
               </p>
             </div>
 

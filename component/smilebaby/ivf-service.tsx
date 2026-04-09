@@ -158,7 +158,7 @@ export default function WhoIsThisFor() {
                   />
                 </svg>
               </span>
-              <br />— Not <span style={{ color: "#ec4899" }}>Confusion</span>
+              <br />Not <span style={{ color: "#ec4899" }}>Confusion</span>
             </h2>
 
             {/* Body intro */}
@@ -167,7 +167,7 @@ export default function WhoIsThisFor() {
               style={{ color: "#6b7280", maxWidth: 420 }}
             >
               You're in the right place if any of these sound familiar. Take the
-              first step toward answers — not more waiting.
+              first step toward answers not more waiting.
             </p>
 
             {/* CTA — visible on sm+ (hidden on mobile, shown on tablet+) */}

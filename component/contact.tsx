@@ -49,14 +49,14 @@ export default function VisitClinic() {
 
             {/* Main Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-[#1e2f5f] mb-6 leading-tight">
-              Visit <span className="text-pink-400">Smile Baby Treatment</span> —
+              Visit <span className="text-pink-400">Smile Baby Treatment</span>
               Lingarajapuram, Bangalore
             </h2>
 
             {/* Body Copy */}
             <p className="text-gray-700 text-md md:text-lg mb-8 leading-relaxed">
               Comparing clinics is normal. If you want clarity on plan, pricing,
-              and next steps—book a treatment planning visit or request a
+              and next steps book a treatment planning visit or request a
               WhatsApp estimate.
             </p>
 
@@ -158,7 +158,7 @@ export default function VisitClinic() {
 
             {/* Main Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e2f5f] mb-4 leading-tight">
-              Visit <span className="text-pink-400">Smile Baby Treatment</span> —
+              Visit <span className="text-pink-400">Smile Baby Treatment</span>
               Lingarajapuram, Bangalore
             </h2>
 
@@ -191,7 +191,7 @@ export default function VisitClinic() {
             {/* Body Copy */}
             <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
               Comparing clinics is normal. If you want clarity on plan, pricing,
-              and next steps—book a treatment planning visit or request a
+              and next steps book a treatment planning visit or request a
               WhatsApp estimate.
             </p>
 

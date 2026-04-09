@@ -111,7 +111,7 @@ const IVFProcessSection = () => {
         {/* Reassurance Section */}
         <div className="items-center flex flex-wrap justify-around">
           <p className="text-gray-600 text-lg max-w-3xl items-left max-sm:mb-4">
-            You'll be guided step-by-step, with planned visits and clear instructions throughout.
+            You'll be guided step by step, with planned visits and clear instructions throughout.
           </p>
         </div>
       </div>

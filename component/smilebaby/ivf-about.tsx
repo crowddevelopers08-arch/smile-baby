@@ -33,7 +33,7 @@ export default function AboutSection() {
   const highlights = [
     { stat: "10,000+", label: "Babies Born" },
     { stat: "12 Years", label: "Advanced Conception Support" },
-    { stat: "80%", label: "Word-of-Mouth Referrals" },
+    { stat: "80%", label: "Word of Mouth Referrals" },
     { stat: "No Hidden", label: "Transparent Pricing" },
     { stat: "Same Doctor", label: "Guidance + Support Team" },
     { stat: "Est. 2012", label: "Serving Bangalore Families" },
@@ -323,7 +323,7 @@ export default function AboutSection() {
                 whiteSpace: "nowrap",
               }}
             >
-              Get a Call-Back Today
+              Get a Call Back Today
               <svg
                 viewBox="0 0 24 24"
                 fill="none"

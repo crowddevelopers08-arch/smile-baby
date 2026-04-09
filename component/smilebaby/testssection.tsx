@@ -41,7 +41,7 @@ const cards = [
   {
     number: "02",
     title: "For the Husband",
-    desc: "Semen analysis — sperm count & quality",
+    desc: "Semen analysis sperm count & quality",
     accent: "#1e2a6e",
     iconBg: "#eef1fb",
     imgSrc: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/sperm.png?updatedAt=1773300923039",
@@ -87,7 +87,7 @@ export default function TestsSection() {
         </h2>
 
         <p className="mx-auto" style={{ fontSize: 16, color: "#6b7280", maxWidth: 710 }}>
-          Many couples feel anxious before the first consultation. The good news: the initial screenings are simple, standard, and designed to give clarity quickly.
+          Many couples feel anxious before the first consultation. The good news the initial screenings are simple, standard, and designed to give clarity quickly.
         </p>
       </div>
 

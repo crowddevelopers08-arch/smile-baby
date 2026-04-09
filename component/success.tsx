@@ -28,7 +28,7 @@ const SuccessRatesSection = () => {
 
             {/* Headline */}
             <h2 className="text-2xl lg:text-4xl font-bold text-[#1e2f5f] mb-6">
-              Responsible Success Rates —{" "}
+              Responsible Success Rates {" "}
               <span className="text-pink-400">No False Promises </span>
             </h2>
 
@@ -37,7 +37,7 @@ const SuccessRatesSection = () => {
               <p className="text-gray-700 leading-relaxed text-md lg:text-lg">
                 Success depends on age, diagnosis, medical history, and embryo
                 quality. We explain what "success rate" means for your case and
-                recommend the safest approach — without overpromising.
+                recommend the safest approach without overpromising.
               </p>
             </div>
 
@@ -138,7 +138,7 @@ const SuccessRatesSection = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="text-[#1e2f5f] font-semibold text-lg mb-1">
-                      Evidence-Based
+                      Evidence Based
                     </h3>
                     <p className="text-gray-600 text-sm">
                       Decisions guided by medical science and data

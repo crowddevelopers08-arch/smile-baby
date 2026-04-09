@@ -87,7 +87,6 @@ const MeetDoctorSection = () => {
                     <p className="text-white/60 text-xs sm:text-sm mt-0.5">
                       Reproductive Health Specialist · Dip. In reprod. Med.
                     </p>
-                    <p className="text-white/40 text-xs mt-0.5">Reg No. 65809</p>
                   </div>
                   {/* Verified badge */}
                   <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#ec4899] shadow-lg shadow-[#ec4899]/40">
@@ -130,7 +129,7 @@ const MeetDoctorSection = () => {
 
             {/* Bio */}
             <p className="text-[#1e2a6e] text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 max-w-lg">
-              Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and conception-care specialist focused on ethical, personalised IVF planning. Known for clear communication and patient-first care, she guides couples through the process with continuity and transparency.
+              Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and conception care specialist focused on ethical, personalised IVF planning. Known for clear communication and patient first care, she guides couples through the process with continuity and transparency.
             </p>
 
             {/* Credentials */}

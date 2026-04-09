@@ -602,8 +602,8 @@ export default function FerlixHero() {
 
               {/* Subheading */}
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-5 sm:mb-6 lg:mb-8">
-                If you've already tried medicines or IUI — or you've been told
-                Ithat an advanced procedure may be needed — we'll help you understand the right
+                If you've already tried medicines or IUI or you've been told
+                Ithat an advanced procedure may be needed we'll help you understand the right
                 protocol, realistic expectations, and the exact next steps for
                 your case.
               </p>

@@ -48,7 +48,7 @@ export default function OurCommitment() {
 
             {/* Main Heading - Desktop */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1e2f5f] mb-4 sm:mb-5 md:mb-6 leading-tight">
-              A Clear Treatment <span className="text-pink-400">Roadmap</span> — Before You Start
+              A Clear Treatment <span className="text-pink-400">Roadmap</span> Before You Start
             </h2>
 
             {/* Description - Desktop */}
@@ -166,7 +166,7 @@ export default function OurCommitment() {
 
             {/* Main Heading - Mobile */}
             <h2 className="text-3xl sm:text-4xl font-bold text-[#1e2f5f] mb-4 leading-tight">
-              A Clear Treatment <span className="text-pink-400">Roadmap</span> — Before You Start
+              A Clear Treatment <span className="text-pink-400">Roadmap</span> Before You Start
             </h2>
 
             {/* IMAGE - Mobile (Positioned BEFORE description and deliverables) */}
@@ -235,7 +235,7 @@ export default function OurCommitment() {
                     </svg>
                   </div>
                   <span className="text-gray-700 text-sm font-medium">
-                    Transparent estimate: what's included + what may add on
+                    Transparent estimate what's included + what may add on
                   </span>
                 </div>
               </div>

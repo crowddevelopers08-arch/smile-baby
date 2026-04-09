@@ -11,7 +11,7 @@ const TeamSection = () => {
       icon: "https://ik.imagekit.io/tnvhh8yfa/public/insemination.png?updatedAt=1773300923237",
     },
     {
-      name: "Fellowship-trained",
+      name: "Fellowship trained",
       role: "laparoscopic surgery expertise",
       icon: "https://ik.imagekit.io/tnvhh8yfa/public/team-leadership.png?updatedAt=1773300923053",
     },
@@ -57,7 +57,7 @@ const TeamSection = () => {
               OUR TEAM
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1e2f5f] max-sm:mb-0 mb-4">
-              A Complete Conception Support Team —{" "}
+              A Complete Conception Support Team {" "}
               <span className="text-[#ec4899]">Not Just One  Person</span>
             </h2>
           </div>
@@ -65,7 +65,7 @@ const TeamSection = () => {
           {/* DESKTOP ONLY - Paragraph and Button */}
           <div className="hidden lg:block lg:ml-8 w-full lg:w-auto">
             <p className="text-gray-600mb-6 max-w-md text-sm sm:text-base mb-3">
-              Successful outcomes depend on the right diagnosis, the right lab support, and the right protocol — guided by experienced specialists.
+              Successful outcomes depend on the right diagnosis, the right lab support, and the right protocol guided by experienced specialists.
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ const TeamSection = () => {
           <div className=" max-sm:mb-2 mb-6 w-full">
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               IVF success depends on the right diagnosis, the right lab work,
-              and the right protocol — guided by experienced specialists.
+              and the right protocol guided by experienced specialists.
             </p>
           </div>
 

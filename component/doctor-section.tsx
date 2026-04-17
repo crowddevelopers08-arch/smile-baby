@@ -47,7 +47,7 @@ const TeamSection = () => {
   };
 
   return (
-    <div id="our-team" className="bg-white max-sm:pt-0 py-10 px-4 sm:px-6 lg:px-8">
+    <div id="our-team" className="bg-gradient-to-br from-pink-50 via-blue-50 to-pink-50 max-sm:pt-0 py-10 px-4 sm:px-6 lg:px-8 md:pb-0">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-6 max-sm:mb-2 lg:mb-4 gap-6">

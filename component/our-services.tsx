@@ -57,7 +57,7 @@ const IVFProcessSection = () => {
   });
 
   return (
-    <div id='process' className="bg-gradient-to-b from-white to-blue-50/30 px-4 sm:px-6 lg:px-8 max-sm:pb-7 pb-13">
+    <div id='process' className="bg-gradient-to-b from-white to-blue-50/30 px-4 sm:px-6 lg:px-8 max-sm:pb-7 pb-13 md:mt-5">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center max-sm:mb-10 mb-16">

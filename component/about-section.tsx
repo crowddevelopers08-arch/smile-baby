@@ -33,7 +33,7 @@ export default function OurCommitment() {
     const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   
   return (
-    <section id='Planning-Visit' className="py-12 sm:py-14 md:py-16 px-4 sm:px-5 md:px-6 bg-white overflow-hidden">
+    <section id='Planning-Visit' className="py-12 md:pb-2 sm:py-14 md:py-16 px-4 sm:px-5 md:px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-start lg:items-center">
           {/* Left Column - Content (Desktop Layout) */}

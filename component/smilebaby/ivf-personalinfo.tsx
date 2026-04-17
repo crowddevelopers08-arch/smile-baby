@@ -40,8 +40,6 @@ export default function PersonalInfo() {
           <span className="text-pink-400"> Emotional</span> We Support You
           Through It
         </h2>
-
-        {/* Subtext */}
         <p className="text-gray-500 text-sm sm:text-base leading-relaxed mb-4 sm:mb-10 max-w-full lg:max-w-4xl">
           We offer counselling and guidance so couples feel supported and
           informed at every stage. We also maintain strict privacy and

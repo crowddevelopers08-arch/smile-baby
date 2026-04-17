@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <FerlixHero />
     <OurCommitment />
-    <MeetDoctorSection />
+    {/* <MeetDoctorSection /> */}
     <TeamSection />
     <WorkProcessSection />
     <FunFacts />

@@ -2,10 +2,10 @@ import { Menu, Phone } from "lucide-react";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Treatments", href: "/treatment" },
-  { label: "About", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Home", href: "#" },
+  { label: "Treatments", href: "#" },
+  { label: "About", href: "#" },
+  { label: "Contact", href: "#" },
 ];
 
 export default function TreatmentNavbar() {

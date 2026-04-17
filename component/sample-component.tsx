@@ -65,34 +65,6 @@ export default function SampleComponent() {
         </div>
       </section>
 
-      <section id="care-highlights" className="bg-white px-5 py-14 md:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-8 max-w-2xl">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-pink-500">
-              Care Highlights
-            </p>
-            <h2 className="mt-3 text-3xl font-bold text-slate-950 md:text-4xl">
-              A simple, supportive path forward
-            </h2>
-          </div>
-
-          <div className="grid gap-5 md:grid-cols-3">
-            {services.map((item) => {
-              const Icon = item.icon;
-
-              return (
-                <article key={item.title} className="rounded-lg border border-pink-100 p-6 shadow-sm">
-                  <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-md bg-pink-50 text-pink-500">
-                    <Icon size={24} aria-hidden="true" />
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-950">{item.title}</h3>
-                  <p className="mt-3 leading-7 text-slate-600">{item.text}</p>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

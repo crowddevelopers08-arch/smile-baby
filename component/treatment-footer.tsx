@@ -11,7 +11,7 @@ export default function TreatmentFooter() {
             className="h-10 w-auto rounded bg-white px-2 py-1"
           />
           <p className="mt-3 max-w-md text-sm leading-6 text-slate-300">
-            Smile Baby IVF supports families with compassionate fertility care and clear guidance.
+            Smile Baby supports families with compassionate fertility care and clear guidance.
           </p>
         </div>
 

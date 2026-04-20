@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Script from "next/script";
 import SmileBabyForm from "./contact-froms";
 import { X } from "lucide-react";
 interface imgse {
@@ -27,12 +28,23 @@ const BookingModal = ({ isOpen, onClose, children }: imgse) => {
   );
 };
 export default function VisitClinic() {
-    const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   return (
     <section
       id="contact"
       className="py-12 sm:py-14 md:py-16 px-4 sm:px-5 md:px-6 bg-gradient-to-br from-pink-50 via-white to-blue-50 overflow-hidden"
     >
+      {/* Event snippet for Directions conversion page */}
+      <Script id="directions-conversion" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+              'send_to': 'AW-17991432817/sLYZCLettp8cEPH0_YJD',
+              'value': 1.0,
+              'currency': 'INR'
+          });
+        `}
+      </Script>
+
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12 items-center">
           {/* =========================================== */}
@@ -308,12 +320,12 @@ export default function VisitClinic() {
           </div>
         </div>
       </div>
-                <BookingModal 
-                                        isOpen={isBookingModalOpen} 
-                                        onClose={() => setIsBookingModalOpen(false)}
-                                      >
-                                        <SmileBabyForm />
-                                      </BookingModal>
+      <BookingModal
+        isOpen={isBookingModalOpen}
+        onClose={() => setIsBookingModalOpen(false)}
+      >
+        <SmileBabyForm />
+      </BookingModal>
       {/* Responsive Styles */}
       <style jsx>{`
         @media (max-width: 1023px) {

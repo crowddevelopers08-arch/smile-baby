@@ -50,7 +50,7 @@ export default function VisitClinic() {
 
             {/* Main Heading */}
             <h2 className="text-2xl md:text-4xl font-bold text-[#1e2f5f] mb-6 leading-tight">
-              Visit <span className="text-pink-400">Smile Baby IVF</span> in Lingarajapuram, Bangalore
+              Visit <span className="text-pink-400">Smile Baby </span> in Lingarajapuram, Bangalore
             </h2>
 
             {/* Body Copy */}
@@ -186,7 +186,7 @@ export default function VisitClinic() {
 
             {/* Main Heading */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1e2f5f] mb-4 leading-tight">
-              Visit <span className="text-pink-400">Smile Baby IVF</span> in Lingarajapuram, Bangalore
+              Visit <span className="text-pink-400">Smile Baby</span> in Lingarajapuram, Bangalore
             </h2>
 
             {/* MAP - Positioned after heading on mobile/tablet */}
@@ -340,9 +340,6 @@ export default function VisitClinic() {
               </span>
               <div className="flex gap-3">
                 <span className="text-xs text-pink-500">📞 +91 8884752134</span>
-                <span className="text-xs text-pink-500">
-                  ✉️ info@smilebabyivfs.in
-                </span>
               </div>
             </div>
           </div>

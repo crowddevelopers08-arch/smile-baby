@@ -10,7 +10,7 @@ export default function Header() {
           <div className="flex items-center">
             <img
               src="https://ik.imagekit.io/tnvhh8yfa/public/smile-baby-logo.webp?updatedAt=1773300923285"
-              alt="Smile Baby IVF Logo"
+              alt="Smile Baby Logo"
               className="h-12 w-auto object-contain"
             />
           </div>

@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from "react";
@@ -13,16 +12,16 @@ import {
   Play,
   X,
 } from "lucide-react";
-import SmileBabyFormed from "./ivf-contact-form";
+import SmileBabyFormed from "./smile-contact-form";
 // import SmileBabyForm from "../contact-froms";
 
-interface imgse{
+interface imgse {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
 }
 // Modal wrapper component
-const BookingModal = ({ isOpen, onClose, children } : imgse) => {
+const BookingModal = ({ isOpen, onClose, children }: imgse) => {
   if (!isOpen) return null;
 
   return (
@@ -34,9 +33,7 @@ const BookingModal = ({ isOpen, onClose, children } : imgse) => {
         >
           <X size={20} />
         </button>
-        <div className="max-h-[90vh] overflow-y-auto">
-          {children}
-        </div>
+        <div className="max-h-[90vh] overflow-y-auto">{children}</div>
       </div>
     </div>
   );
@@ -322,7 +319,7 @@ export default function FerlixHeros() {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://ik.imagekit.io/tnvhh8yfa/public/smile-babys.mp4"
-                title="Smile Baby IVF Video"
+                title="Smile Baby Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -342,10 +339,6 @@ export default function FerlixHeros() {
                 <Phone size={16} className="text-pink-400" />
                 <span>+91 8884752134</span>
               </div>
-              {/* <div className="flex items-center gap-2">
-                <Mail size={16} className="text-pink-400" />
-                <span>info@smilebabyivfs.in</span>
-              </div> */}
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-pink-400" />
                 <span>Hennur Main Road, Below Fly over Lingarajapuram,</span>
@@ -407,7 +400,6 @@ export default function FerlixHeros() {
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
                 <Mail size={14} className="text-pink-400" />
-                {/* <span className="hidden xs:inline">info@smilebabyivfs.in</span> */}
                 <span className="xs:hidden">Email</span>
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
@@ -505,7 +497,7 @@ export default function FerlixHeros() {
               <div className="flex items-center">
                 <img
                   src="https://ik.imagekit.io/tnvhh8yfa/public/smile-baby-logo.webp"
-                  alt="Smile Baby IVF Logo"
+                  alt="Smile Baby Logo"
                   className="h-12 w-auto object-contain"
                 />
               </div>
@@ -589,26 +581,29 @@ export default function FerlixHeros() {
               <div className="inline-flex items-center gap-2 mb-3 sm:mb-4">
                 <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-pink-400 rounded-full"></div>
                 <span className="text-pink-300 uppercase text-xs sm:text-sm font-semibold tracking-wider">
-                  Welcome to Smile Baby IVF
+                  Welcome to Smile Baby
                 </span>
               </div>
 
               {/* Main Heading - Responsive Font Sizes */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight">
-               Not Sure If You Need IVF? Start{" "}
+                Not Sure If You Need? Start{" "}
                 <span className="text-pink-400">
-                 With a Reproductive Health 
+                  With a Reproductive Health
                 </span>{" "}
-               Assessment at Smile Baby IVF
+                Assessment at Smile Baby
               </h1>
 
               {/* Subheading */}
               <p className="text-sm sm:text-base lg:text-lg text-gray-200 mb-5 sm:mb-6 lg:mb-8">
-                If you’re trying for months/years and feeling confused about the next step, our doctor led evaluation helps you understand whether lifestyle changes, medicines, IUI, or IVF is right for your case.
+                If you’re trying for months/years and feeling confused about the
+                next step, our doctor led evaluation helps you understand
+                whether lifestyle changes, medicines, IUI, or is right for
+                your case.
               </p>
 
-              {/* Trust Chips Grid - Responsive Grid */}
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
+                {/* First 3 items - visible on all screens */}
                 <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg
@@ -641,7 +636,7 @@ export default function FerlixHeros() {
                     </svg>
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
-                    12 years of advanced fertility care
+                    12 years of advanced care for couples trying to conceive
                   </span>
                 </div>
 
@@ -659,11 +654,12 @@ export default function FerlixHeros() {
                     </svg>
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
-                   80% patients via referrals
+                    80% patients via referrals
                   </span>
                 </div>
 
-                <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
+                {/* Last 2 items - hidden on mobile, visible on sm and above */}
+                <div className="hidden sm:flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg
                       width="12"
@@ -677,11 +673,11 @@ export default function FerlixHeros() {
                     </svg>
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
-                   Transparent pricing — no hidden costs
+                    Transparent pricing no hidden costs
                   </span>
                 </div>
 
-                <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 col-span-1 sm:col-span-2">
+                <div className="hidden sm:flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 col-span-1 sm:col-span-2">
                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg
                       width="12"
@@ -695,104 +691,10 @@ export default function FerlixHeros() {
                     </svg>
                   </div>
                   <span className="text-white text-xs sm:text-sm font-medium">
-                   Interest-free EMI + Insurance support
+                    Interest free EMI + Insurance support
                   </span>
                 </div>
-              </div> */}
-              {/* Trust Chips Grid - Responsive Grid */}
-<div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4">
-  {/* First 3 items - visible on all screens */}
-  <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        strokeWidth="3"
-      >
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </div>
-    <span className="text-white text-xs sm:text-sm font-medium">
-      10,000+ babies born
-    </span>
-  </div>
-
-  <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        strokeWidth="3"
-      >
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </div>
-    <span className="text-white text-xs sm:text-sm font-medium">
-      12 years of advanced care for couples trying to conceive
-    </span>
-  </div>
-
-  <div className="flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        strokeWidth="3"
-      >
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </div>
-    <span className="text-white text-xs sm:text-sm font-medium">
-      80% patients via referrals
-    </span>
-  </div>
-
-  {/* Last 2 items - hidden on mobile, visible on sm and above */}
-  <div className="hidden sm:flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3">
-    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        strokeWidth="3"
-      >
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </div>
-    <span className="text-white text-xs sm:text-sm font-medium">
-      Transparent pricing no hidden costs
-    </span>
-  </div>
-
-  <div className="hidden sm:flex items-start gap-2 sm:gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-2 sm:p-3 col-span-1 sm:col-span-2">
-    <div className="w-5 h-5 sm:w-6 sm:h-6 bg-pink-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="white"
-        strokeWidth="3"
-      >
-        <polyline points="20 6 9 17 4 12" />
-      </svg>
-    </div>
-    <span className="text-white text-xs sm:text-sm font-medium">
-      Interest free EMI + Insurance support
-    </span>
-  </div>
-</div>
+              </div>
             </div>
 
             {/* Right Column - Video Section */}
@@ -805,13 +707,13 @@ export default function FerlixHeros() {
               </p>
 
               {/* Video Thumbnail with Play Button */}
-              <div 
+              <div
                 className="relative w-full aspect-video rounded-lg overflow-hidden cursor-pointer group mb-4"
                 onClick={() => setIsVideoPopupOpen(true)}
               >
-                <img 
-                  src="https://ik.imagekit.io/tnvhh8yfa/public/image-smile.png" 
-                  alt="Video Thumbnail" 
+                <img
+                  src="https://ik.imagekit.io/tnvhh8yfa/public/image-smile.png"
+                  alt="Video Thumbnail"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-all">
@@ -836,7 +738,7 @@ export default function FerlixHeros() {
                     <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
                   </div>
                   <p className="text-white text-xs sm:text-sm">
-                    Expert doctors explain the IVF process
+                    Expert doctors explain the process
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
@@ -852,10 +754,10 @@ export default function FerlixHeros() {
           </div>
         </div>
       </div>
-      
+
       {/* Booking Modal with Form */}
-      <BookingModal 
-        isOpen={isBookingModalOpen} 
+      <BookingModal
+        isOpen={isBookingModalOpen}
         onClose={() => setIsBookingModalOpen(false)}
       >
         <SmileBabyFormed />

@@ -282,9 +282,6 @@ export default function VisitClinic() {
               </span>
               <div className="flex gap-3">
                 <span className="text-xs text-pink-500">📞 +91 8884752134</span>
-                <span className="text-xs text-pink-500">
-                  ✉️ info@smilebabyivfs.in
-                </span>
               </div>
             </div>
           </div>

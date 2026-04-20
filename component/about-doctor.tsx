@@ -136,7 +136,7 @@ const MeetDoctorSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#1e2f5f] font-semibold text-sm sm:text-base">Fertility Specialist</p>
+                  <p className="text-[#1e2f5f] font-semibold text-sm sm:text-base">Reproductive Health</p>
                   <p className="text-gray-600 text-xs sm:text-sm">(Dip. In reprod. Med.)</p>
                 </div>
               </div>

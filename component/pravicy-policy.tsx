@@ -153,10 +153,10 @@ export default function PrivacyPolicy() {
               
               <div className="space-y-2.5 sm:space-y-3">
                 {[
-                  "To provide and improve our fertility treatment services",
+                  "To provide and improve our Reproductive Health treatment services",
                   "To communicate with you about appointments, treatment plans, and cost estimates",
                   "To process payments and manage billing",
-                  "To send educational content and updates about fertility care (with your consent)",
+                  "To send educational content and updates about Reproductive Health care (with your consent)",
                   "To comply with legal obligations and protect our legal rights",
                   "To analyze and improve our website and services"
                 ].map((text, index) => (

@@ -85,7 +85,7 @@ async function saveLeadToDatabase(leadData: LeadData, telecrmResult?: any) {
   // Determine treatment based on form type
   let treatment = leadData.treatment || leadData.test;
   if (leadData.formName?.toLowerCase() === 'smile baby evaluation') {
-    treatment = 'IVF Evaluation Consultation';
+    treatment = 'SB Evaluation Consultation';
   }
 
   const lead = await prisma.lead.create({
@@ -149,7 +149,7 @@ async function sendToTeleCRM(leadData: LeadData) {
   // Add Smile Baby specific notes
   if (leadData.formName?.toLowerCase() === 'smile baby evaluation') {
     notes.push(
-      { type: "SYSTEM_NOTE", text: `Service: IVF Evaluation Consultation - Smile Baby Evaluation` },
+      { type: "SYSTEM_NOTE", text: `Service: Evaluation Consultation - Smile Baby Evaluation` },
       { type: "SYSTEM_NOTE", text: `Woman's Age Bracket: ${leadData.womansAgeBracket || "Not specified"}` },
       { type: "SYSTEM_NOTE", text: `Trying Duration: ${leadData.tryingDuration || "Not specified"}` },
       { type: "SYSTEM_NOTE", text: `WhatsApp: ${leadData.isWhatsapp || leadData.whatsapp || "Not specified"}` }

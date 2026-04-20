@@ -27,8 +27,8 @@ export default function SmileBabyForm() {
     tryingDuration: '',
     consent: true,
     formName: 'Smile Baby',
-    source: 'Smile Baby IVF Form',
-    treatment: 'IVF Consultation'
+    source: 'Smile Baby Form',
+    treatment: 'Consultation'
   })
   
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -71,7 +71,7 @@ export default function SmileBabyForm() {
         body: JSON.stringify({
           ...formData,
           isWhatsapp: formData.whatsapp === 'yes' ? 'Yes' : 'No',
-          // message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
+          // message: Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
         }),
       })
 

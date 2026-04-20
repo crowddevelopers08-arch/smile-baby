@@ -28,7 +28,7 @@ const BookingModal = ({ isOpen, onClose, children }: imgse) => {
 
 const credentials = [
   { label: "MBBS, MS (OBG)", sub: null },
-  { label: "Fertility Specialist", sub: "Dip. In reprod. Med." },
+  { label: "Reproductive Health", sub: "Dip. In reprod. Med." },
 ];
 
 const MeetDoctorSection = () => {
@@ -129,7 +129,7 @@ const MeetDoctorSection = () => {
 
             {/* Bio */}
             <p className="text-[#1e2a6e] text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8 max-w-lg">
-              Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and conception care specialist focused on ethical, personalised IVF planning. Known for clear communication and patient first care, she guides couples through the process with continuity and transparency.
+              Dr. Mangala Devi K R is a consultant obstetrician, gynaecologist, and conception care specialist focused on ethical, personalised planning. Known for clear communication and patient first care, she guides couples through the process with continuity and transparency.
             </p>
 
             {/* Credentials */}

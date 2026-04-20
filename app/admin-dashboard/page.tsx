@@ -193,7 +193,7 @@ export default function LeadsTable({
     const formConfig: { [key: string]: { label: string, color: string, icon?: any } } = {
       'hairtreatment': { label: "Hair Treatment", color: "bg-purple-100 text-purple-800 border-purple-200" },
       'skin and hair leads': { label: "Skin & Hair", color: "bg-indigo-100 text-indigo-800 border-indigo-200" },
-      'smile baby': { label: "Smile Baby IVF", color: "bg-pink-100 text-pink-800 border-pink-200", icon: Baby },
+      'smile baby': { label: "Smile Baby", color: "bg-pink-100 text-pink-800 border-pink-200", icon: Baby },
       'default': { label: formName, color: "bg-gray-100 text-gray-800 border-gray-200" }
     }
     
@@ -380,7 +380,7 @@ export default function LeadsTable({
                       <span className="font-medium text-sm text-gray-900 capitalize">
                         {formName === 'hairtreatment' ? 'Hair Treatment' : 
                          formName === 'skin and hair leads' ? 'Skin & Hair' : 
-                         formName === 'smile baby' ? 'Smile Baby IVF' : 
+                         formName === 'smile baby' ? 'Smile Baby' : 
                          formName === 'Unknown' ? 'Unknown Form' : formName}
                       </span>
                     </div>
@@ -440,7 +440,6 @@ export default function LeadsTable({
               </SelectTrigger>
               <SelectContent className="bg-white border-gray-300 text-gray-900">
                 <SelectItem value="all" className="focus:bg-gray-100">All Treatments</SelectItem>
-                <SelectItem value="IVF" className="focus:bg-gray-100">IVF</SelectItem>
                 <SelectItem value="ICSI" className="focus:bg-gray-100">ICSI</SelectItem>
                 <SelectItem value="IUI" className="focus:bg-gray-100">IUI</SelectItem>
                 <SelectItem value="Egg Freezing" className="focus:bg-gray-100">Egg Freezing</SelectItem>
@@ -462,7 +461,7 @@ export default function LeadsTable({
                   <SelectItem key={formName} value={formName} className="focus:bg-gray-100">
                     {formName === 'hairtreatment' ? 'Hair Treatment' : 
                      formName === 'skin and hair leads' ? 'Skin & Hair' : 
-                     formName === 'smile baby' ? 'Smile Baby IVF' : 
+                     formName === 'smile baby' ? 'Smile Baby' : 
                      formName === 'Unknown' ? 'Unknown Form' : formName}
                   </SelectItem>
                 ))}
@@ -575,7 +574,7 @@ export default function LeadsTable({
                               <div className="flex flex-col gap-1">
                                 {isSmileBaby ? (
                                   <>
-                                    <span className="text-sm font-medium text-gray-900">IVF Consultation</span>
+                                    <span className="text-sm font-medium text-gray-900">Smile Baby Consultation</span>
                                     {lead.womansAgeBracket && (
                                       <span className="text-xs text-gray-600">Age: {lead.womansAgeBracket}</span>
                                     )}
@@ -746,7 +745,7 @@ export default function LeadsTable({
               {formFilter !== 'all' && ` • Form: ${
                 formFilter === 'hairtreatment' ? 'Hair Treatment' : 
                 formFilter === 'skin and hair leads' ? 'Skin & Hair' : 
-                formFilter === 'smile baby' ? 'Smile Baby IVF' : 
+                formFilter === 'smile baby' ? 'Smile Baby' : 
                 formFilter === 'Unknown' ? 'Unknown Form' : formFilter
               }`}
             </div>

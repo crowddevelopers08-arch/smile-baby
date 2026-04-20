@@ -8,7 +8,7 @@ import FerlixHero from "@/component/hero-section";
 import WorkProcessSection from "@/component/our-services";
 import SuccessRatesSection from "@/component/success";
 import TestimonialsSection from "@/component/testomials";
-import FunFacts from "@/component/transparent-ivf";
+import FunFacts from "@/component/transparent-smile";
 import Image from "next/image";
 
 export default function Home() {

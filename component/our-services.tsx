@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const IVFProcessSection = () => {
+const WorkProcessSection = () => {
   const processes = [
     {
       number: '1',
@@ -18,7 +18,7 @@ const IVFProcessSection = () => {
     },
     {
       number: '3',
-      title: 'Fertilization',
+      title: 'Insemination',
       icon: 'https://ik.imagekit.io/tnvhh8yfa/public/icons3.png?updatedAt=1773300923076',
       isImage: true
     },
@@ -119,4 +119,4 @@ const IVFProcessSection = () => {
   );
 };
 
-export default IVFProcessSection;
+export default WorkProcessSection;

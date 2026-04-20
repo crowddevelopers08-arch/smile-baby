@@ -2,7 +2,7 @@
 
 import { X } from "lucide-react";
 import { useState } from "react";
-import SmileBabyFormed from "./ivf-contact-form";
+import SmileBabyFormed from "./smile-contact-form";
 
 interface imgse{
   isOpen: boolean;
@@ -36,7 +36,7 @@ const bullets = [
   },
   {
     num: "2",
-    text: "Explain whether lifestyle changes/medicines/IUI are enough or IVF should be considered",
+    text: "Explain whether lifestyle changes/medicines/IUI are enough or should be considered",
   },
   {
     num: "3",
@@ -104,7 +104,7 @@ function SpinningBadge() {
 /* ─────────────────────────────────────
    Main Component
 ───────────────────────────────────── */
-export default function FertilitySection() {
+export default function ReproductiveHealth() {
           const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   
   return (
@@ -146,7 +146,7 @@ export default function FertilitySection() {
         }
 
         /* ── Responsive grid ── */
-        .fertility-grid {
+        .health-grid {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 70px;
@@ -155,7 +155,7 @@ export default function FertilitySection() {
 
         /* Tablet: 768px – 1023px */
         @media (max-width: 1023px) {
-          .fertility-grid {
+          .health-grid {
             grid-template-columns: 1fr;
             gap: 60px;
           }
@@ -188,10 +188,10 @@ export default function FertilitySection() {
 
         /* Mobile: < 640px */
         @media (max-width: 639px) {
-          .fertility-section {
+          .health-section {
             padding: 48px 16px !important;
           }
-          .fertility-grid {
+          .health-grid {
             gap: 40px;
           }
           .image-cluster {
@@ -224,7 +224,7 @@ export default function FertilitySection() {
       `}</style>
 
       <section
-        className="fertility-section max-sm:pb-6"
+        className="health-section max-sm:pb-6"
         style={{
           minHeight: "100vh",
           display: "flex",
@@ -233,7 +233,7 @@ export default function FertilitySection() {
           padding: "60px 24px",
         }}
       >
-        <div style={{ maxWidth: 1160, width: "100%" }} className="fertility-grid">
+        <div style={{ maxWidth: 1160, width: "100%" }} className="health-grid">
 
           {/* ══════════════════════════
               LEFT  ── TEXT CONTENT
@@ -378,7 +378,7 @@ export default function FertilitySection() {
                   style={{ width:"100%", height:"100%", objectFit:"cover", display:"block" }} />
               */}
               <img
-                src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/free-photo.jpg?updatedAt=1773300923093"
+                src="/free-photo.jpg"
                 alt="Doctor"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               
@@ -444,10 +444,6 @@ export default function FertilitySection() {
                 zIndex: 2,
               }}
             >
-              {/*
-                ✅ SWAP: <img src="/your-clinic.jpg" alt="Clinic"
-                  style={{ width:"100%", height:"100%", objectFit:"cover", display:"block" }} />
-              */}
               <img
                 src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80"
                 alt="Clinic"

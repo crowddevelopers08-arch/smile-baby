@@ -15,7 +15,7 @@ export default function TreatmentNavbar() {
         <Link href="/" className="flex items-center gap-3" aria-label="Smile Baby home">
           <img
             src="https://ik.imagekit.io/tnvhh8yfa/public/smile-baby-logo.webp?updatedAt=1773300923285"
-            alt="Smile Baby IVF Logo"
+            alt="Smile Baby Logo"
             className="h-11 w-auto object-contain"
           />
         </Link>

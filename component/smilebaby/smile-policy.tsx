@@ -116,10 +116,7 @@ export default function PrivacyPolicy() {
           <p className="text-sm text-gray-700">
             <span className="font-semibold text-pink-500">Questions about your data?</span>{" "}
             Contact us at{" "}
-            <a href="mailto:info@smilebabyivfs.in" className="text-[#1e2f5f] font-semibold underline underline-offset-2">
-              info@smilebabyivfs.in
-            </a>{" "}
-            or call{" "}
+             or call{" "}
             <a href="tel:+918884752134" className="text-[#1e2f5f] font-semibold underline underline-offset-2">
               +91 8884752134
             </a>.
@@ -127,7 +124,7 @@ export default function PrivacyPolicy() {
         </div>
             <div className="text-center mt-10 sm:mt-12">
           <button 
-            onClick={() => router.push("/smilebabyivf")} 
+            onClick={() => router.push("/smilebabyevaluation")} 
             className="group bg-gradient-to-r from-[#1e2f5f] to-[#2d4a7f] text-white px-6 sm:px-7 md:px-8 py-3.5 sm:py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 mx-auto text-sm sm:text-base" >
             <svg width="18" height="18"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>

@@ -3,7 +3,7 @@ export default function CompassionateCareSection() {
     {
       number: "01",
       title: "Lifestyle + Medical Support First",
-      desc: "Before recommending IVF, we explore lifestyle changes and medical support that may improve your chances naturally.",
+      desc: "Before recommending, we explore lifestyle changes and medical support that may improve your chances naturally.",
     },
     {
       number: "02",
@@ -12,8 +12,8 @@ export default function CompassionateCareSection() {
     },
     {
       number: "03",
-      title: "IVF (When It Improves Chances Significantly)",
-      desc: "IVF is recommended only when it meaningfully improves your chances of conceiving based on your specific reports.",
+      title: "(When It Improves Chances Significantly)",
+      desc: "Consultation is recommended only when it meaningfully improves your chances of conceiving based on your specific reports.",
     },
   ];
 
@@ -28,7 +28,7 @@ export default function CompassionateCareSection() {
             className="font-extrabold leading-[1.1] mb-1"
             style={{ fontSize: "clamp(2rem, 2.4vw, 3.5rem)", color: "#1e2a6e" }}
           >
-            IVF Is Not Always{" "}
+            Is Not Always{" "}
             <span style={{ color: "#ec4899" }}>the First Step</span>
           </h2>
 
@@ -127,7 +127,7 @@ export default function CompassionateCareSection() {
             }}
           >
             <img
-              src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/ivf-image.avif?updatedAt=1773300923177"
+              src="/image.avif"
               alt="Compassionate care — doctor with pregnant patient"
               className="w-full h-full object-cover"
             />

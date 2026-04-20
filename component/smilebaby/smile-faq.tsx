@@ -7,8 +7,8 @@ const FAQSections = () => {
 
   const faqs = [
     {
-      question: 'How do we know if we actually need IVF or if IUI/medicines are enough?',
-      answer: "That's exactly what the evaluation is for. Based on your age, reports, and how long you've been trying, the doctor explains whether lifestyle support, medicines, IUI, or IVF fits best."
+      question: 'How do we know if we actually need or if IUI/medicines are enough?',
+      answer: "That's exactly what the evaluation is for. Based on your age, reports, and how long you've been trying, the doctor explains whether lifestyle support, medicines, IUI, or  fits best."
     },
     {
       question: "We've been trying naturally for months/years When should we meet a conception specialist?",
@@ -19,12 +19,12 @@ const FAQSections = () => {
       answer: "Usually, the wife may need an ultrasound and basic blood tests, and the husband may need a semen analysis. The doctor will advise what's necessary for your case."
     },
     {
-      question: 'What is the difference between ovulation induction, IUI and IVF?',
-      answer: 'Ovulation induction helps egg release, IUI places prepared sperm into the uterus, and IVF involves fertilising eggs in the lab and transferring the embryo. The right option depends on diagnosis.'
+      question: 'What is the difference between ovulation induction, IUI and?',
+      answer: 'Ovulation induction helps egg release, IUI places prepared sperm into the uterus, and involves Reproductive Health eggs in the lab and transferring the embryo. The right option depends on diagnosis.'
     },
     {
-      question: 'How many IUIs should we try before IVF?',
-      answer: 'It depends on age and diagnosis. Some couples try a few IUIs first, but IVF may be recommended earlier in certain cases.'
+      question: 'How many IUIs should we try before?',
+      answer: 'It depends on age and diagnosis. Some couples try a few IUIs first, but may be recommended earlier in certain cases.'
     },
     {
       question: 'Can delaying treatment by 1–2 years reduce chances?',

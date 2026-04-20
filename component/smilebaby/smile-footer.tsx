@@ -15,7 +15,7 @@ export default function Footers() {
         </p>
 
         <a
-          href="/privacypolicy"
+          href="/smilebabyevaluation/privacy-policy"
           className="text-white hover:text-black  transition-colors text-sm"
         >
           Privacy Policy

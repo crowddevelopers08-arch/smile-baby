@@ -64,7 +64,7 @@ export default function ThankYouPage() {
 
         {/* Back to home button */}
         <Link
-          href="/smilebabyivf"
+          href="/smilebabyevaluation"
           className="inline-flex items-center gap-2 bg-[#1e2f5f] hover:bg-[#2d3e7f] text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="16" height="16">

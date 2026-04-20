@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import SmileBabyFormed from "./ivf-contact-form";
+import SmileBabyFormed from "./smile-contact-form";
 import { X } from "lucide-react";
 
 interface imgse {
@@ -86,7 +86,7 @@ export default function AboutSection() {
             }}
           >
             <img
-              src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/happy-doctor.avif?updatedAt=1773300924507"
+              src="/happy-doctor.avif"
               alt="Happy family with newborn"
               className="w-full h-full object-cover"
             />
@@ -186,7 +186,7 @@ export default function AboutSection() {
             }}
           >
             <img
-              src="https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/indian-baby.avif?updatedAt=1773300923150"
+              src="/indian-baby.avif"
               alt="Newborn baby"
               className="w-full h-full object-cover"
             />

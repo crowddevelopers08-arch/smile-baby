@@ -2,7 +2,7 @@
 
 import { X } from "lucide-react";
 import { useState, useEffect } from "react";
-import SmileBabyFormed from "./ivf-contact-form";
+import SmileBabyFormed from "./smile-contact-form";
 
 // Define the service type
 interface Service {
@@ -48,14 +48,14 @@ const services: Service[] = [
     featured: true,
     title: "Doctor led and ethical treatment approach",
     desc: "Book Your Conception Evaluation",
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
   },
   {
     id: 1,
     title: "Personalised protocols (not one size fits all)",
     desc: "Doctor led and ethical treatment approach for every patient.",
     icon: <GearIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -63,7 +63,7 @@ const services: Service[] = [
     title: "Continuity of care (same doctor throughout)",
     desc: "Personalised protocols not one size fits all treatment.",
     icon: <CirclesIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -71,15 +71,15 @@ const services: Service[] = [
     title: "Transparent pricing & clear communication",
     desc: "Same doctor throughout consistent care from start to finish.",
     icon: <LayersIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
     id: 4,
-    title: "Counselling + nutrition + fertility support",
+    title: "Counselling + nutrition + Reproductive Health support",
     desc: "Transparent pricing & clear communication no hidden costs.",
     icon: <BoxIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -87,7 +87,7 @@ const services: Service[] = [
     title: "Interest Free EMI",
     desc: "Interest free EMI available affordable care for every couple.",
     icon: <LifeRingIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -95,7 +95,7 @@ const services: Service[] = [
     title: "Insurance support available",
     desc: "Insurance support available to ease your financial journey.",
     icon: <DatabaseIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
   {
@@ -103,7 +103,7 @@ const services: Service[] = [
     title: "Ethical donor programs available (if required)",
     desc: "Ethical donor programs available if required for your journey.",
     icon: <GearIcon />,
-    image: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/service-2.jpg?updatedAt=1773300923191",
+    image: "/service-2.jpg",
     hoverColor: "rgba(30,42,110,0.82)",
   },
 ];
@@ -145,7 +145,7 @@ export default function ServicesGrid() {
           style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.6rem)", color: "#1e2a6e", maxWidth: 700 }}
         >
           Why Couples Choose{" "}
-          <span style={{ color: "#ec4899" }}>Smile Baby IVF</span>{" "}
+          <span style={{ color: "#ec4899" }}>Smile Baby</span>{" "}
           for Evaluation &amp; Guidance
         </h2>
 
@@ -207,7 +207,6 @@ export default function ServicesGrid() {
   );
 }
 
-/* ── FEATURED CARD (Card 1 — IVF) ── */
 function FeaturedCard({ svc, hov, onEnter, isMobile }: FeaturedCardProps) {
   // On mobile: overlay always shown. On desktop: only on hover.
   const showOverlay = hov || isMobile;

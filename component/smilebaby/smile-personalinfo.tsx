@@ -4,25 +4,25 @@ import React from "react";
 
 const cards = [
   {
-    icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/communication.png?updatedAt=1773300923152", // replace with your icon path
+    icon: "/communication.png",
     title: "Counselling Support",
     description:
       "Dedicated emotional support for couples at every stage of their parenthood journey.",
   },
   {
-    icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/guidance.png?updatedAt=1773300923101", // replace with your icon path
+    icon: "/guidance.png",
     title: "Nutrition Guidance",
     description:
       "Personalised nutrition advice to support your body through treatment and beyond.",
   },
   {
-    icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/idea.png?updatedAt=1773300923029", // replace with your icon path
+    icon: "/idea.png",
     title: "Step by Step Clarity",
     description:
       "We walk you through every step so you always know what's happening and what comes next.",
   },
   {
-    icon: "https://ik.imagekit.io/tnvhh8yfa/public/ivf-smile/gear.png?updatedAt=1773300923172", // replace with your icon path
+    icon: "/gear.png",
     title: "Privacy Maintained",
     description:
       "Your details are kept strictly confidential. We maintain full privacy for every patient.",

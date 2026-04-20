@@ -320,7 +320,7 @@ export default function FerlixHero() {
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://ik.imagekit.io/tnvhh8yfa/public/smile-babys.mp4"
-                title="Smile Baby IVF Video"
+                title="Smile Baby Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -340,10 +340,6 @@ export default function FerlixHero() {
                 <Phone size={16} className="text-pink-400" />
                 <span>+91 8884752134</span>
               </div>
-              {/* <div className="flex items-center gap-2">
-                <Mail size={16} className="text-pink-400" />
-                <span>info@smilebabyivfs.in</span>
-              </div> */}
               <div className="flex items-center gap-2">
                 <MapPin size={16} className="text-pink-400" />
                 <span>Hennur Main Road, Below Fly over Lingarajapuram,</span>
@@ -405,7 +401,6 @@ export default function FerlixHero() {
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
                 <Mail size={14} className="text-pink-400" />
-                {/* <span className="hidden xs:inline">info@smilebabyivfs.in</span> */}
                 <span className="xs:hidden">Email</span>
               </div>
               <div className="flex items-center gap-1 sm:gap-2">
@@ -503,7 +498,7 @@ export default function FerlixHero() {
               <div className="flex items-center">
                 <img
                   src="https://ik.imagekit.io/tnvhh8yfa/public/smile-baby-logo.webp"
-                  alt="Smile Baby IVF Logo"
+                  alt="Smile Baby Logo"
                   className="h-12 w-auto object-contain"
                 />
               </div>

@@ -3,7 +3,7 @@
 import { Phone, Calendar, X } from "lucide-react";
 // import SmileBabyForm from "./contact-froms";
 import { useState } from "react";
-import SmileBabyFormed from "./ivf-contact-form";
+import SmileBabyFormed from "./smile-contact-form";
 interface imgse{
   isOpen: boolean;
   onClose: () => void;

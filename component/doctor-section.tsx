@@ -100,7 +100,7 @@ const TeamSection = () => {
           {/* 2. PARAGRAPH - No button here */}
           <div className=" max-sm:mb-2 mb-6 w-full">
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-              IVF success depends on the right diagnosis, the right lab work,
+              Success depends on the right diagnosis, the right lab work,
               and the right protocol guided by experienced specialists.
             </p>
           </div>
@@ -202,7 +202,7 @@ const TeamSection = () => {
                   const section = document.getElementById("forms");
                   section?.scrollIntoView({ behavior: "smooth" });
                 }}>
-              Talk to Our IVF Team
+              Talk to Our Team
               <svg
                 className="w-4 h-4 sm:w-5 sm:h-5"
                 fill="none"

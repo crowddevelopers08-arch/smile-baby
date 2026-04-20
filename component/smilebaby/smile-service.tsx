@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import SmileBabyFormed from "./ivf-contact-form";
+import SmileBabyFormed from "./smile-contact-form";
 import { X } from "lucide-react";
 interface imgse {
   isOpen: boolean;
@@ -29,7 +29,7 @@ const BookingModal = ({ isOpen, onClose, children }: imgse) => {
 
 const points = [
   {
-    text: "Unsure if you actually need IVF",
+    text: "Unsure if you actually need or if IUI is enough",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -78,7 +78,7 @@ const points = [
     ),
   },
   {
-    text: "Wondering whether IUI is enough or IVF is needed",
+    text: "Wondering whether IUI is enough or is needed",
     icon: (
       <svg
         viewBox="0 0 24 24"
@@ -169,16 +169,6 @@ export default function WhoIsThisFor() {
               You're in the right place if any of these sound familiar. Take the
               first step toward answers not more waiting.
             </p>
-
-            {/* CTA — visible on sm+ (hidden on mobile, shown on tablet+) */}
-            {/* <div className="hidden sm:flex flex-row items-center gap-4">
-              <button
-                onClick={() => setIsBookingModalOpen(true)}
-                className="bg-gradient-to-r from-pink-400 to-pink-500 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium shadow-lg text-sm sm:text-base hover:shadow-xl hover:scale-105 transition-all duration-300"
-              >
-                Check If IVF Is Needed
-              </button>
-            </div> */}
                        <div className="flex justify-center lg:justify-start hidden sm:flex flex-row items-center gap-4">
               <button
                 onClick={() => setIsBookingModalOpen(true)}
@@ -189,7 +179,7 @@ export default function WhoIsThisFor() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Check If IVF Is Needed
+                Check If Is Needed
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -300,15 +290,6 @@ export default function WhoIsThisFor() {
                 </div>
               );
             })}
-
-            {/* CTA — mobile only, shown below the cards */}
-            {/* <div className="flex sm:hidden mt-2">
-              <button
-                className="w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white px-5 py-3 rounded-xl font-medium shadow-lg text-sm hover:shadow-xl transition-all duration-300"
-              >
-                Check If IVF Is Needed
-              </button>
-            </div> */}
             <div className="flex justify-center lg:justify-start sm:hidden mt-2">
               <button
                 onClick={() => setIsBookingModalOpen(true)}
@@ -319,7 +300,7 @@ export default function WhoIsThisFor() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Check If IVF Is Needed
+                Check If Is Needed
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"

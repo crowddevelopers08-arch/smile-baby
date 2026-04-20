@@ -27,8 +27,8 @@ export default function SmileBabyFormed() {
     tryingDuration: '',
     consent: true,
     formName: 'Smile Baby Evaluation',
-    source: 'Smile Baby IVF Evaluation',
-    treatment: 'IVF Consultation'
+    source: 'Smile Baby Evaluation',
+    treatment: 'Smile Baby Consultation'
   })
   
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -71,14 +71,14 @@ export default function SmileBabyFormed() {
         body: JSON.stringify({
           ...formData,
           isWhatsapp: formData.whatsapp === 'yes' ? 'Yes' : 'No',
-          // message: `IVF Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
+          // message: `Smile Baby Consultation Request - Age: ${formData.womansAgeBracket}, Trying for: ${formData.tryingDuration}`
         }),
       })
 
       const data = await response.json()
 
       if (response.ok) {
-        router.push('/thankyou')
+        router.push('/smilebabyevaluation/thank-you')
       } else {
         setErrorMessage(data.error || 'Something went wrong. Please try again.')
         setIsSubmitting(false)
@@ -170,7 +170,6 @@ export default function SmileBabyFormed() {
               <option value="Medicines ">Medicines </option>
               <option value="no">No</option>
               <option value="IUI">IUI</option>
-              <option value="IVF">IVF</option>
               <option value="Not sure">Not sure</option>
             </select>
           </div>
@@ -241,7 +240,7 @@ export default function SmileBabyFormed() {
 
         {/* Microcopy */}
         <p className="text-xs text-gray-500 text-center mt-3 sm:mt-4">
-         Not sure if you really need IVF? Fill this form for a Conception Evaluation call-back.
+         Not sure if you really need Smile Baby Consultation? Fill this form for a Conception Evaluation call-back.
         Privacy maintained.
         </p>
       </form>

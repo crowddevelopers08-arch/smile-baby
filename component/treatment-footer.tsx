@@ -7,11 +7,11 @@ export default function TreatmentFooter() {
         <div>
           <img
             src="https://ik.imagekit.io/tnvhh8yfa/public/smile-baby-logo.webp?updatedAt=1773300923285"
-            alt="Smile Baby IVF Logo"
+            alt="Smile Baby Logo"
             className="h-10 w-auto rounded bg-white px-2 py-1"
           />
           <p className="mt-3 max-w-md text-sm leading-6 text-slate-300">
-            Smile Baby supports families with compassionate fertility care and clear guidance.
+            Smile Baby supports families with compassionate Reproductive Health care and clear guidance.
           </p>
         </div>
 

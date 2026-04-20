@@ -1,4 +1,8 @@
-import { CalendarCheck, HeartPulse, ShieldCheck } from "lucide-react";
+"use client";
+
+import { useState } from "react";
+import { CalendarCheck, HeartPulse, ShieldCheck, X } from "lucide-react";
+import SmileBabyForm from "./contacts";
 
 const services = [
   {
@@ -19,6 +23,8 @@ const services = [
 ];
 
 export default function SampleComponent() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
   return (
     <main className="bg-[#fff7fb]">
       <section className="mx-auto flex min-h-[72vh] max-w-7xl flex-col items-center gap-10 px-5 py-16 md:flex-row md:px-8 lg:py-20">
@@ -35,12 +41,13 @@ export default function SampleComponent() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="tel:+918884752134"
+            <button
+              type="button"
+              onClick={() => setIsFormOpen(true)}
               className="inline-flex h-12 items-center justify-center rounded-md bg-pink-500 px-6 font-semibold text-white shadow-sm transition hover:bg-pink-600"
             >
               Book Appointment
-            </a>
+            </button>
             <a
               href="#care-highlights"
               className="inline-flex h-12 items-center justify-center rounded-md border border-pink-200 bg-white px-6 font-semibold text-pink-600 transition hover:border-pink-300 hover:bg-pink-50"
@@ -65,6 +72,32 @@ export default function SampleComponent() {
         </div>
       </section>
 
+      {isFormOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/60 px-4 py-6 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Book appointment form"
+        >
+          <button
+            type="button"
+            aria-label="Close appointment form"
+            className="absolute inset-0 cursor-default"
+            onClick={() => setIsFormOpen(false)}
+          />
+          <div className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-2xl bg-white shadow-2xl">
+            <button
+              type="button"
+              aria-label="Close appointment form"
+              onClick={() => setIsFormOpen(false)}
+              className="absolute right-3 top-3 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white text-slate-600 shadow-md transition hover:bg-pink-50 hover:text-pink-600"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            <SmileBabyForm />
+          </div>
+        </div>
+      )}
     </main>
   );
 }

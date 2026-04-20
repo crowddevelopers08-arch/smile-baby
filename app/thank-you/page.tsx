@@ -7,6 +7,7 @@ import Script from "next/script";
 const page = () => {
   return (
     <div>
+      {/* Google Ads Conversion Tracking Script */}
       <Script id="main-thank-you-conversion" strategy="afterInteractive">
         {`
           gtag('event', 'conversion', {
@@ -16,6 +17,7 @@ const page = () => {
           });
         `}
       </Script>
+      
       <Header />
       <ThankYouPage />
       <Footer />

@@ -31,16 +31,8 @@ const reassuranceItems = [
 export default function TreatmentThankYouPage() {
   return (
     <>
-      <Script id="treatment-thank-you-conversion" strategy="afterInteractive">
-        {`
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17991432817/noj0CJejuZ8cEPH0_YJD',
-            'value': 1.0,
-            'currency': 'INR'
-          });
-        `}
-      </Script>
       <TreatmentNavbar />
+
       <main className="bg-white">
         <section className="relative overflow-hidden bg-[#fff7fb]">
           <div className="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-10 px-5 py-14 md:grid-cols-[1.05fr_0.95fr] md:px-8 lg:py-20">
@@ -52,9 +44,11 @@ export default function TreatmentThankYouPage() {
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-pink-500">
                 Request received
               </p>
+
               <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight text-slate-950 md:text-6xl">
                 Thank you. Your appointment request is with us.
               </h1>
+
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
                 We have received your details. Our Smile Baby care team will contact you soon to
                 understand your needs and help you plan the next step.
@@ -68,6 +62,7 @@ export default function TreatmentThankYouPage() {
                   <Phone className="h-5 w-5" aria-hidden="true" />
                   Call Now
                 </a>
+
                 <Link
                   href="/treatment"
                   className="inline-flex h-12 items-center justify-center rounded-md border border-pink-200 bg-white px-6 font-semibold text-pink-600 transition hover:border-pink-300 hover:bg-pink-50"
@@ -88,6 +83,7 @@ export default function TreatmentThankYouPage() {
                   <p className="text-sm font-bold uppercase tracking-[0.16em] text-slate-400">
                     What happens next
                   </p>
+
                   <div className="mt-4 space-y-4">
                     {nextSteps.map((step, index) => (
                       <div key={step} className="flex gap-3">
@@ -122,7 +118,19 @@ export default function TreatmentThankYouPage() {
           </div>
         </section>
       </main>
+
       <TreatmentFooter />
+
+      {/* Google Ads Conversion Tracking Script */}
+      <Script id="treatment-thank-you-conversion" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17991432817/noj0CJejuZ8cEPH0_YJD',
+            'value': 1.0,
+            'currency': 'INR'
+          });
+        `}
+      </Script>
     </>
   );
 }

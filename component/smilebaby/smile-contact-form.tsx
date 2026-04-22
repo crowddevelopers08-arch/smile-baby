@@ -78,6 +78,12 @@ export default function SmileBabyFormed() {
       const data = await response.json()
 
       if (response.ok) {
+        ;(window as typeof window & {
+          fbq?: (event: string, eventName: string, params?: Record<string, unknown>) => void
+        }).fbq?.('track', 'Lead', {
+          content_name: formData.formName,
+          content_category: formData.treatment,
+        })
         router.push('/smilebabyevaluation/thank-you')
       } else {
         setErrorMessage(data.error || 'Something went wrong. Please try again.')

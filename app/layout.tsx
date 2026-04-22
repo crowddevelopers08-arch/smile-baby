@@ -5,6 +5,8 @@ import ScrollToTop from "@/component/scrollbar";
 import MobileActionBar from "@/component/mobile-bar";
 import Script from "next/script";
 
+const META_PIXEL_ID = "742065915568314";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -72,7 +74,7 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1339396141252235');
+fbq('init', '${META_PIXEL_ID}');
 fbq('track', 'PageView');
           `}
         </Script>
@@ -83,7 +85,7 @@ fbq('track', 'PageView');
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1339396141252235&ev=PageView&noscript=1"
+            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
             alt=""
           />
         </noscript>

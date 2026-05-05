@@ -24,7 +24,7 @@ const SERVICES = [
   {
     label: 'Intrauterine Insemination',
     image: '/service-2.jpg',
-    desc:  'IUI is a simple, low-intervention fertility procedure where specially prepared sperm is placed directly into the uterus. It's often the first line of treatment recommended for mild fertility challenges.',
+    desc:  "IUI is a simple, low-intervention fertility procedure where specially prepared sperm is placed directly into the uterus. It's often the first line of treatment recommended for mild fertility challenges.",
     icon: (active: boolean) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
         stroke={active ? '#fff' : '#6b7280'} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">

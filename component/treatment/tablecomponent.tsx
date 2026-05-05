@@ -34,7 +34,7 @@ export default function ComparisonBanner() {
   ];
 
   return (
-    <section className="w-full py-4 sm:py-8 md:py-8 px-4 sm:px-6 md:px-10 bg-white">
+    <section id="process" className="w-full py-4 sm:py-8 md:py-8 px-4 sm:px-6 md:px-10 bg-white">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}

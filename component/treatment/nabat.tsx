@@ -37,11 +37,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "#" },
-    { name: "About Us", href: "#Planning-Visit" },
+    { name: "About Us", href: "#about" },
     { name: "Our Team", href: "#our-team" },
     { name: "Process", href: "#process" },
-    { name: "Transparent", href: "#transparent" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "RoadMap", href: "#roadmap" },
+    // { name: "Contact Us", href: "#contact" },
   ];
 
   useEffect(() => {

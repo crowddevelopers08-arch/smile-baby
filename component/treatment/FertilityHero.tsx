@@ -48,7 +48,7 @@ export default function FertilityHero() {
   }
 
   return (
-    <section className="relative w-full overflow-hidden bg-white">
+    <section id='about' className="relative w-full overflow-hidden bg-white">
 
       {/* ─────────── CSS ─────────── */}
       <style>{`

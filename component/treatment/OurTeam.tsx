@@ -217,7 +217,7 @@ export default function OurTeam() {
       }}/>
 
       {/* ─── CONTENT ─── */}
-      <div className="relative content-wrap" style={{ zIndex:10, maxWidth:1280, margin:'0 auto', padding:'28px 28px 28px' }}>
+      <div id='our-team' className="relative content-wrap" style={{ zIndex:10, maxWidth:1280, margin:'0 auto', padding:'28px 28px 28px' }}>
 
         {/* Top badge */}
         <div className="f-up team-eyebrow max-sm:mb-3 mb-20" style={{

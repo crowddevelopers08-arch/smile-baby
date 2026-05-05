@@ -109,7 +109,7 @@ export default function IVFRoadmap() {
       <div className="absolute pointer-events-none"
         style={{ top:"-80px", left:"-80px", width:"300px", height:"300px", borderRadius:"50%", border:"1px solid rgba(236,72,153,0.12)" }} />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-10 py-4 md:py-8">
+      <div id="roadmap" className="relative z-10 max-w-6xl mx-auto px-4 md:px-10 py-4 md:py-8">
 
         {/* ── HEADER ── */}
         <div className="mb-4 sm:mb-8 text-center">

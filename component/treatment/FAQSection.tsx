@@ -387,7 +387,7 @@ export default function FAQSection() {
   <button
     type="button"
     onClick={() => setIsBookingModalOpen(true)}
-    className="flex items-center justify-center gap-2 w-full sm:w-auto px-4 sm:px-5 py-3 rounded-full text-xs sm:text-sm font-semibold bg-[#ec4899] text-white hover:bg-[#d63c84] transition-all duration-300 shadow-md hover:shadow-lg"
+    className="flex items-center cursor-pointer justify-center gap-2 w-full sm:w-auto px-4 sm:px-5 py-3 rounded-full text-xs sm:text-sm font-semibold bg-[#ec4899] text-white hover:bg-[#d63c84] transition-all duration-300 shadow-md hover:shadow-lg"
   >
     
     <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
@@ -402,16 +402,17 @@ export default function FAQSection() {
   href="https://wa.me/919876543210"
   target="_blank"
   rel="noopener noreferrer"
-  className="flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-full text-sm font-semibold bg-[#25D366] text-white hover:bg-[#1ebe5d] active:bg-[#169c4a] transition-all duration-300 shadow-md hover:shadow-lg no-underline"
+  className="flex items-center  justify-center gap-2 w-full sm:w-auto px-5 py-3 rounded-full text-sm font-semibold bg-[#25D366] text-white hover:bg-[#1ebe5d] active:bg-[#169c4a] transition-all duration-300 shadow-md hover:shadow-lg no-underline"
   style={{ WebkitTapHighlightColor: "transparent" }}
 >
-  <svg
-    className="w-4 h-4 flex-shrink-0"
-    viewBox="0 0 24 24"
-    fill="white"   // 👈 force white icon
-  >
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.866 9.866 0 01-5.031-1.377l-.361-.214-3.741.981.999-3.648-.235-.374A9.861 9.861 0 012.105 12C2.105 6.533 6.533 2.105 12 2.105S21.895 6.533 21.895 12 17.467 21.894 12 21.894z"/>
-  </svg>
+<svg
+  className="w-4 h-4 flex-shrink-0"
+  viewBox="0 0 32 32"
+  fill="currentColor"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M16.001 3C8.82 3 3 8.82 3 16c0 2.537.74 4.999 2.137 7.116L3 29l6.08-2.09A12.94 12.94 0 0016.001 29C23.18 29 29 23.18 29 16S23.18 3 16.001 3zm0 23.667a10.6 10.6 0 01-5.403-1.48l-.387-.229-3.607 1.24 1.179-3.51-.252-.404A10.59 10.59 0 015.333 16c0-5.882 4.785-10.667 10.668-10.667 5.881 0 10.666 4.785 10.666 10.667S21.882 26.667 16 26.667zm5.848-7.98c-.32-.16-1.892-.934-2.185-1.04-.293-.107-.507-.16-.72.16-.213.32-.826 1.04-1.013 1.253-.187.214-.373.24-.693.08-.32-.16-1.35-.498-2.57-1.588-.95-.847-1.592-1.893-1.779-2.213-.187-.32-.02-.493.14-.653.145-.144.32-.373.48-.56.16-.186.213-.32.32-.533.107-.214.053-.4-.027-.56-.08-.16-.72-1.733-.986-2.373-.26-.626-.526-.54-.72-.55l-.613-.01c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.666s1.147 3.093 1.307 3.306c.16.214 2.258 3.447 5.474 4.833.765.33 1.362.527 1.828.674.768.244 1.467.21 2.02.127.616-.092 1.892-.773 2.158-1.52.267-.746.267-1.386.187-1.52-.08-.133-.293-.213-.613-.373z"/>
+</svg>
 
   <span className="text-white">WhatsApp Us</span>
 </a>

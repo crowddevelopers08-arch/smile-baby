@@ -270,7 +270,8 @@ export default function FertilityBanner() {
             <div className="line-grow" style={{animationDelay:"0.36s",height:3,background:`linear-gradient(90deg,${PINK},rgba(236,72,153,0))`,borderRadius:4,marginBottom:"1.3rem"}}/>
 
             <p className="fade-up" style={{animationDelay:"0.38s",color:"rgba(30,47,95,0.62)",fontSize:"clamp(0.92rem,1.4vw,1.02rem)",lineHeight:1.8,fontWeight:400,maxWidth:420,marginBottom:"1.8rem"}}>
-              Transparent, personal, and built entirely around your case — walk in with your reports, walk out with a clear plan.
+              Best fertility Clinic in Lingarajapuram, Bangalore — transparent, personal, and built around your case.
+
             </p>
 
             {/* Trust chips */}

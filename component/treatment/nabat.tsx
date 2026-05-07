@@ -99,7 +99,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={openBookingForm}
-            className="hidden sm:block bg-gradient-to-r from-[#ec4899] to-[#be185d] text-white px-5 sm:px-6 md:px-7 py-2 sm:py-2.5 md:py-3 rounded-full font-semibold text-sm sm:text-base shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
+            className="hidden sm:block cursor-pointer bg-gradient-to-r from-[#ec4899] to-[#be185d] text-white px-5 sm:px-6 md:px-7 py-2 sm:py-2.5 md:py-3 rounded-full font-semibold text-sm sm:text-base shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
           >
             Book Appointment
           </button>
@@ -153,7 +153,7 @@ export default function Navbar() {
 
           <button
             type="button"
-            className="mt-3 bg-gradient-to-r from-[#ec4899] to-[#be185d] text-white px-8 py-3.5 rounded-full font-semibold text-base shadow-md hover:shadow-lg transition-all duration-300 w-full"
+            className="mt-3 cursor-pointer bg-gradient-to-r from-[#ec4899] to-[#be185d] text-white px-8 py-3.5 rounded-full font-semibold text-base shadow-md hover:shadow-lg transition-all duration-300 w-full"
             onClick={openBookingForm}
           >
             Book Appointment

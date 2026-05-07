@@ -354,7 +354,7 @@ export default function OurTeam() {
               aspectRatio:'3/4',
             }}>
               <img
-                src="https://ik.imagekit.io/tnvhh8yfa/public/doctors.avif?updatedAt=1773300923122"
+                src="/doc.jpeg"
                 alt="Dr. Mangala Devi K R"
                 style={{ width:'100%', height:'100%', objectFit:'cover', objectPosition:'center top' }}
               />

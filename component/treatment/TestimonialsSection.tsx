@@ -9,7 +9,7 @@ const REVIEWS = [
   {
     quote: 'Nine months of my pregnancy could have been a nightmare without the medical supervision at Smile Baby. They made my journey to become a mother nothing less than a dream. What I valued most was that I always understood what was happening and why.',
     name: 'Shaista Amreen',
-    location: 'Kalyan Nagar',
+    location: 'Bangalore',
     initials: 'SA',
     tag: 'Natural Pregnancy',
     gradient: 'linear-gradient(135deg,#ec4899,#be185d)',
@@ -17,7 +17,7 @@ const REVIEWS = [
   {
     quote: 'I was genuinely worried about the costs going out of control. Smile Baby gave me a complete estimate before I committed to anything. Within one IUI cycle my pregnancy was confirmed. The doctor communicates so well — I never felt like just another patient.',
     name: 'Nayana R.',
-    location: 'Kammanahalli',
+    location: 'Bangalore',
     initials: 'NR',
     tag: 'IUI Success',
     gradient: 'linear-gradient(135deg,#1e2f5f,#3b5bdb)',
@@ -25,7 +25,7 @@ const REVIEWS = [
   {
     quote: "We had been to two other clinics before Smile Baby. This was the first time a doctor sat down with us, explained our actual diagnosis, and told us why the earlier cycles hadn't worked. That single appointment gave us more clarity than two years of treatment elsewhere.",
     name: 'Priya & Srinivas',
-    location: 'HBR Layout',
+    location: 'Bangalore',
     initials: 'PS',
     tag: 'IVF Success',
     gradient: 'linear-gradient(135deg,#ec4899,#1e2f5f)',
@@ -33,7 +33,7 @@ const REVIEWS = [
   {
     quote: 'I was scared of the IVF process. The team at Smile Baby walked me through every single step before we started. The embryologist called us after retrieval to tell us how many eggs were fertilised. Nobody had done that for us before.',
     name: 'Anitha K.',
-    location: 'HRBR Layout',
+    location: 'Bangalore',
     initials: 'AK',
     tag: 'IVF Success',
     gradient: 'linear-gradient(135deg,#be185d,#ec4899)',
@@ -518,7 +518,7 @@ export default function TestimonialsSection() {
               { v:'12+ Yrs', l:'Trusted Experience' },
             ].map(({ v, l }) => (
               <div key={l} style={{textAlign:'center'}}>
-                <div className="stat-value" style={{color:PINK,fontWeight:700,fontSize:'1rem',fontFamily:"'Playfair Display',serif"}}>{v}</div>
+                <div className="stat-value" style={{color:PINK,fontWeight:700,fontSize:'1rem',}}>{v}</div>
                 <div className="stat-label" style={{color:'rgba(255,255,255,.38)',fontSize:'1.6rem',fontWeight:500,marginTop:2}}>{l}</div>
               </div>
             ))}

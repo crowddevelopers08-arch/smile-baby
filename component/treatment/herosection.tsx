@@ -374,7 +374,7 @@ export default function FertilityBanner() {
     >
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap');
-        .pf { font-family:'Playfair Display',Georgia,serif; }
+        .pfs { font-family:'Playfair Display',Georgia,serif; }
 
         @keyframes fadeUp   { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
         @keyframes fadeIn   { from{opacity:0} to{opacity:1} }
@@ -457,7 +457,8 @@ export default function FertilityBanner() {
             width:100% !important;
             margin-top:32px !important;
           }
-          .mobile-image-cta button {
+          .mobile-image-cta button,
+          .mobile-image-cta a {
             width:100% !important;
           }
         }
@@ -713,8 +714,8 @@ export default function FertilityBanner() {
                 </svg>
                 Book Your Planning Visit
               </button>
-              <button
-                type="button"
+              <a
+                href="tel:+918884752134"
                 className="btn-secondary flex items-center justify-center gap-2.5 rounded-full font-semibold"
                 style={{
                   padding: "14px 28px",
@@ -735,8 +736,8 @@ export default function FertilityBanner() {
                 >
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.16 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 013.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
-                +91 88847 52134
-              </button>
+                Call Us Now
+              </a>
             </div>
 
             <p
@@ -894,7 +895,7 @@ export default function FertilityBanner() {
                 className="stat-chip absolute"
                 style={{
                   top: "40%",
-                  right: "-8%",
+                  right: "0%",
                   zIndex: 5,
                   background: "#fff",
                   borderRadius: 16,
@@ -1095,8 +1096,8 @@ export default function FertilityBanner() {
                 </svg>
                 Book Your Planning Visit
               </button>
-              <button
-                type="button"
+              <a
+                href="tel:+918884752134"
                 className="btn-secondary flex items-center justify-center gap-2.5 rounded-full font-semibold"
                 style={{
                   padding: "14px 28px",
@@ -1117,48 +1118,11 @@ export default function FertilityBanner() {
                 >
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.16 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 013.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
-                +91 88847 52134
-              </button>
+                Call Now
+              </a>
             </div>
           </div>
           {/* end right */}
-        </div>
-      </div>
-
-      {/* Scroll cue */}
-      <div
-        className="scroll-bnc absolute bottom-6 left-1/2"
-        style={{ transform: "translateX(-50%)", opacity: 0.3, zIndex: 10 }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 4,
-          }}
-        >
-          <span
-            style={{
-              fontSize: "0.58rem",
-              letterSpacing: "0.16em",
-              textTransform: "uppercase",
-              color: BLUE,
-              fontWeight: 600,
-            }}
-          >
-            Scroll
-          </span>
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke={BLUE}
-            strokeWidth="2.5"
-          >
-            <path d="M12 5v14M5 12l7 7 7-7" />
-          </svg>
         </div>
       </div>
 

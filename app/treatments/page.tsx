@@ -20,8 +20,8 @@ const page = () => {
       <FertilityHero />
       <OurTeam />
       <CostBanner />
-      <ComparisonBanner />
       <ServicesSection />
+      <ComparisonBanner />
       <TestimonialsSection />
       <FAQSection />
       <Footer />

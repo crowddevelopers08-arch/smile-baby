@@ -207,6 +207,12 @@ export default function FertilityHero() {
             gap:36px !important;
             width:100% !important;
           }
+          .video-section {
+            order:1 !important;
+          }
+          .quote-section {
+            order:2 !important;
+          }
           .quote-card {
             border-radius:18px !important;
             padding:34px 22px 44px !important;
@@ -231,7 +237,8 @@ export default function FertilityHero() {
             flex-direction:column !important;
             gap:10px !important;
           }
-          .hero-cta button {
+          .hero-cta button,
+          .hero-cta a {
             display:flex !important;
             width:100% !important;
             justify-content:center !important;
@@ -344,7 +351,7 @@ export default function FertilityHero() {
         <div className="hero-cols" style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:52,alignItems:'stretch'}}>
 
           {/* ══════ LEFT : Quote + promise ══════ */}
-          <div className="f-up" style={{animationDelay:'0.32s'}}>
+          <div className="f-up quote-section" style={{animationDelay:'0.32s'}}>
 
             {/* ── Quote card ── */}
             <div className="quote-card" style={{
@@ -450,14 +457,14 @@ export default function FertilityHero() {
               <button type="button" onClick={() => setIsBookingModalOpen(true)} className="btn-pink" style={{padding:'14px 30px',borderRadius:999,fontSize:'0.88rem',fontWeight:700,letterSpacing:'0.03em'}}>
                 Book Your Consultation →
               </button>
-              <button className="btn-outline" style={{padding:'13px 24px',borderRadius:999,fontSize:'0.86rem',fontWeight:600}}>
-                📞 +91 88847 52134
-              </button>
+              <a href="tel:+918884752134" className="btn-outline" style={{padding:'13px 24px',borderRadius:999,fontSize:'0.86rem',fontWeight:600}}>
+                📞 Call Now
+              </a>
             </div>
           </div>
 
           {/* ══════ RIGHT : Video — fills full column height ══════ */}
-          <div className="do-float f-up" style={{animationDelay:'0.46s',display:'flex',flexDirection:'column'}}>
+          <div className="do-float f-up video-section" style={{animationDelay:'0.46s',display:'flex',flexDirection:'column'}}>
 
             {/* ── Video frame ── */}
             <div className="vid-frame" style={{

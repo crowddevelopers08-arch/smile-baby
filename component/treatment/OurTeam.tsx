@@ -75,8 +75,6 @@ export default function OurTeam() {
           100%{ background-position: 200% center }
         }
         @keyframes lineW { from{width:0} to{width:64px} }
-
-        .pf       { font-family:'Playfair Display',Georgia,serif }
         .f-up     { animation:fadeUp   .85s cubic-bezier(.22,1,.36,1) both }
         .do-float { animation:floatBob 7s ease-in-out infinite }
         .blink    { animation:blinkDot 2.2s ease-in-out infinite }
@@ -140,7 +138,8 @@ export default function OurTeam() {
         }
         .cta-btn:hover { transform:translateY(-3px) }
         .mobile-cta { display:none !important }
-
+        .section-end-cta { display:none !important }
+        .f-up pillar-grid {margin-bottom:36px}  
         @media(min-width:1024px) {
           .team-eyebrow   { margin-bottom:32px !important }
           .team-grid      { align-items:center !important; gap:54px !important }
@@ -175,10 +174,20 @@ export default function OurTeam() {
           }
         }
         @media(max-width:480px) {
-        .team-grid      { gap:0px !important }
+        .f-up pillar-grid {margin-bottom:6px}
+          .team-grid      { gap:0px !important }
+          .team-copy      { display:contents !important }
+          .team-heading   { order:1 !important }
+          .team-accent    { order:2 !important }
+          .team-description { order:3 !important }
+          .qual-row       { order:4 !important }
+          .img-col        { order:5 !important }
+          .img-col        { padding:0px 0 0px !important }
+          .pillar-grid    { order:6 !important }
+          .desktop-cta    { order:7 !important }
           .pillar-grid    { grid-template-columns:1fr !important }
           .content-wrap   { padding:24px 16px 10px !important }
-          .img-col        { width:100% !important; padding-top:28px !important }
+          .img-col        { width:100% !important; padding-top:0px !important }
           .image-stage    { min-height:438px !important }
           .img-frame      { width:76% !important; max-width:300px !important }
           .float-badge    { min-width:102px !important; padding:7px 9px !important }
@@ -198,7 +207,10 @@ export default function OurTeam() {
           .img-name-badge > div > div:first-child { font-size:.74rem !important }
           .img-name-badge > div > div:last-child { font-size:.56rem !important; line-height:1.35 !important }
           .mobile-cta     { flex-direction:column !important; align-items:stretch !important; gap:10px !important; padding:0 8px !important }
-          .mobile-cta button { justify-content:center !important; width:100% !important }
+          .image-mobile-cta { display:none !important }
+          .section-end-cta { display:flex !important; margin-top:24px !important }
+          .mobile-cta button,
+          .mobile-cta a { justify-content:center !important; width:100% !important }
         }
           
       `}</style>
@@ -249,7 +261,7 @@ export default function OurTeam() {
           <div className="team-copy">
 
             {/* Headline */}
-            <h2 className="pf f-up" style={{
+            <h2 className="pf f-up team-heading" style={{
               animationDelay:'0.1s',
               fontSize:'clamp(2.2rem,4.2vw,3.6rem)',
               fontWeight:800, color:BLUE,
@@ -262,7 +274,7 @@ export default function OurTeam() {
             </h2>
 
             {/* Accent line */}
-            <div className="line-anim f-up" style={{
+            <div className="line-anim f-up team-accent" style={{
               animationDelay:'0.18s',
               height:3, width:64,
               background:`linear-gradient(90deg,${PINK},rgba(236,72,153,0))`,
@@ -270,7 +282,7 @@ export default function OurTeam() {
             }}/>
 
             {/* Description */}
-            <p className="f-up team-lead max-sm:mb-10 mb-20" style={{
+            <p className="f-up team-lead team-description max-sm:mb-5 mb-20" style={{
               animationDelay:'0.24s',
               color:'rgba(30,47,95,.56)',
               fontSize:'clamp(.96rem,1.5vw,1.08rem)',
@@ -285,7 +297,7 @@ export default function OurTeam() {
             </p>
 
             {/* Qualification chips */}
-            <div className="f-up" style={{ animationDelay:'0.3s', display:'flex', flexWrap:'wrap', gap:8, marginBottom:36 }}>
+            <div className="f-up qual-row max-sm:mb-8 mb-10" style={{ animationDelay:'0.3s', display:'flex', flexWrap:'wrap', gap:8, }}>
               {QUALS.map(q => (
                 <span key={q} className="qual-chip">
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke={PINK} strokeWidth="2.5">
@@ -297,7 +309,7 @@ export default function OurTeam() {
             </div>
 
             {/* Three pillars */}
-            <div className="f-up pillar-grid" style={{ animationDelay:'0.38s', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:12, marginBottom:36 }}>
+            <div className="f-up pillar-grid" style={{ animationDelay:'0.38s', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:12,}}>
               {PILLARS.map(p => (
                 <div key={p.title} className="pillar-card">
                   <div style={{
@@ -315,29 +327,30 @@ export default function OurTeam() {
             </div>
 
             {/* CTA */}
-            <div className="f-up desktop-cta" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
+            <div className="f-up desktop-cta mt-4" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
               <button type="button" onClick={() => setIsBookingModalOpen(true)} className="cta-btn" style={{ padding:'13px 28px', borderRadius:999, fontSize:'0.88rem', fontWeight:700 }}>
                 Book a Consultation
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </button>
-              <button style={{
+              <a href="tel:+918884752134"  style={{
                 padding:'12px 24px', borderRadius:999, fontSize:'0.86rem', fontWeight:600,
                 background:'transparent', border:`2px solid ${BLUE}`, color:BLUE,
                 cursor:'pointer', transition:'all .25s ease',
+                display:'inline-flex', alignItems:'center', justifyContent:'center',
               }}
                 onMouseEnter={e => {
-                  (e.currentTarget as HTMLButtonElement).style.background = BLUE;
-                  (e.currentTarget as HTMLButtonElement).style.color = '#fff';
+                  (e.currentTarget as HTMLAnchorElement).style.background = BLUE;
+                  (e.currentTarget as HTMLAnchorElement).style.color = '#fff';
                 }}
                 onMouseLeave={e => {
-                  (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
-                  (e.currentTarget as HTMLButtonElement).style.color = BLUE;
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+                  (e.currentTarget as HTMLAnchorElement).style.color = BLUE;
                 }}
               >
-                📞 +91 88847 52134
-              </button>
+                📞 Call Now
+              </a>
             </div>
           </div>
 
@@ -404,7 +417,7 @@ export default function OurTeam() {
                   </svg>
                 </div>
                 <div>
-                  <div className="pf" style={{ fontSize:'1.1rem', fontWeight:700, color:PINK, lineHeight:1 }}>{label}</div>
+                  <div className="pfe" style={{ fontSize:'1.1rem', fontWeight:700, color:PINK, lineHeight:1 }}>{label}</div>
                   <div style={{ fontSize:'0.6rem', color:'rgba(30,47,95,.5)', fontWeight:500, marginTop:2 }}>{sub}</div>
                 </div>
               </div>
@@ -412,33 +425,60 @@ export default function OurTeam() {
 
             </div>
 
-            <div  className="f-up mobile-cta maxx-sm:m-0" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
+            <div  className="f-up mobile-cta image-mobile-cta maxx-sm:m-0 mt-4" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
               <button type="button" onClick={() => setIsBookingModalOpen(true)} className="cta-btn" style={{ padding:'13px 28px', borderRadius:999, fontSize:'0.88rem', fontWeight:700 }}>
                 Book a Consultation
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </button>
-              <button style={{
+              <a href="tel:+918884752134" style={{
                 padding:'12px 24px', borderRadius:999, fontSize:'0.86rem', fontWeight:600,
                 background:'transparent', border:`2px solid ${BLUE}`, color:BLUE,
                 cursor:'pointer', transition:'all .25s ease',
+                display:'inline-flex', alignItems:'center', justifyContent:'center',
               }}
                 onMouseEnter={e => {
-                  (e.currentTarget as HTMLButtonElement).style.background = BLUE;
-                  (e.currentTarget as HTMLButtonElement).style.color = '#fff';
+                  (e.currentTarget as HTMLAnchorElement).style.background = BLUE;
+                  (e.currentTarget as HTMLAnchorElement).style.color = '#fff';
                 }}
                 onMouseLeave={e => {
-                  (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
-                  (e.currentTarget as HTMLButtonElement).style.color = BLUE;
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+                  (e.currentTarget as HTMLAnchorElement).style.color = BLUE;
                 }}
               >
-                📞 +91 88847 52134
-              </button>
+                📞 Call Now
+              </a>
             </div>
 
           </div>
         </div>{/* end grid */}
+
+        <div className="f-up mobile-cta section-end-cta mt-4" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
+          <button type="button" onClick={() => setIsBookingModalOpen(true)} className="cta-btn" style={{ padding:'13px 28px', borderRadius:999, fontSize:'0.88rem', fontWeight:700 }}>
+            Book a Consultation
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+          <a href="tel:+918884752134" style={{
+            padding:'12px 24px', borderRadius:999, fontSize:'0.86rem', fontWeight:600,
+            background:'transparent', border:`2px solid ${BLUE}`, color:BLUE,
+            cursor:'pointer', transition:'all .25s ease',
+            display:'inline-flex', alignItems:'center', justifyContent:'center',
+          }}
+            onMouseEnter={e => {
+              (e.currentTarget as HTMLAnchorElement).style.background = BLUE;
+              (e.currentTarget as HTMLAnchorElement).style.color = '#fff';
+            }}
+            onMouseLeave={e => {
+              (e.currentTarget as HTMLAnchorElement).style.background = 'transparent';
+              (e.currentTarget as HTMLAnchorElement).style.color = BLUE;
+            }}
+          >
+           Call Now
+          </a>
+        </div>
 
       </div>
       <BookingModal

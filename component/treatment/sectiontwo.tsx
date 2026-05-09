@@ -62,7 +62,7 @@ export default function CostBanner() {
               Book Appointment
             </button>
 
-            <button className="flex cursor-pointer items-center gap-1 bg-white/10 border border-white/30 hover:bg-white/20 text-white px-6 py-3 rounded-full font-medium transition-all duration-300">
+            <button className="flex cursor-pointer justify-center items-center gap-1 bg-white/10 border border-white/30 hover:bg-white/20 text-white px-6 py-3 rounded-full font-medium transition-all duration-300">
               <svg
   className="w-4 h-4 flex-shrink-0"
   viewBox="0 0 32 32"

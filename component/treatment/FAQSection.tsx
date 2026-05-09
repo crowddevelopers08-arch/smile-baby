@@ -69,7 +69,7 @@ function FAQItem({ item, index, open, onToggle }: {
           display: 'flex',
           alignItems: 'center',
           gap: 12,
-          padding: '16px 18px sm:22px 24px',
+          padding: '16px 18px',
           background: 'transparent',
           border: 'none',
           cursor: 'pointer',
@@ -123,7 +123,7 @@ function FAQItem({ item, index, open, onToggle }: {
       </button>
 
       {/* Answer */}
-      <div style={{
+      <div className={`faq-answer-panel${open ? ' is-open' : ''}`} style={{
         maxHeight: open ? 300 : 0,
         overflow: 'hidden',
         transition: 'max-height .4s cubic-bezier(.22,1,.36,1)',
@@ -241,6 +241,100 @@ export default function FAQSection() {
           }
           .faq-heading h2 {
             font-size: 2.2rem !important;
+          }
+        }
+
+        @media(max-width: 639px) {
+          .faq-shell {
+            padding:42px 14px 34px !important;
+          }
+          .faq-heading {
+            margin-bottom:24px !important;
+          }
+          .faq-badge {
+            max-width:100% !important;
+            padding:6px 12px !important;
+            gap:7px !important;
+            margin-bottom:16px !important;
+          }
+          .faq-badge span:last-child {
+            font-size:.56rem !important;
+            letter-spacing:.14em !important;
+            white-space:normal !important;
+            text-align:left !important;
+          }
+          .faq-heading h2 {
+            font-size:1.72rem !important;
+            line-height:1.16 !important;
+            margin-bottom:12px !important;
+          }
+          .faq-heading p {
+            padding:0 4px !important;
+            font-size:.86rem !important;
+            line-height:1.65 !important;
+          }
+          .faq-cols {
+            gap:10px !important;
+            margin-bottom:18px !important;
+          }
+          .faq-cols > div {
+            gap:10px !important;
+          }
+          .faq-question-row {
+            align-items:flex-start !important;
+            gap:9px !important;
+            padding:14px 12px !important;
+          }
+          .faq-question-row > span:first-child {
+            width:28px !important;
+            height:28px !important;
+            font-size:.58rem !important;
+            margin-top:1px !important;
+          }
+          .faq-question-row > span:nth-child(2) {
+            font-size:.82rem !important;
+            line-height:1.38 !important;
+          }
+          .faq-question-row > span:last-child {
+            width:26px !important;
+            height:26px !important;
+            margin-top:1px !important;
+          }
+          .faq-answer-panel.is-open {
+            max-height:520px !important;
+          }
+          .faq-answer-body {
+            padding:0 12px 16px 49px !important;
+          }
+          .faq-answer-body p {
+            font-size:.8rem !important;
+            line-height:1.68 !important;
+          }
+          .faq-bottom-cta {
+            border-radius:18px !important;
+            padding:24px 16px !important;
+            gap:18px !important;
+            text-align:center !important;
+          }
+          .faq-bottom-cta h3 {
+            font-size:1.14rem !important;
+            line-height:1.32 !important;
+          }
+          .faq-bottom-cta p {
+            font-size:.78rem !important;
+            margin:0 auto !important;
+          }
+          .faq-bottom-buttons {
+            width:100% !important;
+            gap:10px !important;
+          }
+          .faq-bottom-buttons button,
+          .faq-bottom-buttons a {
+            flex:none !important;
+            width:100% !important;
+            min-height:46px !important;
+            padding:12px 16px !important;
+            font-size:.82rem !important;
           }
         }
 
@@ -381,7 +475,7 @@ export default function FAQSection() {
             </p>
           </div>
 
-<div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto z-10">
+<div className="faq-bottom-buttons flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto z-10">
 
   {/* Book Button */}
   <button

@@ -578,7 +578,6 @@ export default function FertilityHero() {
                   textAlign:'center',
                 }}>
                   <div style={{
-                    fontFamily:"'Playfair Display',Georgia,serif",
                     color:PINK,fontWeight:700,fontSize:'1.12rem',lineHeight:1,
                   }}>{v}</div>
                   <div style={{color:'rgba(30,47,95,.42)',fontSize:'0.6rem',marginTop:4,fontWeight:500}}>{l}</div>

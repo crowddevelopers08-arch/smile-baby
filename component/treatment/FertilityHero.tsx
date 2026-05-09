@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { X } from 'lucide-react'
 import BookingModal from './BookingModal'
 
 /* ─── Brand colours (Smile Baby logo) ─── */
@@ -31,6 +32,7 @@ export default function FertilityHero() {
   const [cur,     setCur]     = useState(0)
   const [exiting, setExiting] = useState(false)
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
+  const [isVideoPopupOpen, setIsVideoPopupOpen] = useState(false)
 
   /* auto-cycle every 4.2 s */
   useEffect(() => {
@@ -49,6 +51,30 @@ export default function FertilityHero() {
 
   return (
     <section id='about' className="relative w-full overflow-hidden bg-white">
+      {isVideoPopupOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80">
+          <div className="relative w-full max-w-4xl bg-black rounded-2xl overflow-hidden">
+            <button
+              type="button"
+              onClick={() => setIsVideoPopupOpen(false)}
+              className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-all"
+              aria-label="Close video"
+            >
+              <X size={20} />
+            </button>
+            <div className="relative pt-[56.25%]">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://ik.imagekit.io/tnvhh8yfa/public/smile-babys.mp4"
+                title="Smile Baby Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ─────────── CSS ─────────── */}
       <style>{`
@@ -445,7 +471,29 @@ export default function FertilityHero() {
               border:'2px solid rgba(236,72,153,.22)',
               display:'flex',alignItems:'center',justifyContent:'center',
               cursor:'pointer',
-            }}>
+            }}
+              onClick={() => setIsVideoPopupOpen(true)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault()
+                  setIsVideoPopupOpen(true)
+                }
+              }}
+            >
+              <img
+                src="https://ik.imagekit.io/tnvhh8yfa/public/image-smile.png"
+                alt="Video thumbnail"
+                style={{
+                  position:'absolute',
+                  inset:0,
+                  width:'100%',
+                  height:'100%',
+                  objectFit:'cover',
+                  zIndex:0,
+                }}
+              />
 
               {/* Top bar */}
               <div className="video-topbar" style={{position:'absolute',top:18,left:18,right:18,display:'flex',justifyContent:'space-between',alignItems:'center',zIndex:5}}>

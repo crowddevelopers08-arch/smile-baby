@@ -165,7 +165,14 @@ export default function OurTeam() {
           .pillar-grid    { grid-template-columns:1fr 1fr !important; gap:10px !important }
           .desktop-cta    { display:none !important }
           .mobile-cta     { display:flex !important; justify-content:center !important; margin-top:22px !important }
-          .img-name-badge { padding:7px 10px !important; gap:6px !important; left:10px !important; right:10px !important; bottom:10px !important }
+          .img-name-badge {
+            left:50% !important;
+            right:auto !important;
+            bottom:34px !important;
+            width:min(78%, 300px) !important;
+            transform:translateX(-50%) !important;
+            padding:10px 12px !important;
+          }
         }
         @media(max-width:480px) {
         .team-grid      { gap:0px !important }
@@ -182,12 +189,14 @@ export default function OurTeam() {
           .fb-left-top    { top:3% !important; left:1px !important }
           .fb-right       { top:30% !important; right:1px !important }
           .fb-left-low    { bottom:19% !important; left:1px !important }
-          .img-name-badge { border-radius:12px !important }
-          .img-name-badge > div:first-child { width:34px !important; height:34px !important }
-          .img-name-badge > div:nth-child(2) { min-width:0 !important }
-          .img-name-badge > div:nth-child(2) > div:first-child { font-size:.74rem !important }
-          .img-name-badge > div:nth-child(2) > div:last-child { font-size:.56rem !important; line-height:1.35 !important }
-          .img-name-badge > div:last-child { display:none !important }
+          .img-name-badge {
+            bottom:30px !important;
+            width:min(82%, 260px) !important;
+            border-radius:12px !important;
+            padding:9px 10px !important;
+          }
+          .img-name-badge > div > div:first-child { font-size:.74rem !important }
+          .img-name-badge > div > div:last-child { font-size:.56rem !important; line-height:1.35 !important }
           .mobile-cta     { flex-direction:column !important; align-items:stretch !important; gap:10px !important; padding:0 8px !important }
           .mobile-cta button { justify-content:center !important; width:100% !important }
         }
@@ -365,30 +374,19 @@ export default function OurTeam() {
               }}/>
               {/* Name badge */}
               <div className="img-name-badge" style={{
-                position:'absolute', bottom:20, left:20, right:20,
+                position:'absolute', bottom:42, left:'50%',
+                transform:'translateX(-50%)',
+                width:'min(78%, 320px)',
                 background:'rgba(255,255,255,.94)',
                 backdropFilter:'blur(16px)',
                 borderRadius:14, padding:'12px 16px',
-                display:'flex', alignItems:'center', gap:12,
+                textAlign:'center',
               }}>
-                <div style={{
-                  width:40, height:40, borderRadius:'50%', flexShrink:0,
-                  background:`linear-gradient(135deg,${PINK},#be185d)`,
-                  display:'flex', alignItems:'center', justifyContent:'center',
-                }}>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
-                    <path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-2 9h-4v4h-2v-4H7v-2h4V6h2v4h4v2z"/>
-                  </svg>
-                </div>
                 <div>
                   <div style={{ fontSize:'0.82rem', fontWeight:700, color:BLUE, lineHeight:1.2 }}>Dr. Mangala Devi K R</div>
                   <div style={{ fontSize:'0.65rem', color:'rgba(30,47,95,.55)', fontWeight:500, marginTop:2 }}>
                     MBBS, MS (OBG) · Conception Care
                   </div>
-                </div>
-                <div style={{ marginLeft:'auto', display:'flex', alignItems:'center', gap:4 }}>
-                  <span className="blink" style={{ width:7, height:7, borderRadius:'50%', background:'#22c55e', display:'block' }}/>
-                  <span style={{ fontSize:'0.6rem', color:'#16a34a', fontWeight:700 }}>Available</span>
                 </div>
               </div>
             </div>

@@ -103,7 +103,7 @@ export default function ComparisonBanner() {
             Book Appointment
           </button>
 
-          <button className="flex items-center gap-1 border border-gray-300 text-[#1e2f5f] px-6 py-3 rounded-full font-medium cursor-pointer">
+          <button className="flex justify-center items-center gap-1 border border-gray-300 text-[#1e2f5f] px-6 py-3 rounded-full font-medium cursor-pointer">
             <svg
   className="w-4 h-4 flex-shrink-0"
   viewBox="0 0 32 32"

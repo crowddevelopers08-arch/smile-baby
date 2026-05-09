@@ -163,7 +163,7 @@ export default function OurTeam() {
           .fb-left-low    { bottom:21% !important; left:0 !important }
           .pillar-grid    { grid-template-columns:1fr 1fr !important; gap:10px !important }
           .desktop-cta    { display:none !important }
-          .mobile-cta     { display:flex !important; justify-content:center !important; margin-top:22px !important }
+          .mobile-cta     { display:flex !important; justify-content:center !important;}
           .img-name-badge {
             left:50% !important;
             right:auto !important;
@@ -172,6 +172,26 @@ export default function OurTeam() {
             transform:translateX(-50%) !important;
             padding:10px 12px !important;
           }
+        }
+        @media(min-width:768px) and (max-width:1023px) {
+          .content-wrap   { max-width:860px !important; padding:72px 40px 64px !important }
+          .team-eyebrow   { margin-bottom:28px !important }
+          .team-grid      { gap:34px !important }
+          .team-copy      { display:flex !important; flex-direction:column !important; align-items:center !important; text-align:center !important }
+          .team-heading   { max-width:720px !important; margin-left:auto !important; margin-right:auto !important; font-size:clamp(2.35rem,5vw,3.1rem) !important }
+          .team-accent    { margin-left:auto !important; margin-right:auto !important }
+          .team-lead      { max-width:650px !important; margin-left:auto !important; margin-right:auto !important; margin-bottom:28px !important }
+          .qual-row       { justify-content:center !important; margin-bottom:26px !important }
+          .pillar-grid    { grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:12px !important }
+          .pillar-card    { padding:20px 16px !important; border-radius:18px !important }
+          .img-col        { width:min(100%,520px) !important; padding:12px 0 18px !important }
+          .image-stage    { min-height:500px !important; max-width:520px !important; margin:0 auto !important }
+          .img-frame      { width:68% !important; max-width:340px !important }
+          .img-blob       { width:74% !important; height:76% !important; top:9% !important; left:13% !important }
+          .fb-left-top    { top:6% !important; left:2% !important }
+          .fb-right       { top:35% !important; right:2% !important }
+          .fb-left-low    { bottom:22% !important; left:4% !important }
+          .mobile-cta     { justify-content:center !important; }
         }
         @media(max-width:480px) {
         .f-up pillar-grid {margin-bottom:6px}
@@ -268,9 +288,9 @@ export default function OurTeam() {
               lineHeight:1.1, marginBottom:14,
             }}>
               You&apos;re Not Treated<br/>by a Clinic.{' '}
-              <em className="heading-accent" style={{ fontStyle:'italic' }}>
-                You&apos;re Treated<br/>by Specialists.
-              </em>
+              <span className="heading-accent">
+                You&apos;re Treated by Specialists.
+              </span>
             </h2>
 
             {/* Accent line */}
@@ -327,7 +347,7 @@ export default function OurTeam() {
             </div>
 
             {/* CTA */}
-            <div className="f-up desktop-cta mt-4" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
+            <div className="f-up desktop-cta mt-4" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap',marginTop:24 }}>
               <button type="button" onClick={() => setIsBookingModalOpen(true)} className="cta-btn" style={{ padding:'13px 28px', borderRadius:999, fontSize:'0.88rem', fontWeight:700 }}>
                 Book a Consultation
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
@@ -424,7 +444,7 @@ export default function OurTeam() {
             ))}
 
             </div>
-
+{/* 
             <div  className="f-up mobile-cta image-mobile-cta maxx-sm:m-0 mt-4" style={{ animationDelay:'0.44s', display:'flex', gap:12, flexWrap:'wrap' }}>
               <button type="button" onClick={() => setIsBookingModalOpen(true)} className="cta-btn" style={{ padding:'13px 28px', borderRadius:999, fontSize:'0.88rem', fontWeight:700 }}>
                 Book a Consultation
@@ -449,7 +469,7 @@ export default function OurTeam() {
               >
                 📞 Call Now
               </a>
-            </div>
+            </div> */}
 
           </div>
         </div>{/* end grid */}

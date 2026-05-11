@@ -25,7 +25,7 @@ const PILLARS = [
       </svg>
     ),
     title: 'Diagnostic Precision',
-    desc: 'Every case reviewed with thorough report analysis before any recommendation.',
+    desc: 'Every case is carefully reviewed with detailed medical history, scan reports, blood reports, and previous treatment records before suggesting any next step.',
   },
   {
     icon: (
@@ -34,7 +34,7 @@ const PILLARS = [
       </svg>
     ),
     title: 'Lab Quality',
-    desc: 'State-of-the-art IVF lab maintained to the highest ICMR standards.',
+    desc: 'Our state-of-the-art IVF lab is maintained with strict quality protocols and follows high ICMR standards to support safe and reliable treatment outcomes.',
   },
   {
     icon: (
@@ -43,14 +43,14 @@ const PILLARS = [
       </svg>
     ),
     title: 'Protocol Experience',
-    desc: '12+ years of personalised fertility protocols — never a standard one-size-fits-all plan.',
+    desc: 'With 12+ years of experience, every treatment plan is personalised based on the couple’s condition, age, reports, and previous journey, instead of using a standard one-size-fits-all approach.',
   },
 ]
 
 const FLOATING_BADGES = [
-  { label: '10,000+', sub: 'Babies Delivered', pos: { top: '6%',  left: '-14%' }, cls: 'fb-left-top' },
-  { label: '80–85%',  sub: 'IVF Success Rate',  pos: { top: '36%', right: '-16%' }, cls: 'fb-right' },
-  { label: '12+ Yrs', sub: 'Expert Experience', pos: { bottom: '26%', left: '-14%' }, cls: 'fb-left-low' },
+  { label: '10,000+', sub: 'Babies Delivered', pos: { top: '6%',  left: '0%' }, cls: 'fb-left-top' },
+  { label: '80–85%',  sub: 'IVF Success Rate',  pos: { top: '36%', right: '-6%' }, cls: 'fb-right' },
+  { label: '12+ Yrs', sub: 'Expert Experience', pos: { bottom: '26%', left: '0%' }, cls: 'fb-left-low' },
 ]
 
 export default function OurTeam() {
@@ -217,7 +217,7 @@ export default function OurTeam() {
           .float-badge .pf + div { font-size:.54rem !important }
           .fb-left-top    { top:3% !important; left:1px !important }
           .fb-right       { top:30% !important; right:1px !important }
-          .fb-left-low    { bottom:19% !important; left:1px !important }
+          .fb-left-low    { bottom:28% !important; left:-5px !important }
           .img-name-badge {
             bottom:30px !important;
             width:min(82%, 260px) !important;

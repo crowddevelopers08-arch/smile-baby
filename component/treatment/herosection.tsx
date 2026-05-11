@@ -363,7 +363,7 @@ export default function FertilityBanner() {
    * Using a public placeholder that looks like a medical professional.
    * Swap → your own image path e.g. "/images/doctor-banner.jpg"
    */
-  const IMAGE_URL = "/happy-doctor.avif";
+  const IMAGE_URL = "/doctors.png";
   // 👆 A smiling Indian female doctor — replace with your own photo
 
   return (

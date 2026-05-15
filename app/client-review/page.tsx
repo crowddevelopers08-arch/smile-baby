@@ -42,7 +42,7 @@ const Review = () => {
 
           <div className="grid gap-3 sm:grid-cols-2">
             <a
-              href="https://www.google.com/search?sca_esv=d8d54bc98ea0488a&rlz=1C1CHBF_enIN1127IN1128&sxsrf=ANbL-n4XTijjrYZzbasm93s3rJ8dQSpZEA:1778829961100&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOSjAqe_jA5Ky7EISlAIRCyviST22_acJxMpMuFOQ-O7VEN7Xi8V_UKnvXei2aDs1CbhfpCcwpq8FmmUxJ1UAsRjcdhfn5WtHzrh5xgEZXWvKe8bFCo6517VCQrb1mRkQtNvDXBg%3D&q=Smile+Baby+IVF+-+Best+IVF+Centre+In+Bangalore+Reviews&sa=X&ved=2ahUKEwilzMn_4bqUAxU7S2cHHb3rC5oQ0bkNegQILhAI&biw=1507&bih=679&dpr=1.27"
+              href="https://g.page/r/CQ84stpL3-1DEBM/review"
               className="w-full rounded-lg border-2 border-[#ec4899] bg-[#ec4899] px-5 py-3 text-center text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-[0_12px_30px_rgba(236,72,153,0.22)] transition hover:bg-[#db2777]"
             >
               Client Review

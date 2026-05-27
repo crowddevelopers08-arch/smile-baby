@@ -8,7 +8,23 @@ import ThankYouPage from '@/component/treatment/thankpage'
 const page = () => {
   return (
     <div>
-      {/* Google Ads Conversion Tracking */}
+      {/* Google Ads - Load gtag library first */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=AW-17991432817`}
+        strategy="afterInteractive"
+      />
+      
+      {/* Initialize gtag */}
+      <Script id="google-gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17991432817');
+        `}
+      </Script>
+
+      {/* Conversion Tracking Script */}
       <Script id="google-conversion" strategy="afterInteractive">
         {`
           function gtag_report_conversion(url) {
@@ -17,19 +33,26 @@ const page = () => {
                 window.location = url;
               }
             };
-
             gtag('event', 'conversion', {
               'send_to': 'AW-17991432817/noj0CJejuZ8cEPH0_YJD',
               'value': 1.0,
               'currency': 'INR',
               'event_callback': callback
             });
-
             return false;
           }
-
-          // Auto trigger on thank you page load
-          gtag_report_conversion();
+          
+          // Ensure gtag is loaded before triggering
+          if (typeof gtag !== 'undefined') {
+            gtag_report_conversion();
+          } else {
+            // Wait for gtag to load
+            window.addEventListener('load', function() {
+              if (typeof gtag !== 'undefined') {
+                gtag_report_conversion();
+              }
+            });
+          }
         `}
       </Script>
 

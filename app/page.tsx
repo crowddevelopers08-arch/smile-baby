@@ -13,6 +13,7 @@ import SuccessRatesSection from "@/component/success";
 import TestimonialsSection from "@/component/testomials";
 import FunFacts from "@/component/transparent-smile";
 import Image from "next/image";
+import MobileActionBar from "@/component/treatment/mobile-bar";
 
 export default function Home() {
   useEffect(() => {
@@ -58,6 +59,8 @@ export default function Home() {
       <FAQSection />
       <VisitClinic />
       <Footer />
+        <MobileActionBar />
+
     </>
   );
 }

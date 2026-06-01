@@ -94,7 +94,6 @@ fbq('track', 'PageView');
       <body className={`${geistSans.variable} ${outfit.variable} antialiased`}>
         {children}
         <ScrollToTop />
-        <MobileActionBar />
       </body>
     </html>
   );

@@ -13,6 +13,12 @@ import FAQSection from '@/component/treatment/FAQSection'
 import Footer from '@/component/treatment/footer'
 import MobileActionBar from '@/component/treatment/mobile-bar'
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
+}
+
 const page = () => {
   // For conversion tracking on page load (if this is a thank you page)
   useEffect(() => {

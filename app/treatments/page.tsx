@@ -1,6 +1,6 @@
+'use client'
 import React, { useEffect } from 'react'
 import Script from 'next/script'
-
 import FertilityHero from '@/component/treatment/FertilityHero'
 import FertilityBanner from '@/component/treatment/herosection'
 import Navbar from '@/component/treatment/nabat'
